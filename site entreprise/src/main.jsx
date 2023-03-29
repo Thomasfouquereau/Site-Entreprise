@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom';
 import App from './App'
 import NavBar from './NavBar/NavBar'
-import './index.css'
+import Footer from './Footer/Footer';
 
 console.log(localStorage.getItem('theme'))
 
@@ -12,6 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <NavBar />
       <App />
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>,
 )

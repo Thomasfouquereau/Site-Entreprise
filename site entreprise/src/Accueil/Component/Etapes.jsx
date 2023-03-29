@@ -47,8 +47,6 @@ const Etapes__Container = styled.div`
     margin-bottom: 5px;
 `
 
-
-
 const Etapes__Container__item1 = styled.div`
     display: flex;
     flex-direction: row;
@@ -249,7 +247,7 @@ export default function Etapes() {
             </Etapes__Container__title>
             <Etapes__Container>
                 <Etapes__Container__item1 ref={item1Ref1}>
-                    <img src={icon_message} alt="icon messagee" />
+                    <img src={icon_message} alt="icon message" />
                     <div>
                         <h2>Lorem ipsum </h2>
                         <p>
@@ -265,7 +263,7 @@ export default function Etapes() {
             </Etapes__Container>
             <Etapes__Container>
                 <Etapes__Container__item1 ref={item1Ref2} >
-                    <img src={icon_design} alt="icon messagee" />
+                    <img src={icon_design} alt="icon design" />
                     <div>
                         <h2>Lorem ipsum </h2>
                         <p>
@@ -281,7 +279,7 @@ export default function Etapes() {
             </Etapes__Container>
             <Etapes__Container>
                 <Etapes__Container__item1 ref={item1Ref3} >
-                    <img src={icon_message} alt="icon messagee" />
+                    <img src={icon_site} alt="icon site" />
                     <div>
                         <h2>Lorem ipsum </h2>
                         <p>
@@ -297,7 +295,7 @@ export default function Etapes() {
             </Etapes__Container>
             <Etapes__Container>
                 <Etapes__Container__item1 ref={item1Ref4} >
-                    <img src={icon_clef} alt="icon messagee" />
+                    <img src={icon_clef} alt="icon clef" />
                     <div>
                         <h2>Lorem ipsum </h2>
                         <p>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef,  } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import { gsap } from "gsap";
@@ -19,7 +19,7 @@ const Headerdiv = styled.header`
         margin-bottom: 0.5rem;
         overflow: hidden;
     }
-    p {
+    p { 
         font-size: 2.5rem;
         margin-top:0 ;
         margin-bottom: 1.5rem;
@@ -34,6 +34,7 @@ const Headerdiv = styled.header`
         font-size: 1.3rem;
         font-weight: 700;
         transition: all 0.3s ease;
+        box
         &:hover {
             background-color: #00F5D4;
         }

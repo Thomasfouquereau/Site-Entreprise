@@ -6,7 +6,7 @@ import moon from '../assets/moon.svg';
 
 const StyledButton = styled.button`
     position: absolute;
-    top: 50%;
+    top: 10%;
     right: 10px;
     width: 70px;
     height: 170px;

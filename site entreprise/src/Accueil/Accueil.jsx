@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Header from "./Component/Header";
 import Services from "./Component/Services";
 import Etapes from "./Component/Etapes";
+import Types from "./Component/TypesDeSite";
+import Faq from "./Component/Faq";
 
 // const Cursor = styled.div`
 //     width: 40px;
@@ -55,7 +57,9 @@ export default function Accueil() {
             {/* <Cursor ref={cursor} className="cursor" delay={0.9} ></Cursor> */}
             <Header />
             <Services />
+            <Types />
             <Etapes />
+            <Faq />
         </div>
     );
 }
