@@ -42,8 +42,10 @@ const Headerdiv = styled.header`
 `
 
 export default function Header() {
+
     const [title, setTitle] = useState('Site entreprise');
     const [description, setDescription] = useState('Site entreprise');
+    
     const h1 = useRef(null);
     const p = useRef(null);
 

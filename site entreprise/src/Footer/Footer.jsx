@@ -65,6 +65,10 @@ const Footer__Container__Contact = styled.div`
         font-size: 1.2rem;
         color:#fff
     }
+    a{
+        display: flex;
+        align-items: center
+    }
 `
 
 const Footer__Container__Links = styled.div`
@@ -75,7 +79,7 @@ const Footer__Container__Links = styled.div`
     img{
         margin-right: 20px;
    }
-`   
+`
 
 const Footer__Container__Content = styled.div`
     color: #fff;
@@ -86,12 +90,14 @@ export default function Footer() {
         <Footer__>
             <Footer__Container >
                 <Footer__Container__Contact>
-                    <img src={icon_mail}/>
-                    <span>Contact</span>
+                    <Link to="/Contact">
+                        <img src={icon_mail} />
+                        <span>Contact</span>
+                    </Link>
                 </Footer__Container__Contact>
                 <Footer__Container__Links>
-                    <img src={icon_facebook}/>
-                    <img src={icon_instagram}/>
+                    <img src={icon_facebook} />
+                    <img src={icon_instagram} />
                     <img src={icon_linkedin} />
                 </Footer__Container__Links>
             </Footer__Container>

@@ -34,6 +34,7 @@ const Types__Container__img = styled.div`
     margin-left: 20px;
     border-radius: 50px 0px 0px 50px;
     background-color: #FEE440;
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.25);
 `
 const Types__Container__img__reverse = styled.div`
     display: flex;
@@ -44,6 +45,7 @@ const Types__Container__img__reverse = styled.div`
     margin-right: 20px;
     border-radius: 0px 50px 50px 0px;
     background-color: #FEE440;
+    box-shadow: inset -4px 4px 6px rgba(0, 0, 0, 0.25);
 `
 const Types__Container__info__bg_color = styled.div`
     background-color: #FEE440;
@@ -75,12 +77,12 @@ const Types__Container__info = styled.div`
     }
     a {
         text-decoration: none;
-        color: #fff;
+        color: #222223;
         font-size: 1.2rem;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0;
         width: 25%;
-        border: 1px solid #fff;
+        background-color: #fff;
         padding: 10px;
         border-radius: 50px;
         margin-top: 10px;
@@ -90,7 +92,8 @@ const Types__Container__info = styled.div`
         margin-top: 20px;
         transition: all 0.31s ease;
         &:hover {
-            background-color: #fff;
+            background-color: #FEE440;
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
             color: #222223;
             transition: all 0.31s ease;
         }
@@ -122,11 +125,11 @@ const Types__Container__info__reverse = styled.div`
     }
     a {
         text-decoration: none;
-        color: #fff;
+        color: #222223;
+        background-color: #fff;
         font-size: 1.2rem;
-        font-weight: 400;
+        font-weight: 500;
         width: 25%;
-        border: 1px solid #fff;
         padding: 10px;
         border-radius: 50px;
         margin-top: 10px;
@@ -136,8 +139,9 @@ const Types__Container__info__reverse = styled.div`
         margin-top: 20px;
         transition: all 0.31s ease;
         &:hover {
-            background-color: #fff;
+            background-color: #FEE440;
             color: #222223;
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
             transition: all 0.31s ease;
         }
     }
@@ -205,6 +209,7 @@ export default function Types() {
 
     return (
         <Section__Types>
+
             <Types__Container>
                 <Types__Container__img ref={item1}>
                     <img src={icon_site} alt="icon site" />
@@ -212,11 +217,16 @@ export default function Types() {
                 <Types__Container__info__bg_color>
                     <Types__Container__info>
                         <h2>Landing Page</h2>
-                        <p>Une landing page est une page web qui a pour but de convertir un visiteur en client. Elle est souvent utilisée pour des campagnes de marketing digital.</p>
-                        <Link to="/landing-page">En savoir plus</Link>
+                        <p>
+                            Une landing page est une page web qui a pour but de convertir
+                            un visiteur en client. Elle est souvent utilisée pour des 
+                            campagnes de marketing digital.
+                        </p>
+                        <Link to="/Offre/Landing-page">En savoir plus</Link>
                     </Types__Container__info>
                 </Types__Container__info__bg_color>
             </Types__Container>
+
             <Types__Container__reverse>
                 <Types__Container__img__reverse ref={item2}>
                     <img src={icon_moniteur} alt="icon site" />
@@ -224,12 +234,16 @@ export default function Types() {
                 <Types__Container__info__bg_color>
                     <Types__Container__info__reverse>
                         <h2>Site vitrine</h2>
-                        <p>Un site vitrine est un site web qui présente votre entreprise, vos produits ou vos services. Il est le premier contact que vos clients auront avec vous. Il doit donc être clair, simple et efficace.</p>
-                        <Link to="/site-vitrine">En savoir plus</Link>
-
+                        <p>
+                            Un site vitrine est un site web qui présente votre entreprise, 
+                            vos produits ou vos services. Il est le premier contact que vos 
+                            clients auront avec vous. Il doit donc être clair, simple et efficace.
+                        </p>
+                        <Link to="/Offre/Site-vitrine">En savoir plus</Link>
                     </Types__Container__info__reverse>
                 </Types__Container__info__bg_color>
             </Types__Container__reverse>
+
             <Types__Container>
                 <Types__Container__img ref={item3}>
                     <img src={icon_shop} alt="icon site" />
@@ -237,11 +251,16 @@ export default function Types() {
                 <Types__Container__info__bg_color>
                     <Types__Container__info>
                         <h2>Site e-commerce</h2>
-                        <p>Un site e-commerce est un site web qui permet de vendre des produits ou des services en ligne. Il est donc indispensable pour toute entreprise qui souhaite vendre ses produits en ligne.</p>
-                        <Link to="/site-e-commerce">En savoir plus</Link>
+                        <p>
+                            Un site e-commerce est un site web qui permet de vendre 
+                            des produits ou des services en ligne. Il est donc indispensable 
+                            pour toute entreprise qui souhaite vendre ses produits en ligne.
+                        </p>
+                        <Link to="/Offre/Site-e-commerce">En savoir plus</Link>
                     </Types__Container__info>
                 </Types__Container__info__bg_color>
             </Types__Container>
+
             <Types__Container__reverse>
                 <Types__Container__img__reverse ref={item4}>
                     <img src={icon_saas} alt="icon site" />
@@ -249,11 +268,16 @@ export default function Types() {
                 <Types__Container__info__bg_color>
                     <Types__Container__info__reverse>
                         <h2>Site SaaS</h2>
-                        <p>Un site SaaS est un site web qui permet de vendre un service en ligne. Il est donc indispensable pour toute entreprise qui souhaite vendre un service en ligne.</p>
-                        <Link to="/site-saas">En savoir plus</Link>
+                        <p>
+                            Un site SaaS est un site web qui permet de vendre un service en ligne.
+                            Il est donc indispensable pour toute entreprise qui souhaite vendre 
+                            un service en ligne.
+                        </p>
+                        <Link to="/Offre/Site-saas">En savoir plus</Link>
                     </Types__Container__info__reverse>
                 </Types__Container__info__bg_color>
             </Types__Container__reverse>
+
         </Section__Types>
     );
 }

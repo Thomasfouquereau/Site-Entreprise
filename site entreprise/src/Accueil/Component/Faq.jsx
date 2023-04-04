@@ -64,13 +64,12 @@ const Faq__Container__Response = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     p{
         font-size: 1.5rem;
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 20px;
+        padding: 20px 50px;
 
     }
 `
