@@ -4,8 +4,6 @@ import Light_Night_Mode from '../Liht_Night Mode/Light_Night_Mode';
 import styled from 'styled-components';
 import { gsap } from "gsap";
 
-
-
 const StyledNav = styled.nav`
     display: flex;
     justify-content: center;
@@ -21,10 +19,10 @@ const StyledNav = styled.nav`
 
 const StyledLi = styled.li`
     margin: 0 1rem;
-    background-color: #FEE440;
+    background-color: #EF8354;
     border-radius: 20px;
-    padding: 1rem 0rem;
-    width: 170px;
+    padding: 0.7vw 0rem;
+    width: 10vw;
     text-align: center;
     transition: all 0.3s ease;
     &:hover {
@@ -33,7 +31,7 @@ const StyledLi = styled.li`
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.346);
         }
     a {
-        font-size: 1.3rem;
+        font-size: 1vw;
         font-weight: 700;
         text-decoration: none;
         color: #222223;         
@@ -44,8 +42,8 @@ const Contact = styled.li`
     margin: 0 1rem;
     background-color: #00F5D4;
     border-radius: 20px;
-    padding: 1rem 0rem;
-    width: 170px;
+    padding: 0.7vw 0rem;
+    width: 10vw;
     text-align: center;
     transition: all 0.3s ease;
     &:hover {
@@ -54,7 +52,7 @@ const Contact = styled.li`
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.346);
         }
     a {
-        font-size: 1.3rem;
+        font-size: 1vw;
         font-weight: 700;
         text-decoration: none;
         color: #222223;         
