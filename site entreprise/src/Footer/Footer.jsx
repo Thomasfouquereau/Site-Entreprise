@@ -14,7 +14,7 @@ const Footer__ = styled.footer`
     background-color: #222223;
     padding: 50px 0px;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 0.7vw;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.1em;
@@ -26,8 +26,9 @@ const Footer__Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:#FEE440 ;
-    width: 40%;
+    background-color:#EF8354 ;
+    width: 30vw;
+    height: 5vw;
     padding: 20px 30px;
     border-radius: 50px;
     transform: translateY(-90%);
@@ -36,38 +37,40 @@ const Footer__Container = styled.div`
 const Footer__Container__Contact = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    background-color:#222223 ;
-    padding: 20px 30px;
+    justify-content: center;
+    background-color:#2D3142 ;
+    width: 13vw;
+    height: 3vw;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.31s ease;
     &:hover{
-        background-color: #FEE440;
-        box-shadow: #222223 0px 0px 0px 2px;
+        background-color: #EF8354;
+        box-shadow: #2D3142 0px 0px 0px 2px;
         transition: all 0.31s ease;
         img{
             filter: invert(1);
             transition: all 0.31s ease;
         }
         span{
-            color: #222223;
+            color: #2D3142;
             transition: all 0.31s ease;
-            font-weight: 700;
-            letter-spacing: 0.6px;
+            font-size: 0.7vw;
         }
     }
     img{
-        margin-right: 20px;
+        width: 2vw;
+        height: 2vw;
+        margin-right: 10px;
     }
     span{
-        font-size: 1.2rem;
+        font-size: 0.7vw;
         color:#fff
     }
     a{
         display: flex;
-        align-items: center
+        align-items: center;
     }
 `
 
@@ -76,14 +79,16 @@ const Footer__Container__Links = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 6vw;
     img{
-        margin-right: 20px;
+        width: 1.7vw;
+        height: 1.7vw;
    }
 `
 
 const Footer__Container__Content = styled.div`
     color: #fff;
-    `
+`
 
 export default function Footer() {
     return (

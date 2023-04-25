@@ -17,13 +17,13 @@ const Services__Info = styled.div`
     margin-bottom: 100px;
     font-family: 'Anybody', cursive;
     h1 {
-        font-size: 4rem;
+        font-size: 3vw;
         font-weight: 700;
         margin-bottom: 10px;
         margin-top: 0;
     }
     p {
-        font-size: 1.7rem;
+        font-size: 1vw;
         font-weight: 400;
         margin: 0;
         width: 70%;
@@ -44,9 +44,9 @@ const Services__wrapper = styled.div`
 
 const Services__wrapper__item1 = styled.div` 
      grid-area: 1 / 1 / 2 / 3; 
-     background-color:#FEE440;
+     background-color:#EF8354;
      border-radius: 0px 50px 50px 0px;
-     height: 250px;
+     height: 15vw;
      display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -54,39 +54,39 @@ const Services__wrapper__item1 = styled.div`
         padding-left: 8%;
         padding-right: 8%;
         h2 {
-            font-size: 2rem;
+            font-size: 2vw;
             font-weight: 700;
-            color: #222223;
-            margin-bottom: 10px;
+            color: #BFC0C0;
+            margin-bottom: 30px;
             margin-top: 0;
         }
         p {
-            font-size: 1.2rem;
+            font-size: 0.8vw;
             font-weight: 400;
-            color: #222223;
+            color: #BFC0C0;
             margin: 0;
         }
 `
 
 const Services__wrapper__item2 = styled.div`
      grid-area: 1 / 3 / 2 / 5; 
-     background-color:#00f5d42f;
+     background-color:#4F5D75;
      border-radius: 50px 0px 0px 50px;
-     height: 250px;
+     height: 15vw;;
 `
 
 const Services__wrapper__item3 = styled.div`
      grid-area: 2 / 1 / 3 / 2;
-     background-color:#00f5d42f;
+     background-color:#4F5D75;
      border-radius: 0px 50px 50px 0px;
-     height: 250px;
+     height: 15vw;
 `
 
 const Services__wrapper__item4 = styled.div`
      grid-area: 2 / 2 / 3 / 4; 
-     background-color:#FEE440;
+     background-color:#EF8354;
      border-radius: 50px;
-     height: 250px;
+     height: 15vw;
      display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -94,39 +94,39 @@ const Services__wrapper__item4 = styled.div`
         padding-left: 8%;
         padding-right: 8%;
         h2 {
-            font-size: 2rem;
+            font-size: 2vw;
             font-weight: 700;
-            color: #222223;
-            margin-bottom: 10px;
+            color: #BFC0C0;
+            margin-bottom: 30px;
             margin-top: 0;
         }
         p {
-            font-size: 1.2rem;
+            font-size: 0.8vw;
             font-weight: 400;
-            color: #222223;
+            color: #BFC0C0;
             margin: 0;
         }
 `
 
 const Services__wrapper__item5 = styled.div`
      grid-area: 2 / 4 / 3 / 5;
-     background-color:#00f5d42f;
+     background-color:#4F5D75;
      border-radius: 50px 0px 0px 50px;
-     height: 250px;
+     height: 15vw;
 `
 
 const Services__wrapper__item6 = styled.div`
      grid-area: 3 / 1 / 4 / 3;
-     background-color:#00f5d42f;
+     background-color:#4F5D75;
      border-radius: 0px 50px 50px 0px;
-     height: 250px;
+     height: 15vw;
 `
 
 const Services__wrapper__item7 = styled.div`
      grid-area: 3 / 3 / 4 / 5; 
-     background-color:#FEE440;
+     background-color:#EF8354;
      border-radius: 50px 0px 0px 50px;
-     height: 250px;
+     height: 15vw;
      display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -134,16 +134,16 @@ const Services__wrapper__item7 = styled.div`
         padding-left: 8%;
         padding-right: 8%;
         h2 {
-            font-size: 2rem;
+            font-size: 2vw;
             font-weight: 700;
-            color: #222223;
-            margin-bottom: 10px;
+            color: #BFC0C0;
+            margin-bottom: 30px;
             margin-top: 0;
         }
         p {
-            font-size: 1.2rem;
+            font-size: 0.8vw;
             font-weight: 400;
-            color: #222223;
+            color: #BFC0C0;
             margin: 0;
         }
 `

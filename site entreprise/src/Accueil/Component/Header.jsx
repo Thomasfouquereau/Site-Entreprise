@@ -5,33 +5,33 @@ import { gsap } from "gsap";
 
 const Headerdiv = styled.header`
     width: 100%;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
-    margin-top: 200px;
     font-family: 'Anybody', cursive;
     h1 {
-        font-size: 5rem;
+        font-size: 3vw;
         font-weight: 700;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
         overflow: hidden;
     }
     p { 
-        font-size: 2.5rem;
+        font-size: 1.5vw;
         margin-top:0 ;
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
     }
     button {
         margin-top:  0.5rem;
-        padding: 0.9rem 3rem;
+        padding: 1rem 4rem;
         border: none;
         border-radius: 15px;
-        background-color: #FEE440;
-        color: #121212;
-        font-size: 1.3rem;
+        background-color: #EF8354;
+        color: #222223;
+        font-size: 0.8vw;
         font-weight: 700;
         transition: all 0.3s ease;
         box
@@ -50,7 +50,7 @@ export default function Header() {
     const p = useRef(null);
 
     useEffect(() => {
-        const arrayTitle = ['Votre site vitrine', 'Site entreprise', 'Site entreprise'];
+        const arrayTitle = ['Votre Landing page', 'Votre Site vitrine', 'Votre Site e-commerce'];
         const arrayDescription = ['Sur mesure pour professionnel ou particulier', 'Sur mesure pour professionnel ou particulier', 'Site entreprise'];
         let index = 0;
         const interval = setInterval(() => {

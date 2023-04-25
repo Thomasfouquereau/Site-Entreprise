@@ -18,20 +18,20 @@ const Etapes__Container__title = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #00f5d42f;
-    height: 250px;
+    background-color: #4F5D75;
+    height: 15vw;
     border-radius: 50px;
     padding-left: 2%;
     margin-bottom: 5px;
     font-family: 'Anybody', cursive;
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.5vw;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         margin-top: 0;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1vw;
         font-weight: 400;
         margin: 0;
         width: 70%;
@@ -51,27 +51,27 @@ const Etapes__Container__item1 = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color:#00f5d42f;
+    background-color:#4F5D75;
     border-radius: 50px 0px 0px 50px;
-    height: 250px;
+    height: 15vw;
     width: 55%;
     padding-left: 2%;
     padding-right: 2%;
     font-family: 'Poppins', sans-serif;
     img {
-        margin-right: 30px;
-        width: 50px;
-        height: 50px;
+        margin-right: 3vw;
+        width: 3.5vw;
+        height: 3.5vw;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.8vw;
         font-weight: 700;
         margin-bottom: 10px;
         margin-top: 0;
         margin-bottom: 25px;
     }
     p {
-        font-size: 1rem;
+        font-size: 0.8vw;
         font-weight: 400;
         margin: 0;
         width: 80%;
@@ -81,26 +81,26 @@ const Etapes__Container__item1 = styled.div`
 const Etapes__Container__item2 = styled.div`
     position: absolute;
     width: 50%;
-    height: 250px;
+    height: 15vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:#FEE440;
+    background-color:#EF8354;
     right: 0;
     border-radius: 50px;
     padding-left: 8%;
     padding-right: 8%;
     box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.402);
     span {
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         font-weight: 400;
         color: #222223;
         margin-bottom: 1 0px;
         margin-top: 0;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 2vw;
         font-weight: 700;
         color: #222223;
         margin-bottom: 0;

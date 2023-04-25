@@ -17,13 +17,13 @@ const Types__Container = styled.div`
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 500px;
+    height: 25vw;
 `
 const Types__Container__reverse = styled.div`
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    height: 500px;
+    height: 25vw;
 `
 const Types__Container__img = styled.div`
     display: flex;
@@ -33,8 +33,11 @@ const Types__Container__img = styled.div`
     width: 30%;   
     margin-left: 20px;
     border-radius: 50px 0px 0px 50px;
-    background-color: #FEE440;
+    background-color: #EF8354;
     box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.25);
+    img{
+        width: 8vw;
+    }
 `
 const Types__Container__img__reverse = styled.div`
     display: flex;
@@ -44,11 +47,14 @@ const Types__Container__img__reverse = styled.div`
     width: 30%;   
     margin-right: 20px;
     border-radius: 0px 50px 50px 0px;
-    background-color: #FEE440;
+    background-color: #EF8354;
     box-shadow: inset -4px 4px 6px rgba(0, 0, 0, 0.25);
+    img{
+        width: 8vw;
+    }
 `
 const Types__Container__info__bg_color = styled.div`
-    background-color: #FEE440;
+    background-color: #EF8354;
     width: 70%;
 `
 const Types__Container__info = styled.div`
@@ -60,29 +66,33 @@ const Types__Container__info = styled.div`
     height: 100%;
     width: 70%;
     border-radius: 50px 0px 0px 50px;
-    background-color: #222223;
+    background-color: #4F5D75;
     padding-left: 70px;
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.2vw;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 2vw;
         margin-top: 0;
         font-family: 'Anybody', cursive;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 0.8vw;
         font-weight: 400;
         margin: 0;
         width: 70%;
     }
     a {
         text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         color: #222223;
-        font-size: 1.2rem;
-        font-weight: 500;
         margin: 0;
-        width: 25%;
-        background-color: #fff;
+        font-size: 0.8vw;
+        font-weight: 500;
+        width: 20vw;
+        height: 4vh;
+        background-color: #BFC0C0;
         padding: 10px;
         border-radius: 50px;
         margin-top: 10px;
@@ -92,7 +102,7 @@ const Types__Container__info = styled.div`
         margin-top: 20px;
         transition: all 0.31s ease;
         &:hover {
-            background-color: #FEE440;
+            background-color: #EF8354;
             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
             color: #222223;
             transition: all 0.31s ease;
@@ -108,28 +118,32 @@ const Types__Container__info__reverse = styled.div`
     height: 100%;
     width: 70%;
     border-radius: 0px 50px 50px 0px;
-    background-color: #222223;
+    background-color: #4F5D75;
     padding-left: 70px;
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.2vw;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 2vw;
         margin-top: 0;
         font-family: 'Anybody', cursive;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 0.8vw;
         font-weight: 400;
         margin: 0;
         width: 70%;
     }
     a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
         color: #222223;
-        background-color: #fff;
-        font-size: 1.2rem;
+        background-color: #BFC0C0;
+        font-size: 0.8vw;
         font-weight: 500;
-        width: 25%;
+        width: 20vw;
+        height: 4vh;
         padding: 10px;
         border-radius: 50px;
         margin-top: 10px;
@@ -139,8 +153,8 @@ const Types__Container__info__reverse = styled.div`
         margin-top: 20px;
         transition: all 0.31s ease;
         &:hover {
-            background-color: #FEE440;
-            color: #222223;
+            background-color: #EF8354;
+            color: #BFC0C0;
             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
             transition: all 0.31s ease;
         }
@@ -158,7 +172,7 @@ export default function Types() {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.fromTo(item1.current, {
-            x: "70%",
+            x: "80%",
         }, {
             x: 0,
             duration: 1,
@@ -170,7 +184,7 @@ export default function Types() {
             }
         })
         gsap.fromTo(item2.current, {
-            x: "-70%",
+            x: "-80%",
         }, {
             x: 0,
             duration: 1,
@@ -182,7 +196,7 @@ export default function Types() {
             }
         })
         gsap.fromTo(item3.current, {
-            x: "70%",
+            x: "80%",
         }, {
             x: 0,
             duration: 1,
@@ -194,7 +208,7 @@ export default function Types() {
             }
         })
         gsap.fromTo(item4.current, {
-            x: "-70%",
+            x: "-80%",
         }, {
             x: 0,
             duration: 1,

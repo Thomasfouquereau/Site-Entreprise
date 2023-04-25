@@ -14,6 +14,64 @@ const Section__Contact = styled.section`
     margin-right: 20px;
     font-family: 'Poppins', sans-serif;
 `
+
+const Contact__Container__Info = styled.div`
+    display: flex;
+    width: 100%;
+    height: 20vw;
+    margin-bottom: 5px;
+`    
+const Contact__Container__Info__button = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    button{
+        height: 50%;
+        border: none;
+        background-color: #EF8354;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 1vw;
+        font-weight: 600;
+        color: #EF8354;
+        margin-top: 5px;
+        img{
+            width: 3vw;
+            height: 3vw;
+        }
+    }
+`
+const Contact__Container__Info__div = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: #4F5D75;
+    padding: 50px;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 5px;
+    h1{
+        font-size: 2vw;
+        font-weight: 600;
+        color: #EF8354;
+        margin-top: 0px;
+    }
+    p{
+        font-size: 0.9vw;
+        font-weight: 600;
+        color: #BFC0C0;
+        margin-top: 0px;
+    }
+    img{
+        position: absolute;
+        width: 2vw;
+        height: 2vw;
+        right: 40px;
+        bottom: 40px;
+        rotate: 50deg;
+    }
+` 
+
 const Contact__Container__Form__Wrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -23,20 +81,20 @@ const Contact__Container__Form__Wrapper = styled.div`
 `
 const Contact__Container__Form__Wrapper__div1 = styled.div`
     grid-area: 1 / 1 / 2 / 6;
-    height: 70px;
+    height: 3vw;
     border-radius: 50px;
     input{
         width: 100%;
         height: 100%;
         border: none;
         background-color: #fff;
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
         border-radius: 50px;
         &::placeholder{
-            color: #00F5D4;
-            font-size: 1.5rem;
+            color: #EF8354;
+            font-size: 1vw;
             font-weight: 600;
         }
     }
@@ -49,13 +107,13 @@ const Contact__Container__Form__Wrapper__div2 = styled.div`
         height: 100%;
         border: none;
         background-color: #fff;
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
         border-radius: 50px;
         &::placeholder{
-            color: #00F5D4;
-            font-size: 1.5rem;
+            color: #EF8354;
+            font-size: 1vw;
             font-weight: 600;
         }
     }
@@ -68,13 +126,13 @@ const Contact__Container__Form__Wrapper__div3 = styled.div`
         height: 100%;
         border: none;
         background-color: #fff;
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
         border-radius: 50px;
         &::placeholder{
-            color: #00F5D4;
-            font-size: 1.5rem;
+            color: #EF8354;
+            font-size: 1vw;
             font-weight: 600;
         }
     }
@@ -87,13 +145,13 @@ const Contact__Container__Form__Wrapper__div4 = styled.div`
         height: 100%;
         border: none;
         background-color: #fff;
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
         border-radius: 50px;
         &::placeholder{
-            color: #00F5D4;
-            font-size: 1.5rem;
+            color: #EF8354;
+            font-size: 1vw;
             font-weight: 600;
         }
     }
@@ -101,7 +159,7 @@ const Contact__Container__Form__Wrapper__div4 = styled.div`
 const Contact__Container__Form__Wrapper__div5 = styled.div`
     grid-area: 3 / 1 / 4 / 3;
     border-radius: 50px;
-    background-color: #00F5D4;
+    background-color: #EF8354;
 `
 const Contact__Container__Form__div6 = styled.input`
     width: 100%;
@@ -118,7 +176,7 @@ const Contact__Container__Form__div6 = styled.input`
         width: 100%;
         height: 100%;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
     } 
 `
@@ -130,13 +188,13 @@ const Contact__Container__Form__Wrapper__div6 = styled.div`
         height: 100%;
         border: none;
         background-color: #fff;
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
-        padding-left: 20px;
+        padding-left: 20px; 
         border-radius: 50px;
         &::placeholder{
-            color: #00F5D4;
-            font-size: 1.5rem;
+            color: #EF8354;
+            font-size: 1vw;
             font-weight: 600;
         }
     }
@@ -149,13 +207,13 @@ const Contact__Container__Form__Wrapper__div7 = styled.div`
         height: 100%;
         border: none;
         background-color: #fff;
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
         border-radius: 50px;
         &::placeholder{
-            color: #00F5D4;
-            font-size: 1.5rem;
+            color: #EF8354;
+            font-size: 1vw;
             font-weight: 600;
         }
     }
@@ -168,69 +226,14 @@ const Contact__Container__Form__Wrapper__div8 = styled.div`
         width: 100%;
         height: 100%;
         border: none;
-        background-color: #00F5D4;
-        font-size: 1.5rem;
+        background-color: #EF8354;
+        font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
         border-radius: 50px;
         color: #fff;
     }
 `
-
-const Contact__Container__Info = styled.div`
-    display: flex;
-    width: 100%;
-    height: 400px;
-    margin-bottom: 5px;
-`    
-const Contact__Container__Info__button = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    button{
-        height: 50%;
-        border: none;
-        background-color: #FEE440;
-        border-radius: 50px;
-        cursor: pointer;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #00F5D4;
-        margin-top: 5px;
-    }
-`
-const Contact__Container__Info__div = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    background-color: #222223;
-    padding: 50px;
-    border-radius: 50px;
-    position: relative;
-    margin-left: 5px;
-    h1{
-        font-size: 3rem;
-        font-weight: 600;
-        color: #00F5D4;
-        margin-top: 0px;
-    }
-    p{
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #fff;
-        margin-top: 0px;
-    }
-    img{
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        right: 30px;
-        bottom: 30px;
-        rotate: 50deg;
-    }
-` 
-
-
 
 export default function Contact() {
 

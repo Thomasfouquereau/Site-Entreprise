@@ -12,7 +12,7 @@ const StyledButton = styled.button`
     height: 170px;
     border-radius: 20px;
     border: none;
-    background-color: #FEE440;
+    background-color: #EF8354;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.185);
     transition: all 0.3s ease;
     overflow: hidden;
@@ -31,8 +31,8 @@ export default function Light_Night_Mode() {
         localTheme && setTheme(localTheme);
     }, []);
 
-    const bgColor = theme === 'light' ? '#FFFFFF' : '#121212';
-    const Color = theme === 'light' ? '#121212' : '#FFFFFF';
+    const bgColor = theme === 'light' ? '#BFC0C0' : '#2D3142';
+    const Color = theme === 'light' ? '#2D3142' : '#BFC0C0';
     document.body.style.transition = 'background-color 0.5s ease-in-out';
     document.body.style.backgroundColor = bgColor;
     document.body.style.color = Color;
@@ -49,11 +49,11 @@ export default function Light_Night_Mode() {
         if (theme === 'light') {
             gsap.fromTo(img.current, { y: 12, opacity: 1, }, { y: 100, opacity: 0, duration: 0.3 });
             gsap.fromTo(img1.current, { y: -100, opacity: 0 }, { y: -20, opacity: 1, duration: 0.7 });
-            gsap.fromTo(lnm.current, { backgroundColor: "#FEE440" }, { backgroundColor: "#00F5D4", duration: 0.3 });
+            gsap.fromTo(lnm.current, { backgroundColor: "#EF8354" }, { backgroundColor: "#00F5D4", duration: 0.3 });
         } else {
             gsap.fromTo(img.current, { y: 100, opacity: 0 }, { y: 15, opacity: 1, duration: 0.7 });
             gsap.fromTo(img1.current, { y: -0, opacity: 1 }, { y: -100, opacity: 0, duration: 0.3 });
-            gsap.fromTo(lnm.current, { backgroundColor: "#00F5D4" }, { backgroundColor: "#FEE440", duration: 0.3 });
+            gsap.fromTo(lnm.current, { backgroundColor: "#00F5D4" }, { backgroundColor: "#EF8354", duration: 0.3 });
         }
     }, [theme])
 

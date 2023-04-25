@@ -14,82 +14,107 @@ const Types_Wrapper = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    height: 300px;
+    height: 13vw;
     font-family: 'Anybody', cursive;
 `
 const Types_Wrapper__div1 = styled.div`
     grid-area: 1 / 1 / 3 / 2;
-    background-color: #FEE440;
+    background-color: #EF8354;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h3{
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
+        color : #2D3142;
+    }
+    img{
+        width: 4vw;
+        height: 4vw;
     }
 `  
 const Types_Wrapper__div2 = styled.div`
     grid-area: 1 / 2 / 2 / 4;
-    background-color: #FEE440;
+    background-color: #EF8354;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h3{
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
+        color : #2D3142;
+    }
+    img{
+        width: 2.3vw;
+        height: 2.3vw;
     }
 `
 const Types_Wrapper__div3 = styled.div`
     grid-area: 1 / 4 / 2 / 7;
-    background-color: #FEE440;
+    background-color: #EF8354;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h3{
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
+        color : #2D3142;
+    }
+    img{
+        width: 2.3vw;
+        height: 2.3vw;;
     }
 `
 const Types_Wrapper__div4 = styled.div`
     grid-area: 2 / 2 / 3 / 5;
-    background-color: #FEE440;
+    background-color: #EF8354;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h3{
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
+        color : #2D3142;
+    }
+    img{
+        width: 2.2vw;
+        height: 2.2vw;
     }
 `
 const Types_Wrapper__div5 = styled.div`
     grid-area: 2 / 5 / 3 / 7;
-    background-color: #FEE440;
+    background-color: #EF8354;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h3{
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
+        color : #2D3142;
+    }
+    img{
+        width: 2.3vw;
+        height: 2.3vw;
     }
 `
 

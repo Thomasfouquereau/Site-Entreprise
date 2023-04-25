@@ -14,21 +14,22 @@ const Offre__Container__Title = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 14vw;
     border-radius: 0px 50px 50px 0px;
-    background-color: #FEE440;
-    padding: 40px 50px;
+    background-color: #4F5D75;
+    padding: 70px 50px;
     margin: 5px;
     margin-left: 0;
     margin-right: 10px;
     h1{
-        font-size: 2.5rem;
+        font-size: 2vw;
         font-weight: 700;
         margin: 0;
         margin-top: 10px;
         font-family: 'Anybody', cursive;
     }
     p{
-        font-size: 1.2rem;
+        font-size: 1vw;
         font-weight: 400;
     }
 `
@@ -37,40 +38,31 @@ const Offre__Container__Info = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 14vw;
     border-radius: 50px 0px 0px 50px;
-    background-color: #00BBF9;
-    padding: 40px 50px;
+    background-color: #4F5D75;
+    padding: 70px 50px;
     margin: 5px;
     margin-right: 0;
     margin-left: 10px;
     h2{
-        font-size: 2.5rem;
+        font-size: 1.5vw;
         font-weight: 700;
         margin: 0;
         margin-top: 10px;
         font-family: 'Anybody', cursive;
     }
     p{
-        font-size: 1.2rem;
+        font-size: 0.8vw;
         font-weight: 400;
     }
 `
 
 export default function Offre() {
 
-    const [tl] = useState(gsap.timeline({ defaults: { ease: "power3.inOut" } }));
-
-    let offre__container__title = useRef(null);
-    let offre__container__info = useRef(null);
-
-    useEffect(() => {
-        tl.fromTo(offre__container__title.current, { x: -1000, opacity: 0 }, { x: 0, opacity: 1, duration: 1.5 })
-        tl.fromTo(offre__container__info.current, { x: 1000, opacity: 0 }, { x: 0, opacity: 1, duration: 1.5 })
-    }, [tl])
-
     return (
         <Offre__Section>
-            <Offre__Container__Title ref={offre__container__title}>
+            <Offre__Container__Title>
                 <h1>offre</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam,
@@ -82,7 +74,7 @@ export default function Offre() {
              
             </Offre__Container__Title>
             <Offre__Nav />
-            <Offre__Container__Info ref={offre__container__info}>
+            <Offre__Container__Info>
                 <h2>Plus d'information</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam,

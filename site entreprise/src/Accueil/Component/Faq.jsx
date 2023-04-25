@@ -15,19 +15,19 @@ const Faq__Title__Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    background-color: #222223;
+    height: 15vw;
+    background-color: #4F5D75;
     border-radius: 50px;
     margin-bottom: 5px;
     h2 {
-        font-size: 2.5rem;
+        font-size: 2vw;
         font-weight: 700;
         margin-bottom: 10px;
         margin-top: 0;
         font-family: 'Anybody', cursive;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 0;
@@ -40,32 +40,32 @@ const Faq__Container = styled.div`
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 400px;
-    background-color: #222223;
+    height: 20vw;
+    background-color: #4F5D75;
     padding: 70px;
     border-radius: 50px;
     margin-bottom: 5px;
     overflow: hidden;
 `
 const Faq__Question = styled.span`
-    font-size: 2rem;
+    font-size: 1.3vw;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
 `
 const Faq__Container__Response = styled.div`
     position: absolute;     
-    background-color: #00F5D4;
+    background-color: #EF8354;
     border-radius: 50px;
-    height: 400px;
+    height: 20vw;
     width: 100%;
-    transform: translateY(400px);
+    transform: translateY(700px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     p{
-        font-size: 1.5rem;
+        font-size: 1vw;
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 0;
@@ -92,7 +92,7 @@ export default function Faq() {
         setHover(!hover);
         if (hover) {
             gsap.to(faq__container__response.current, {
-                y: -400,
+                y: -700,
                 duration: 0.8,
                 ease: "power3.out",
             })
@@ -108,7 +108,7 @@ export default function Faq() {
         setHover2(!hover2);
         if (hover2) {
             gsap.to(faq__container__response2.current, {
-                y: -400,
+                y: -700,
                 duration: 0.8,
                 ease: "power3.out",
             })
@@ -124,7 +124,7 @@ export default function Faq() {
         setHover3(!hover3);
         if (hover3) {
             gsap.to(faq__container__response3.current, {
-                y: -400,
+                y: -700,
                 duration: 0.8,
                 ease: "power3.out",
             })
