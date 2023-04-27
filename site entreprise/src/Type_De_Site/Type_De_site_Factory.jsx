@@ -33,7 +33,7 @@ const Type_De_Site__Container__Title = styled.div`
 `
 
 const Type_De_Site__Container__Title__Info = styled.div`
-margin-left: 50px;
+    margin-left: 50px;
     h1{
         margin: 0;
         margin-bottom: 20px;

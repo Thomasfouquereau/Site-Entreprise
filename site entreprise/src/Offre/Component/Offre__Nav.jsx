@@ -2,6 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import icon_arrow from '../../assets/Icon-arrow.svg';
+import icon_landing_page from '../../assets/Icon-site-shadow.svg';
+import icon_creatif_coding from '../../assets/Icon-creatif-coding-shadow.svg';
+import icon_site_vitrine from '../../assets/Icon-monitor-shadow.svg';
+import icon_site_e_commerce from '../../assets/Icon-shop-shadow.svg';
+import icon_site_saas from '../../assets/Icon-saas-shadow2.svg';
 
 const Offre__Nav__Section = styled.section`
     display: flex;
@@ -15,7 +20,7 @@ const Offre__Nav__Section = styled.section`
 `
 
 const Offre__Nav__Container = styled.div`
-    background-color: #EF8354;
+    background-color: #4F5D75;
     height: 18vw;
     width: calc( 100% / 2 - 10px );
     border-radius: 50px;
@@ -25,78 +30,89 @@ const Offre__Nav__Container = styled.div`
     &:hover{
         scale: 0.98;
         transition: all 0.3s ease-in-out;
+        background-color: #EF8354;
     }
     a{
         color: #fff;
     }
-    div{
-        width: 100%;
-        height: 100%;
-    }
 `
 
-const Offre__Nav__Container__Span = styled.span`
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 1vw;
-    font-weight: 600;
-    font-family: 'Anybody', cursive;
+const Offre__Nav__Card__Container = styled.div`
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+`
+
+const Offre__Nav__Card__Container__Icon = styled.img`
+    width: 7vw;
+    height: 7vw;
     transition: all 0.3s ease-in-out;
     &:hover{
-        color: #4F5D75;
+        scale: 1.1;
         transition: all 0.3s ease-in-out;
     }
 `
 
-const Offre__Nav__Container__P = styled.p`
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+const Offre__Nav__Card__Container__Info = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 40px 30px;
-    background-color: #fff;
-    color: #4F5D75;
-    border-radius: 25px;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.544) ;
-    font-size: 0.8vw;
-    font-weight: 500;
+    width: 70%;
+`
+
+const Offre__Nav__Card__Container__Coder = styled.p`
     margin: 0;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 1.7vw;
     transition: all 0.3s ease-in-out;
     &:hover{
-        padding: 60px 30px;
+        scale: 1.01;
         transition: all 0.3s ease-in-out;
     }
-
 `
 
-const Offre__Nav__Container__Img = styled.img`
+const Offre__Nav__Card__Container__Title = styled.h2`
+    margin: 0;
+    text-transform: capitalize;
+    font-family:'Anybody', cursive;
+    font-size: 2.5vw;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        scale: 1.01;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+const Offre__Nav__Card__Prix = styled.p`
     position: absolute;
-    bottom: 20px;
-    right: 30px;
-    width: 1.5vw;
-    height: 1.5vw;
+    bottom: 1vw;
+    left: 3.4vw;
+    margin: 0;
+    font-size: 1vw;
     transition: all 0.3s ease-in-out;
     &:hover{
-        transform: scale(1.1);
+        scale: 1.2;
         transition: all 0.3s ease-in-out;
     }
 `
 
-const Offre__Nav__Container__Span__reverse = styled.span`
+const Offre__Nav__Card__Arrow = styled.img`
     position: absolute;
-    bottom: 20px;
-    left: 30px;
-    font-size: 0.8vw;
-    font-weight: 600;
-    font-family: 'Anybody', cursive;
+    bottom: 1vw;
+    right: 2.5vw;
     transition: all 0.3s ease-in-out;
     &:hover{
-        color: #4F5D75;
+        scale: 1.2;
         transition: all 0.3s ease-in-out;
     }
 `
+
+
 
 export default function Offre__Nav() {
 
@@ -105,68 +121,71 @@ export default function Offre__Nav() {
 
             <Offre__Nav__Container >
                 <Link to="/Offre/Landing-page">
-                    <div>
-                        <Offre__Nav__Container__Span>Landing-page</Offre__Nav__Container__Span>
-                        <Offre__Nav__Container__P >
-                            Votre activité et entreprise sont présentées sur 5 pages détaillées.
-                        </Offre__Nav__Container__P >
-                        <Offre__Nav__Container__Span__reverse>A partir de 500€</Offre__Nav__Container__Span__reverse>
-                        <Offre__Nav__Container__Img src={icon_arrow} />
-                    </div>
+                    <Offre__Nav__Card__Container>
+                        <Offre__Nav__Card__Container__Icon src={icon_landing_page} alt='icon site' />
+                        <Offre__Nav__Card__Container__Info>
+                            <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
+                            <Offre__Nav__Card__Container__Title>Landing-page</Offre__Nav__Card__Container__Title>
+                        </Offre__Nav__Card__Container__Info>
+                    </Offre__Nav__Card__Container>
+                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
+                    <Offre__Nav__Card__Arrow src={icon_arrow} alt='icon arrow' /> 
                 </Link>
             </Offre__Nav__Container>
-
+            
             <Offre__Nav__Container >
                 <Link to="/Offre/Site-vitrine">
-                    <div>
-                        <Offre__Nav__Container__Span>Site vitrine</Offre__Nav__Container__Span>
-                        <Offre__Nav__Container__P >
-                            Votre activité et entreprise sont présentées sur 5 pages détaillées.
-                        </Offre__Nav__Container__P >
-                        <Offre__Nav__Container__Span__reverse>A partir de 500€</Offre__Nav__Container__Span__reverse>
-                        <Offre__Nav__Container__Img src={icon_arrow} />
-                    </div>
+                    <Offre__Nav__Card__Container>
+                        <Offre__Nav__Card__Container__Icon src={icon_site_vitrine} alt='icon site' />
+                        <Offre__Nav__Card__Container__Info>
+                            <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
+                            <Offre__Nav__Card__Container__Title>Site-vitrine</Offre__Nav__Card__Container__Title>
+                        </Offre__Nav__Card__Container__Info>
+                    </Offre__Nav__Card__Container>
+                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
 
             <Offre__Nav__Container >
                 <Link to="/Offre/Site-e-commerce">
-                    <div>
-                        <Offre__Nav__Container__Span>Site e-commerce</Offre__Nav__Container__Span>
-                        <Offre__Nav__Container__P >
-                            Votre activité et entreprise sont présentées sur 5 pages détaillées.
-                        </Offre__Nav__Container__P >
-                        <Offre__Nav__Container__Span__reverse>A partir de 500€</Offre__Nav__Container__Span__reverse>
-                        <Offre__Nav__Container__Img src={icon_arrow} />
-                    </div>
+                    <Offre__Nav__Card__Container>
+                        <Offre__Nav__Card__Container__Icon src={icon_site_e_commerce} alt='icon site' />
+                        <Offre__Nav__Card__Container__Info>
+                            <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
+                            <Offre__Nav__Card__Container__Title>Site-e-commerce</Offre__Nav__Card__Container__Title>
+                        </Offre__Nav__Card__Container__Info>
+                    </Offre__Nav__Card__Container>
+                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
 
             <Offre__Nav__Container >
                 <Link to="/Offre/Site-saas">
-                    <div>
-                        <Offre__Nav__Container__Span>Site-saas</Offre__Nav__Container__Span>
-                        <Offre__Nav__Container__P >
-                            Votre activité et entreprise sont présentées sur 5 pages détaillées.
-                        </Offre__Nav__Container__P >
-                        <Offre__Nav__Container__Span__reverse>A partir de 500€</Offre__Nav__Container__Span__reverse>
-                        <Offre__Nav__Container__Img src={icon_arrow} />
-                    </div>
+                    <Offre__Nav__Card__Container>
+                        <Offre__Nav__Card__Container__Icon src={icon_site_saas} alt='icon site' />
+                        <Offre__Nav__Card__Container__Info>
+                            <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
+                            <Offre__Nav__Card__Container__Title>Application web</Offre__Nav__Card__Container__Title>
+                        </Offre__Nav__Card__Container__Info>
+                    </Offre__Nav__Card__Container>
+                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
 
             <Offre__Nav__Container >
                 <Link to="/Offre/Creatif-Coding">
-                    <div>
-                        <Offre__Nav__Container__Span>Creatif-Coding</Offre__Nav__Container__Span>
-                        <Offre__Nav__Container__P >
-                            Votre activité et entreprise sont présentées sur 5 pages détaillées.
-                        </Offre__Nav__Container__P >
-                        <Offre__Nav__Container__Span__reverse>A partir de 500€</Offre__Nav__Container__Span__reverse>
-                        <Offre__Nav__Container__Img src={icon_arrow} />
-                    </div>
+                    <Offre__Nav__Card__Container>
+                        <Offre__Nav__Card__Container__Icon src={icon_creatif_coding} alt='icon site' />
+                        <Offre__Nav__Card__Container__Info>
+                            <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
+                            <Offre__Nav__Card__Container__Title>Creatif Coding</Offre__Nav__Card__Container__Title>
+                        </Offre__Nav__Card__Container__Info>
+                    </Offre__Nav__Card__Container>
+                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
+
+            
 
         </Offre__Nav__Section>
     )
