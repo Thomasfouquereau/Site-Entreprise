@@ -31,7 +31,7 @@ const Headerdiv = styled.header`
         border-radius: 15px;
         background-color: #EF8354;
         color: #222223;
-        font-size: 0.8vw;
+        font-size: 0.9vw;
         font-weight: 700;
         transition: all 0.3s ease;
         box

@@ -7,6 +7,7 @@ import Site_Vitrine from "./Site_Vitrine/Site_Vitrine";
 import LandingPage from "./LandingPage/LandingPage";
 import Site_E_Commerce from "./Site_E_Commerce/Site_E_Commerce";
 import Site_Saas from "./Site_Saas/Site_Saas";
+import Creatif_Coding from "./CreatifCoding/CreatifCoding";
 
 const Section__Type_de_Site = styled.section`
     margin-top: 300px;
@@ -78,7 +79,8 @@ export default function Type_De_site_Factory() {
     let titre = window.location.href.includes("Site-vitrine") ? "Site Vitrine"
         : window.location.href.includes("Landing-page") ? "Landing page"
             : window.location.href.includes("Site-e-commerce") ? "Site e-commerce"
-                : window.location.href.includes("Site-saas") ? "Site saas" : null
+                : window.location.href.includes("Creatif-Coding") ? "Creatif Coding"
+                    : window.location.href.includes("Site-saas") ? "Site saas" : null
 
     return (
         <Section__Type_de_Site>
@@ -94,7 +96,8 @@ export default function Type_De_site_Factory() {
                 window.location.href.includes("Site-vitrine") ? <Site_Vitrine />
                     : window.location.href.includes("Landing-page") ? <LandingPage />
                         : window.location.href.includes("Site-e-commerce") ? <Site_E_Commerce />
-                            : window.location.href.includes("Site-saas") ? <Site_Saas /> : null
+                            : window.location.href.includes("Creatif-Coding") ? <Creatif_Coding />
+                                : window.location.href.includes("Site-saas") ? <Site_Saas /> : null
             }
             <Type_De_Site__Container__description>
                 <h2>Création de {titre}</h2>
