@@ -1,19 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
-import icon_arrow from '../../assets/Icon-arrow.svg';
-import icon_landing_page from '../../assets/Icon-site-shadow.svg';
-import icon_creatif_coding from '../../assets/Icon-creatif-coding-shadow.svg';
-import icon_site_vitrine from '../../assets/Icon-monitor-shadow.svg';
-import icon_site_e_commerce from '../../assets/Icon-shop-shadow.svg';
-import icon_site_saas from '../../assets/Icon-saas-shadow2.svg';
+import icon_arrow from '../assets/Icon-arrow.svg';
+import icon_landing_page from '../assets/Icon-site-shadow.svg';
+import icon_creatif_coding from '../assets/Icon-creatif-coding-shadow.svg';
+import icon_site_vitrine from '../assets/Icon-monitor-shadow.svg';
+import icon_site_e_commerce from '../assets/Icon-shop-shadow.svg';
+import icon_site_saas from '../assets/Icon-saas-shadow2.svg';
 
 const Offre__Nav__Section = styled.section`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 250px;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    color: #fff;
     a{
         text-decoration: none;
     }
@@ -93,30 +98,6 @@ const Offre__Nav__Card__Container__Title = styled.h2`
     }
 `
 
-const Offre__Nav__Card__Prix = styled.p`
-    position: absolute;
-    bottom: 1vw;
-    left: 3.4vw;
-    margin: 0;
-    font-size: 1vw;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        scale: 1.2;
-        transition: all 0.3s ease-in-out;
-    }
-`
-
-const Offre__Nav__Card__Arrow = styled.img`
-    position: absolute;
-    bottom: 1vw;
-    right: 2.5vw;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        scale: 1.2;
-        transition: all 0.3s ease-in-out;
-    }
-`
-
 const Offre__Nav__Card__New = styled.span`
     position: absolute;
     top: 1vw;
@@ -138,40 +119,40 @@ const Offre__Nav__Card__New = styled.span`
 
 
 
-export default function Offre__Nav() {
+export default function Projetnav() {
 
     return (
         <Offre__Nav__Section >
 
             <Offre__Nav__Container >
-                <Link to="/Offre/Landing-page">
+                <Link to="/Projet/Landing-page">
                     <Offre__Nav__Card__Container>
+                    <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
                         <Offre__Nav__Card__Container__Icon src={icon_landing_page} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
                             <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
                             <Offre__Nav__Card__Container__Title>Landing-page</Offre__Nav__Card__Container__Title>
                         </Offre__Nav__Card__Container__Info>
                     </Offre__Nav__Card__Container>
-                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
-                    <Offre__Nav__Card__Arrow src={icon_arrow} alt='icon arrow' /> 
                 </Link>
             </Offre__Nav__Container>
             
             <Offre__Nav__Container >
-                <Link to="/Offre/Site-vitrine">
+                <Link to="/Projet/Site-vitrine">
                     <Offre__Nav__Card__Container>
+                    <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
                         <Offre__Nav__Card__Container__Icon src={icon_site_vitrine} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
                             <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
                             <Offre__Nav__Card__Container__Title>Site-vitrine</Offre__Nav__Card__Container__Title>
                         </Offre__Nav__Card__Container__Info>
                     </Offre__Nav__Card__Container>
-                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
+
                 </Link>
             </Offre__Nav__Container>
 
             <Offre__Nav__Container >
-                <Link to="/Offre/Site-e-commerce">
+                <Link to="/Projet/Site-e-commerce">
                     <Offre__Nav__Card__Container>
                         <Offre__Nav__Card__Container__Icon src={icon_site_e_commerce} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
@@ -179,12 +160,11 @@ export default function Offre__Nav() {
                             <Offre__Nav__Card__Container__Title>Site-e-commerce</Offre__Nav__Card__Container__Title>
                         </Offre__Nav__Card__Container__Info>
                     </Offre__Nav__Card__Container>
-                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
 
             <Offre__Nav__Container >
-                <Link to="/Offre/Site-saas">
+                <Link to="/Projet/Site-saas">
                     <Offre__Nav__Card__Container>
                         <Offre__Nav__Card__Container__Icon src={icon_site_saas} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
@@ -192,22 +172,25 @@ export default function Offre__Nav() {
                             <Offre__Nav__Card__Container__Title>Application web</Offre__Nav__Card__Container__Title>
                         </Offre__Nav__Card__Container__Info>
                     </Offre__Nav__Card__Container>
-                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
 
             <Offre__Nav__Container >
-                <Link to="/Offre/Creatif-Coding">
+                <Link to="/Projet/Creatif-Coding">
                     <Offre__Nav__Card__Container>
-                        <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
                         <Offre__Nav__Card__Container__Icon src={icon_creatif_coding} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
                             <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
                             <Offre__Nav__Card__Container__Title>Creatif Coding</Offre__Nav__Card__Container__Title>
                         </Offre__Nav__Card__Container__Info>
                     </Offre__Nav__Card__Container>
-                    <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
+            </Offre__Nav__Container>
+            <Offre__Nav__Container >
+                <Offre__Nav__Card__Container__Info>
+                    <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
+                    <Offre__Nav__Card__Container__Title>Creatif Coding</Offre__Nav__Card__Container__Title>
+                </Offre__Nav__Card__Container__Info>
             </Offre__Nav__Container>
 
             

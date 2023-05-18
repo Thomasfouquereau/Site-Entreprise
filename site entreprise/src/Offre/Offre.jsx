@@ -8,21 +8,22 @@ const Offre__Section = styled.section`
     margin-bottom: 250px;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    color: #fff;
 `
 
 const Offre__Container__Title = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
     height: 14vw;
-    border-radius: 0px 50px 50px 0px;
+    width: 90%;
+    border-radius: 50px;
     background-color: #4F5D75;
     padding: 70px 50px;
-    margin: 5px;
-    margin-left: 0;
-    margin-right: 10px;
     h1{
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-weight: 700;
         margin: 0;
         margin-top: 10px;
@@ -35,25 +36,25 @@ const Offre__Container__Title = styled.section`
 `
 
 const Offre__Container__Info = styled.section`
-    display: flex;
+  display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
     height: 14vw;
-    border-radius: 50px 0px 0px 50px;
-    background-color: #4F5D75;
+    width: 90%;
+    border-radius: 50px;
+    background-color: #EF8354;
     padding: 70px 50px;
-    margin: 5px;
-    margin-right: 0;
-    margin-left: 10px;
     h2{
-        font-size: 1.5vw;
+        font-size: 1.7vw;
         font-weight: 700;
         margin: 0;
         margin-top: 10px;
         font-family: 'Anybody', cursive;
     }
     p{
-        font-size: 0.8vw;
+        font-size: 0.9vw;
         font-weight: 400;
     }
 `
