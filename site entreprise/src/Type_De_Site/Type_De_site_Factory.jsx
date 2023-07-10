@@ -2,12 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import { gsap } from "gsap";
-import logo_site from "../assets/Icon-site.svg";
 import Site_Vitrine from "./Site_Vitrine/Site_Vitrine";
 import LandingPage from "./LandingPage/LandingPage";
 import Site_E_Commerce from "./Site_E_Commerce/Site_E_Commerce";
 import Site_Saas from "./Site_Saas/Site_Saas";
 import Creatif_Coding from "./CreatifCoding/CreatifCoding";
+
+import icon_landing_page from "../assets/Icon-site.svg";
+import icon_site_vitrine from "../assets/Icon-monitor-shadow copy.svg";
+import icon_site_saas  from "../assets/Icon-saas-shadow copy.svg";
+import icon_site_e_commerce from "../assets/Icon-shop-shadow copy.svg";
+import icon_creatif_coding from "../assets/Icon-creatif-coding-shadow copy.svg";
 
 const Section__Type_de_Site = styled.section`
     margin-top: 300px;
@@ -80,12 +85,20 @@ export default function Type_De_site_Factory() {
         : window.location.href.includes("Landing-page") ? "Landing page"
             : window.location.href.includes("Site-e-commerce") ? "Site e-commerce"
                 : window.location.href.includes("Creatif-Coding") ? "Creatif Coding"
-                    : window.location.href.includes("Site-saas") ? "Site saas" : null
+                    : window.location.href.includes("Site-saas") ? "Site saas"
+                        : null
 
     return (
         <Section__Type_de_Site>
             <Type_De_Site__Container__Title>
-                <img src={logo_site} />
+                {
+                    window.location.href.includes("Site-vitrine") ? <img src={icon_site_vitrine} alt="title" />
+                        : window.location.href.includes("Landing-page") ? <img src={icon_landing_page} alt="title" />
+                            : window.location.href.includes("Site-e-commerce") ? <img src={icon_site_e_commerce} alt="title" />
+                                : window.location.href.includes("Creatif-Coding") ? <img src={icon_creatif_coding} alt="title" />
+                                    : window.location.href.includes("Site-saas") ? <img src={icon_site_saas} alt="title" />
+                                        : null
+                }
                 <Type_De_Site__Container__Title__Info>
                     <h1>{titre}</h1>
                     <p>Pour se démarquer sur internet et faire de votre projet une entité unique.</p>
