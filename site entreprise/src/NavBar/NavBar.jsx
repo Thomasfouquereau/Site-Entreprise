@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import Light_Night_Mode from '../Liht_Night Mode/Light_Night_Mode';
 import styled from 'styled-components';
 import { gsap } from "gsap";
 
@@ -34,7 +33,7 @@ const StyledLi = styled.li`
         font-size: 1vw;
         font-weight: 700;
         text-decoration: none;
-        color: #222223;         
+        color: #fff;         
     }
 `;
 
@@ -55,7 +54,7 @@ const Contact = styled.li`
         font-size: 1vw;
         font-weight: 700;
         text-decoration: none;
-        color: #222223;         
+        color: #fff;         
     }
 `;
 
@@ -86,7 +85,6 @@ const NavBar = () => {
                     <Link to="/contact">Contact</Link>
                 </Contact>
             </ul>
-            <Light_Night_Mode />
         </StyledNav>
     );
 }

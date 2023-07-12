@@ -56,14 +56,14 @@ const Services__wrapper__item1 = styled.div`
         h2 {
             font-size: 2vw;
             font-weight: 700;
-            color: #BFC0C0;
+
             margin-bottom: 30px;
             margin-top: 0;
         }
         p {
             font-size: 0.8vw;
             font-weight: 400;
-            color: #BFC0C0;
+
             margin: 0;
         }
 `
@@ -96,14 +96,14 @@ const Services__wrapper__item4 = styled.div`
         h2 {
             font-size: 2vw;
             font-weight: 700;
-            color: #BFC0C0;
+
             margin-bottom: 30px;
             margin-top: 0;
         }
         p {
             font-size: 0.8vw;
             font-weight: 400;
-            color: #BFC0C0;
+
             margin: 0;
         }
 `
@@ -136,14 +136,14 @@ const Services__wrapper__item7 = styled.div`
         h2 {
             font-size: 2vw;
             font-weight: 700;
-            color: #BFC0C0;
+  
             margin-bottom: 30px;
             margin-top: 0;
         }
         p {
             font-size: 0.8vw;
             font-weight: 400;
-            color: #BFC0C0;
+
             margin: 0;
         }
 `
