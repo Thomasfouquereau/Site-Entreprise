@@ -28,7 +28,7 @@ const Offre__Nav__Container = styled.div`
     background-color: #4F5D75;
     height: 18vw;
     width: calc( 100% / 2 - 10px );
-    border-radius: 50px;
+    border-radius: 3vw;
     margin: 5px;
     position: relative;  
     transition: all 0.3s ease-in-out; 
@@ -108,7 +108,7 @@ const Offre__Nav__Card__New = styled.span`
     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
     color: #fff;
     padding: 0.2vw 1.5vw;
-    border-radius: 50px;
+    border-radius: 3vw;
     font-size: 1vw;
     transition: all 0.3s ease-in-out;
     &:hover{

@@ -29,7 +29,7 @@ const Contact__Container__Info__button = styled.div`
         height: 50%;
         border: none;
         background-color: #EF8354;
-        border-radius: 50px;
+        border-radius: 3vw;
         cursor: pointer;
         font-size: 1vw;
         font-weight: 600;
@@ -47,7 +47,7 @@ const Contact__Container__Info__div = styled.div`
     width: 75%;
     background-color: #4F5D75;
     padding: 50px;
-    border-radius: 50px;
+    border-radius: 3vw;
     position: relative;
     margin-left: 5px;
     h1{
@@ -82,7 +82,7 @@ const Contact__Container__Form__Wrapper = styled.div`
 const Contact__Container__Form__Wrapper__div1 = styled.div`
     grid-area: 1 / 1 / 2 / 6;
     height: 3vw;
-    border-radius: 50px;
+    border-radius: 3vw;
     input{
         width: 100%;
         height: 100%;
@@ -91,7 +91,7 @@ const Contact__Container__Form__Wrapper__div1 = styled.div`
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
-        border-radius: 50px;
+        border-radius: 3vw;
         &::placeholder{
             color: #EF8354;
             font-size: 1vw;
@@ -101,7 +101,7 @@ const Contact__Container__Form__Wrapper__div1 = styled.div`
 `
 const Contact__Container__Form__Wrapper__div2 = styled.div`
     grid-area: 1 / 6 / 2 / 8;
-    border-radius: 50px;
+    border-radius: 3vw;
     input{
         width: 100%;
         height: 100%;
@@ -110,7 +110,7 @@ const Contact__Container__Form__Wrapper__div2 = styled.div`
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
-        border-radius: 50px;
+        border-radius: 3vw;
         &::placeholder{
             color: #EF8354;
             font-size: 1vw;
@@ -120,7 +120,7 @@ const Contact__Container__Form__Wrapper__div2 = styled.div`
 `
 const Contact__Container__Form__Wrapper__div3 = styled.div`
     grid-area: 2 / 1 / 3 / 5;
-    border-radius: 50px;
+    border-radius: 3vw;
     input{
         width: 100%;
         height: 100%;
@@ -129,7 +129,7 @@ const Contact__Container__Form__Wrapper__div3 = styled.div`
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
-        border-radius: 50px;
+        border-radius: 3vw;
         &::placeholder{
             color: #EF8354;
             font-size: 1vw;
@@ -139,7 +139,7 @@ const Contact__Container__Form__Wrapper__div3 = styled.div`
 `
 const Contact__Container__Form__Wrapper__div4 = styled.div`
     grid-area: 2 / 5 / 3 / 8;
-    border-radius: 50px;
+    border-radius: 3vw;
     input{
         width: 100%;
         height: 100%;
@@ -148,7 +148,7 @@ const Contact__Container__Form__Wrapper__div4 = styled.div`
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
-        border-radius: 50px;
+        border-radius: 3vw;
         &::placeholder{
             color: #EF8354;
             font-size: 1vw;
@@ -158,7 +158,7 @@ const Contact__Container__Form__Wrapper__div4 = styled.div`
 `
 const Contact__Container__Form__Wrapper__div5 = styled.div`
     grid-area: 3 / 1 / 4 / 3;
-    border-radius: 50px;
+    border-radius: 3vw;
     background-color: #EF8354;
 `
 const Contact__Container__Form__div6 = styled.input`
@@ -182,7 +182,7 @@ const Contact__Container__Form__div6 = styled.input`
 `
 const Contact__Container__Form__Wrapper__div6 = styled.div`
     grid-area: 3 / 3 / 4 / 8;
-    border-radius: 50px;
+    border-radius: 3vw;
     input{
         width: 100%;
         height: 100%;
@@ -191,7 +191,7 @@ const Contact__Container__Form__Wrapper__div6 = styled.div`
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px; 
-        border-radius: 50px;
+        border-radius: 3vw;
         &::placeholder{
             color: #EF8354;
             font-size: 1vw;
@@ -201,7 +201,7 @@ const Contact__Container__Form__Wrapper__div6 = styled.div`
 `
 const Contact__Container__Form__Wrapper__div7 = styled.div`
     grid-area: 4 / 1 / 5 / 6;
-    border-radius: 50px;
+    border-radius: 3vw;
     input{
         width: 100%;
         height: 100%;
@@ -210,7 +210,7 @@ const Contact__Container__Form__Wrapper__div7 = styled.div`
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
-        border-radius: 50px;
+        border-radius: 3vw;
         &::placeholder{
             color: #EF8354;
             font-size: 1vw;
@@ -220,7 +220,7 @@ const Contact__Container__Form__Wrapper__div7 = styled.div`
 `
 const Contact__Container__Form__Wrapper__div8 = styled.div`
     grid-area: 4 / 6 / 5 / 8;
-    border-radius: 50px;
+    border-radius: 3vw;
     button{
         cursor: pointer;
         width: 100%;
@@ -230,7 +230,7 @@ const Contact__Container__Form__Wrapper__div8 = styled.div`
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
-        border-radius: 50px;
+        border-radius: 3vw;
         color: #fff;
     }
 `

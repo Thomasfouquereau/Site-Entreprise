@@ -92,9 +92,9 @@ const Types__Container__info = styled.div`
         font-weight: 500;
         width: 20vw;
         height: 4vh;
-        background-color: #BFC0C0;
+        background-color: #fff;
         padding: 10px;
-        border-radius: 50px;
+        border-radius: 3vw;
         margin-top: 10px;
         text-align: center;
         transform: translateX(50%);
@@ -139,13 +139,13 @@ const Types__Container__info__reverse = styled.div`
         align-items: center;
         text-decoration: none;
         color: #222223;
-        background-color: #BFC0C0;
+        background-color: #fff;
         font-size: 0.8vw;
         font-weight: 500;
         width: 20vw;
         height: 4vh;
         padding: 10px;
-        border-radius: 50px;
+        border-radius: 3vw;
         margin-top: 10px;
         text-align: center;
         transform: translateX(50%);

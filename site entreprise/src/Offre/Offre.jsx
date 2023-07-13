@@ -19,7 +19,7 @@ const Offre__Container__Title = styled.section`
     transform: translateX(-50%);
     height: 14vw;
     width: 90%;
-    border-radius: 50px;
+    border-radius: 3vw;
     background-color: #4F5D75;
     padding: 70px 50px;
     h1{
@@ -43,7 +43,7 @@ const Offre__Container__Info = styled.section`
     transform: translateX(-50%);
     height: 14vw;
     width: 90%;
-    border-radius: 50px;
+    border-radius: 3vw;
     background-color: #EF8354;
     padding: 70px 50px;
     h2{

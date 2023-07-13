@@ -20,7 +20,7 @@ const Types_Wrapper = styled.div`
 const Types_Wrapper__div1 = styled.div`
     grid-area: 1 / 1 / 3 / 2;
     background-color: #EF8354;
-    border-radius: 50px;
+    border-radius: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,7 @@ const Types_Wrapper__div1 = styled.div`
 const Types_Wrapper__div2 = styled.div`
     grid-area: 1 / 2 / 2 / 4;
     background-color: #EF8354;
-    border-radius: 50px;
+    border-radius: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@ const Types_Wrapper__div2 = styled.div`
 const Types_Wrapper__div3 = styled.div`
     grid-area: 1 / 4 / 2 / 7;
     background-color: #EF8354;
-    border-radius: 50px;
+    border-radius: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +80,7 @@ const Types_Wrapper__div3 = styled.div`
 const Types_Wrapper__div4 = styled.div`
     grid-area: 2 / 2 / 3 / 5;
     background-color: #EF8354;
-    border-radius: 50px;
+    border-radius: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +100,7 @@ const Types_Wrapper__div4 = styled.div`
 const Types_Wrapper__div5 = styled.div`
     grid-area: 2 / 5 / 3 / 7;
     background-color: #EF8354;
-    border-radius: 50px;
+    border-radius: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;

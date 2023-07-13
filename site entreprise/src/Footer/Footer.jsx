@@ -30,7 +30,7 @@ const Footer__Container = styled.div`
     width: 30vw;
     height: 5vw;
     padding: 20px 30px;
-    border-radius: 50px;
+    border-radius: 3vw;
     transform: translateY(-90%);
 `
 
@@ -42,7 +42,7 @@ const Footer__Container__Contact = styled.div`
     background-color:#2D3142 ;
     width: 13vw;
     height: 3vw;
-    border-radius: 50px;
+    border-radius: 3vw;
     cursor: pointer;
     transition: all 0.31s ease;
     &:hover{

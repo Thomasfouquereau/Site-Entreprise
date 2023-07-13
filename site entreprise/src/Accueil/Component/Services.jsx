@@ -85,7 +85,7 @@ const Services__wrapper__item3 = styled.div`
 const Services__wrapper__item4 = styled.div`
      grid-area: 2 / 2 / 3 / 4; 
      background-color:#EF8354;
-     border-radius: 50px;
+     border-radius: 2vw;
      height: 15vw;
      display: flex;
         flex-direction: column;

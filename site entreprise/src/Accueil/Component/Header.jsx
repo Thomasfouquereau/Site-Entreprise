@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
 import { gsap } from "gsap";
 
 const Headerdiv = styled.header`
@@ -9,81 +8,57 @@ const Headerdiv = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     position: relative;
     font-family: 'Anybody', cursive;
     h1 {
-        font-size: 3vw;
+        font-size: 3.5vw;
         font-weight: 700;
         margin-bottom: 1rem;
         overflow: hidden;
+        margin-left: 23.5vw;
+    }
+    span{
+        color: #EF8354;
     }
     p { 
-        font-size: 1.5vw;
+        font-size: 1.7vw;
         margin-top:0 ;
-        margin-bottom: 3rem;
-    }
-    button {
-        margin-top:  0.5rem;
-        padding: 1rem 4rem;
-        border: none;
-        border-radius: 15px;
-        background-color: #EF8354;
-        color: #222223;
-        font-size: 0.9vw;
-        font-weight: 700;
-        transition: all 0.3s ease;
-        box
-        &:hover {
-            background-color: #00F5D4;
-        }
+        margin-bottom: 5rem;
+        margin-left: 23.5vw;
+        overflow: hidden;
     }
 `
 
 export default function Header() {
 
-    const [title, setTitle] = useState('Site entreprise');
     const [description, setDescription] = useState('Site entreprise');
-    
-    const h1 = useRef(null);
+    const [typeSite, setTypeSite] = useState(' Site entreprise');
+    const titre = useRef(null);
     const p = useRef(null);
 
     useEffect(() => {
-        const arrayTitle = ['Votre Landing page', 'Votre Site vitrine', 'Votre Site e-commerce'];
-        const arrayDescription = ['Sur mesure pour professionnel ou particulier', 'Sur mesure pour professionnel ou particulier', 'Site entreprise'];
+        const arrayTypeSite = [' Landing page', ' Site vitrine', ' Site e-commerce'];
+        const arrayDescription = ['Landing page', 'Site vitrine', 'Site e-commerce'];
         let index = 0;
+
         const interval = setInterval(() => {
-            setTitle(arrayTitle[index]);
+            setTypeSite(arrayTypeSite[index]);
             setDescription(arrayDescription[index]);
-            index = index === arrayTitle.length - 1 ? 0 : index + 1;
-            gsap.fromTo(h1.current, { x: -150, opacity: 0 }, { x: 0, opacity: 1, duration: 1 });
-            gsap.fromTo(p.current, { x: 150, opacity: 0 }, { x: 0, opacity: 1, duration: 1 },);
-            gsap.fromTo(h1.current, { x: 0, opacity: 1 }, { x: 150, opacity: 0, duration: 1, delay: 4 });
-            gsap.fromTo(p.current, { x: 0, opacity: 1 }, { x: -150, opacity: 0, duration: 1, delay: 4 });
+            index = index === arrayTypeSite.length - 1 ? 0 : index + 1;
+            gsap.fromTo(titre.current, { y: -150, opacity: 0 }, { y: 0, opacity: 1, duration: 1 });
+            gsap.fromTo(titre.current, { y: 0, opacity: 1 }, { y: 150, opacity: 0, duration: 1, delay: 4 });
+            gsap.fromTo(p.current, { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 });
+            gsap.fromTo(p.current, { y: 0, opacity: 1 }, { y: 50, opacity: 0, duration: 1, delay: 4 });
         }, 5000);
         return () => clearInterval(interval);
-    }, []);
-
-    const button = useRef(null);
-
-    useEffect(() => {
-        gsap.fromTo(h1.current, { opacity: 0 }, { opacity: 1, duration: 1 });
-        gsap.fromTo(p.current, { x: -1000, opacity: 0 }, { x: 0, opacity: 1, duration: 1 });
-        gsap.fromTo(button.current, { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 1 });
     }, []);
 
     return (
         <Headerdiv className="header">
             <div className="header__Text">
-                <h1 ref={h1} className="header__Text__Title">{title}</h1>
+                <h1 className="header__Text__Title">Votre<span ref={titre}>{typeSite}</span></h1>
                 <p ref={p} className="header__Text__Description">{description}</p>
             </div>
-            <Link to="/">
-                <button ref={button}>
-                    En savoir plus sur les site
-                </button>
-            </Link>
         </Headerdiv>
     );
 

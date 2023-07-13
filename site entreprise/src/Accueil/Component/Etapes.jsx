@@ -20,7 +20,7 @@ const Etapes__Container__title = styled.div`
     justify-content: center;
     background-color: #4F5D75;
     height: 15vw;
-    border-radius: 50px;
+    border-radius: 3vw;
     padding-left: 2%;
     margin-bottom: 5px;
     font-family: 'Anybody', cursive;
@@ -88,21 +88,21 @@ const Etapes__Container__item2 = styled.div`
     justify-content: center;
     background-color:#EF8354;
     right: 0;
-    border-radius: 50px;
+    border-radius: 3vw;
     padding-left: 8%;
     padding-right: 8%;
     box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.402);
     span {
         font-size: 1.5vw;
         font-weight: 400;
-        color: #222223;
+        color: #4F5D75;
         margin-bottom: 1 0px;
         margin-top: 0;
     }
     h2 {
         font-size: 2vw;
         font-weight: 700;
-        color: #222223;
+        color: #4F5D75;
         margin-bottom: 0;
         margin-top: 0;
     }

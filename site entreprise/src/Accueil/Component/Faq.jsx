@@ -17,12 +17,12 @@ const Faq__Title__Container = styled.div`
     align-items: center;
     height: 15vw;
     background-color: #4F5D75;
-    border-radius: 50px;
+    border-radius: 3vw;
     margin-bottom: 5px;
     h2 {
         font-size: 2vw;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 1vw;
         margin-top: 0;
         font-family: 'Anybody', cursive;
     }
@@ -43,7 +43,7 @@ const Faq__Container = styled.div`
     height: 20vw;
     background-color: #4F5D75;
     padding: 70px;
-    border-radius: 50px;
+    border-radius: 3vw;
     margin-bottom: 5px;
     overflow: hidden;
 `
@@ -56,7 +56,7 @@ const Faq__Question = styled.span`
 const Faq__Container__Response = styled.div`
     position: absolute;     
     background-color: #EF8354;
-    border-radius: 50px;
+    border-radius: 3vw;
     height: 20vw;
     width: 100%;
     transform: translateY(700px);
@@ -69,8 +69,7 @@ const Faq__Container__Response = styled.div`
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 20px 50px;
-
+        padding: 0 10vw;
     }
 `
 
