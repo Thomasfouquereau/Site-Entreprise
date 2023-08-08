@@ -13,18 +13,21 @@ const Section__Types = styled.section`
     margin-bottom: 300px;
     font-family: 'Poppins', sans-serif;
 `
+
 const Types__Container = styled.div`
     display: flex;
     flex-direction: row;
     position: relative;
     height: 25vw;
 `
+
 const Types__Container__reverse = styled.div`
     display: flex;
     flex-direction: row-reverse;
     position: relative;
     height: 25vw;
 `
+
 const Types__Container__img = styled.div`
     display: flex;
     flex-direction: column;
@@ -39,6 +42,7 @@ const Types__Container__img = styled.div`
         width: 8vw;
     }
 `
+
 const Types__Container__img__reverse = styled.div`
     display: flex;
     flex-direction: column;
@@ -53,10 +57,12 @@ const Types__Container__img__reverse = styled.div`
         width: 8vw;
     }
 `
+
 const Types__Container__info__bg_color = styled.div`
     background-color: #EF8354;
     width: 70%;
 `
+
 const Types__Container__info = styled.div`
     position: absolute;
     display: flex;
@@ -88,10 +94,10 @@ const Types__Container__info = styled.div`
         justify-content: center;
         color: #222223;
         margin: 0;
-        font-size: 0.8vw;
+        font-size: 0.9vw;
         font-weight: 500;
-        width: 20vw;
-        height: 4vh;
+        width: 15vw;
+        height: 4.5vh;
         background-color: #fff;
         padding: 10px;
         border-radius: 3vw;
@@ -103,12 +109,13 @@ const Types__Container__info = styled.div`
         transition: all 0.31s ease;
         &:hover {
             background-color: #EF8354;
-            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-            color: #222223;
+            color: #ffffff;
             transition: all 0.31s ease;
+            transform: scale(0.95) translateX(50%);
         }
     }
 `
+
 const Types__Container__info__reverse = styled.div`
     position: absolute;
     display: flex;
@@ -140,12 +147,12 @@ const Types__Container__info__reverse = styled.div`
         text-decoration: none;
         color: #222223;
         background-color: #fff;
-        font-size: 0.8vw;
+        font-size: 0.9vw;
         font-weight: 500;
-        width: 20vw;
+        width: 15vw;
         height: 4vh;
         padding: 10px;
-        border-radius: 3vw;
+        border-radius: 4.5vw;
         margin-top: 10px;
         text-align: center;
         transform: translateX(50%);
@@ -154,13 +161,13 @@ const Types__Container__info__reverse = styled.div`
         transition: all 0.31s ease;
         &:hover {
             background-color: #EF8354;
-            color: #BFC0C0;
+            color: #ffffff;
             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
             transition: all 0.31s ease;
+            transform: scale(0.95) translateX(50%);
         }
     }
 `
-
 
 export default function Types() {
 
@@ -233,7 +240,7 @@ export default function Types() {
                         <h2>Landing Page</h2>
                         <p>
                             Une landing page est une page web qui a pour but de convertir
-                            un visiteur en client. Elle est souvent utilisée pour des 
+                            un visiteur en client. Elle est souvent utilisée pour des
                             campagnes de marketing digital.
                         </p>
                         <Link to="/Offre/Landing-page">En savoir plus</Link>
@@ -249,8 +256,8 @@ export default function Types() {
                     <Types__Container__info__reverse>
                         <h2>Site vitrine</h2>
                         <p>
-                            Un site vitrine est un site web qui présente votre entreprise, 
-                            vos produits ou vos services. Il est le premier contact que vos 
+                            Un site vitrine est un site web qui présente votre entreprise,
+                            vos produits ou vos services. Il est le premier contact que vos
                             clients auront avec vous. Il doit donc être clair, simple et efficace.
                         </p>
                         <Link to="/Offre/Site-vitrine">En savoir plus</Link>
@@ -266,8 +273,8 @@ export default function Types() {
                     <Types__Container__info>
                         <h2>Site e-commerce</h2>
                         <p>
-                            Un site e-commerce est un site web qui permet de vendre 
-                            des produits ou des services en ligne. Il est donc indispensable 
+                            Un site e-commerce est un site web qui permet de vendre
+                            des produits ou des services en ligne. Il est donc indispensable
                             pour toute entreprise qui souhaite vendre ses produits en ligne.
                         </p>
                         <Link to="/Offre/Site-e-commerce">En savoir plus</Link>
@@ -284,7 +291,7 @@ export default function Types() {
                         <h2>Site SaaS</h2>
                         <p>
                             Un site SaaS est un site web qui permet de vendre un service en ligne.
-                            Il est donc indispensable pour toute entreprise qui souhaite vendre 
+                            Il est donc indispensable pour toute entreprise qui souhaite vendre
                             un service en ligne.
                         </p>
                         <Link to="/Offre/Site-saas">En savoir plus</Link>

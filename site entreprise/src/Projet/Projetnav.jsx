@@ -44,7 +44,6 @@ const Offre__Nav__Container = styled.div`
     a{
         color: #fff;
     }
-   
 `
 
 const Offre__Nav__Card__Container = styled.div`
@@ -117,17 +116,14 @@ const Offre__Nav__Card__New = styled.span`
     }
 `
 
-
-
 export default function Projetnav() {
 
     return (
         <Offre__Nav__Section >
-
             <Offre__Nav__Container >
                 <Link to="/Projet/Landing-page">
                     <Offre__Nav__Card__Container>
-                    <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
+                        <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
                         <Offre__Nav__Card__Container__Icon src={icon_landing_page} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
                             <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
@@ -136,23 +132,20 @@ export default function Projetnav() {
                     </Offre__Nav__Card__Container>
                 </Link>
             </Offre__Nav__Container>
-            
             <Offre__Nav__Container >
                 <Link to="/Projet/Site-vitrine">
                     <Offre__Nav__Card__Container>
-                    <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
+                        <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
                         <Offre__Nav__Card__Container__Icon src={icon_site_vitrine} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
                             <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
                             <Offre__Nav__Card__Container__Title>Site-vitrine</Offre__Nav__Card__Container__Title>
                         </Offre__Nav__Card__Container__Info>
                     </Offre__Nav__Card__Container>
-
                 </Link>
             </Offre__Nav__Container>
-
             <Offre__Nav__Container >
-                <Link to="/Projet/Site-e-commerce">
+                <Link to="/Projet/E-Commerce">
                     <Offre__Nav__Card__Container>
                         <Offre__Nav__Card__Container__Icon src={icon_site_e_commerce} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
@@ -162,9 +155,8 @@ export default function Projetnav() {
                     </Offre__Nav__Card__Container>
                 </Link>
             </Offre__Nav__Container>
-
             <Offre__Nav__Container >
-                <Link to="/Projet/Site-saas">
+                <Link to="/Projet/Application-web">
                     <Offre__Nav__Card__Container>
                         <Offre__Nav__Card__Container__Icon src={icon_site_saas} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
@@ -174,7 +166,6 @@ export default function Projetnav() {
                     </Offre__Nav__Card__Container>
                 </Link>
             </Offre__Nav__Container>
-
             <Offre__Nav__Container >
                 <Link to="/Projet/Creatif-Coding">
                     <Offre__Nav__Card__Container>
@@ -186,7 +177,6 @@ export default function Projetnav() {
                     </Offre__Nav__Card__Container>
                 </Link>
             </Offre__Nav__Container>
-            
             {/* <Offre__Nav__Container >
                 <Link to="/Projet/Creatif-Coding">
                     <Offre__Nav__Card__Container>
@@ -198,9 +188,6 @@ export default function Projetnav() {
                     </Offre__Nav__Card__Container>
                 </Link>
             </Offre__Nav__Container> */}
-
-            
-
         </Offre__Nav__Section>
     )
 }

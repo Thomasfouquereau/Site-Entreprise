@@ -8,7 +8,8 @@ const StyledNav = styled.nav`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 30px;
+    height: 5vh;
+    margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     ul {
         display: flex;
@@ -17,13 +18,16 @@ const StyledNav = styled.nav`
 `;
 
 const StyledLi = styled.li`
+    display: flex;
     margin: 0 1rem;
     background-color: #EF8354;
     border-radius: 20px;
-    padding: 0.7vw 0rem;
-    width: 10vw;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     transition: all 0.3s ease;
+    height: 3.5vw;
+    width: 12vw;
     &:hover {
             transform: scale(1.05);
             transition: all 0.31s ease;
@@ -33,18 +37,23 @@ const StyledLi = styled.li`
         font-size: 1vw;
         font-weight: 700;
         text-decoration: none;
-        color: #fff;         
+        color: #fff; 
+        padding: 3rem 3rem;
+        width: 100%; 
     }
 `;
 
 const Contact = styled.li`
+    display: flex;
     margin: 0 1rem;
     background-color: #00F5D4;
     border-radius: 20px;
-    padding: 0.7vw 0rem;
-    width: 10vw;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     transition: all 0.3s ease;
+    height: 3.5vw;
+    width: 10vw;
     &:hover {
             transform: scale(1.05);
             transition: all 0.31s ease;
@@ -54,18 +63,19 @@ const Contact = styled.li`
         font-size: 1vw;
         font-weight: 700;
         text-decoration: none;
-        color: #fff;         
+        color: #fff;
+        padding: 3rem 3rem;
+        width: 100%;
     }
 `;
 
 const NavBar = () => {
 
     const ul = useRef(null);
-
     useEffect(() => {
         gsap.fromTo(ul.current, { y: -200 }, { y: 0, duration: 0.7 });
     }, []);
-
+    
     return (
         <StyledNav  >
             <ul ref={ul}>

@@ -12,7 +12,7 @@ const Offre__Nav__Section = styled.section`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     a{
         text-decoration: none;
@@ -76,7 +76,7 @@ const Offre__Nav__Card__Container__Coder = styled.p`
     font-size: 1.7vw;
     transition: all 0.3s ease-in-out;
     &:hover{
-        scale: 1.01;
+        scale: 1.015;
         transition: all 0.3s ease-in-out;
     }
 `
@@ -101,7 +101,7 @@ const Offre__Nav__Card__Prix = styled.p`
     font-size: 1vw;
     transition: all 0.3s ease-in-out;
     &:hover{
-        scale: 1.2;
+        scale: 1.1;
         transition: all 0.3s ease-in-out;
     }
 `
@@ -131,18 +131,14 @@ const Offre__Nav__Card__New = styled.span`
     font-size: 1vw;
     transition: all 0.3s ease-in-out;
     &:hover{
-        scale: 1.2;
+        scale: 1.1;
         transition: all 0.3s ease-in-out;
     }
 `
 
-
-
 export default function Offre__Nav() {
-
     return (
         <Offre__Nav__Section >
-
             <Offre__Nav__Container >
                 <Link to="/Offre/Landing-page">
                     <Offre__Nav__Card__Container>
@@ -155,8 +151,7 @@ export default function Offre__Nav() {
                     <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                     <Offre__Nav__Card__Arrow src={icon_arrow} alt='icon arrow' /> 
                 </Link>
-            </Offre__Nav__Container>
-            
+            </Offre__Nav__Container>  
             <Offre__Nav__Container >
                 <Link to="/Offre/Site-vitrine">
                     <Offre__Nav__Card__Container>
@@ -169,7 +164,6 @@ export default function Offre__Nav() {
                     <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
-
             <Offre__Nav__Container >
                 <Link to="/Offre/Site-e-commerce">
                     <Offre__Nav__Card__Container>
@@ -182,7 +176,6 @@ export default function Offre__Nav() {
                     <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
-
             <Offre__Nav__Container >
                 <Link to="/Offre/Site-saas">
                     <Offre__Nav__Card__Container>
@@ -195,7 +188,6 @@ export default function Offre__Nav() {
                     <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
-
             <Offre__Nav__Container >
                 <Link to="/Offre/Creatif-Coding">
                     <Offre__Nav__Card__Container>
@@ -209,9 +201,6 @@ export default function Offre__Nav() {
                     <Offre__Nav__Card__Prix>A partir de 650€</Offre__Nav__Card__Prix>
                 </Link>
             </Offre__Nav__Container>
-
-            
-
         </Offre__Nav__Section>
     )
 }

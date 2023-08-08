@@ -32,6 +32,11 @@ const Footer__Container = styled.div`
     padding: 20px 30px;
     border-radius: 3vw;
     transform: translateY(-90%);
+    a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
 `
 
 const Footer__Container__Contact = styled.div`
@@ -68,10 +73,6 @@ const Footer__Container__Contact = styled.div`
         font-size: 0.7vw;
         color:#fff
     }
-    a{
-        display: flex;
-        align-items: center;
-    }
 `
 
 const Footer__Container__Links = styled.div`
@@ -79,7 +80,8 @@ const Footer__Container__Links = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 6vw;
+    width: 7vw;
+    margin-right: 10px;
     img{
         width: 1.7vw;
         height: 1.7vw;
@@ -94,12 +96,13 @@ export default function Footer() {
     return (
         <Footer__>
             <Footer__Container >
-                <Footer__Container__Contact>
-                    <Link to="/Contact">
+                <Link to="/Contact">
+                    <Footer__Container__Contact>
                         <img src={icon_mail} />
                         <span>Contact</span>
-                    </Link>
-                </Footer__Container__Contact>
+                    </Footer__Container__Contact>
+                </Link>
+
                 <Footer__Container__Links>
                     <img src={icon_facebook} />
                     <img src={icon_instagram} />

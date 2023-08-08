@@ -18,7 +18,7 @@ const Offre__Container__Title = styled.section`
     margin-left: 50%;
     transform: translateX(-50%);
     height: 14vw;
-    width: 90%;
+    width: 95%;
     border-radius: 3vw;
     background-color: #4F5D75;
     padding: 70px 50px;
@@ -42,7 +42,7 @@ const Offre__Container__Info = styled.section`
     margin-left: 50%;
     transform: translateX(-50%);
     height: 14vw;
-    width: 90%;
+    width: 95%;
     border-radius: 3vw;
     background-color: #EF8354;
     padding: 70px 50px;
@@ -60,7 +60,6 @@ const Offre__Container__Info = styled.section`
 `
 
 export default function Offre() {
-
     return (
         <Offre__Section>
             <Offre__Container__Title>
@@ -72,7 +71,6 @@ export default function Offre() {
                     Donec rhoncus lobortis magna ac ornare. Nunc ornare odio at lectus
                     pellentesque dapibus sit amet ut leo.
                 </p>
-             
             </Offre__Container__Title>
             <Offre__Nav />
             <Offre__Container__Info>
@@ -91,7 +89,5 @@ export default function Offre() {
                 </p>
             </Offre__Container__Info>
         </Offre__Section>
-
-
     )
 }
