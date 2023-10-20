@@ -25,7 +25,7 @@ const Services__Info = styled.div`
         font-size: 1vw;
         font-weight: 400;
         margin: 0;
-        width: 70%;
+        width: 65%;
         text-align: center;
         font-family: 'Poppins', sans-serif;
     }
@@ -55,14 +55,12 @@ const Services__wrapper__item1 = styled.div`
         h2 {
             font-size: 2vw;
             font-weight: 700;
-
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             margin-top: 0;
         }
         p {
             font-size: 0.8vw;
             font-weight: 400;
-
             margin: 0;
         }
 `
@@ -95,14 +93,12 @@ const Services__wrapper__item4 = styled.div`
         h2 {
             font-size: 2vw;
             font-weight: 700;
-
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             margin-top: 0;
         }
         p {
             font-size: 0.8vw;
             font-weight: 400;
-
             margin: 0;
         }
 `
@@ -135,14 +131,12 @@ const Services__wrapper__item7 = styled.div`
         h2 {
             font-size: 2vw;
             font-weight: 700;
-  
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             margin-top: 0;
         }
         p {
             font-size: 0.8vw;
             font-weight: 400;
-
             margin: 0;
         }
 `
@@ -211,37 +205,30 @@ export default function Services() {
             <Services__Info>
                 <h1>Services</h1>
                 <p>
-                    Que vous voulier refaire ou cree un site-web, nous vous 
-                    accompagne dans votre projet. Profitez de notre expertise
+                Que vous souhaitiez rénover ou créer un site web, nous vous accompagnons avec notre expertise de premier plan pour concrétiser votre projet.
                 </p>
             </Services__Info>
             <Services__wrapper>
                 <Services__wrapper__item1>
-                    <h2>Lorem ipsum </h2>
+                    <h2>Design UI/UX </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cras aliquam,Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Cras aliquam,
+                    Transformez votre présence en ligne avec des interfaces intuitives, esthétiques et orientées vers la conversion. Créez des expériences captivantes pour vos utilisateurs.
                     </p>
                 </Services__wrapper__item1>
                 <Services__wrapper__item2 ref={item2}></Services__wrapper__item2>
                 <Services__wrapper__item3 ref={item3}></Services__wrapper__item3>
                 <Services__wrapper__item4>
-                    <h2>Lorem ipsum </h2>
+                    <h2>Développement Web Sur Mesure</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cras aliquam,Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Cras aliquam,
+                    Nous concevons des solutions web personnalisées, répondant à vos besoins spécifiques. De la conception à la mise en ligne, nous créons des sites performants et esthétiques pour propulser votre présence en ligne.
                     </p>
                 </Services__wrapper__item4>
                 <Services__wrapper__item5 ref={item5}></Services__wrapper__item5>
                 <Services__wrapper__item6 ref={item6}></Services__wrapper__item6>
                 <Services__wrapper__item7>
-                    <h2>Lorem ipsum </h2>
+                    <h2>Maintenance Web Expertise</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cras aliquam,Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Cras aliquam,
+                    Nous assurons la maintenance proactive de votre site, garantissant un fonctionnement sans faille. Notre équipe est prête à résoudre rapidement les problèmes et à fournir un support technique de qualité pour une expérience client optimale.
                     </p>
                 </Services__wrapper__item7>
             </Services__wrapper>
