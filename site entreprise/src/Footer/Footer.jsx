@@ -110,7 +110,7 @@ export default function Footer() {
                 </Footer__Container__Links>
             </Footer__Container>
             <Footer__Container__Content>
-                <p>© 2023 - Tous droits réservés</p>
+                <p>© 2024 - Tous droits réservés</p>
             </Footer__Container__Content>
         </Footer__>
     )
