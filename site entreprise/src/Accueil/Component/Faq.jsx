@@ -9,6 +9,10 @@ const Section__Faq = styled.section`
     margin-right: 20px;
     margin-left: 20px;
     font-family: 'Poppins', sans-serif;
+    @media (max-width: 768px) {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 `
 const Faq__Title__Container = styled.div`
     display: flex;
@@ -19,18 +23,28 @@ const Faq__Title__Container = styled.div`
     background-color: #4F5D75;
     border-radius: 3vw;
     margin-bottom: 5px;
+    @media (max-width: 768px) {
+        height: 20vw;
+    }
     h2 {
         font-size: 2vw;
         font-weight: 700;
         margin-bottom: 1vw;
         margin-top: 0;
         font-family: 'Anybody', cursive;
+        @media (max-width: 768px) {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+    }
     }
     p {
         font-size: 1vw;
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 0;
+        @media (max-width: 768px) {
+            font-size: 2vw;
+        }
     }
 `
 const Faq__Container = styled.div`
@@ -52,12 +66,15 @@ const Faq__Question = styled.span`
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
+    @media (max-width: 768px) {
+            font-size: 2vw;
+        }
 `
 const Faq__Container__Response = styled.div`
     position: absolute;     
     background-color: #EF8354;
     border-radius: 3vw;
-    height: 20vw;
+    height: 100%;
     width: 100%;
     transform: translateY(700px);
     display: flex;
@@ -70,6 +87,9 @@ const Faq__Container__Response = styled.div`
         margin-top: 0;
         margin-bottom: 0;
         padding: 0 10vw;
+        @media (max-width: 768px) {
+            font-size: 2vw;
+        }
     }
 `
 

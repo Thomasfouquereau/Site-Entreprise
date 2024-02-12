@@ -12,6 +12,10 @@ const Section__Types = styled.section`
     margin-top: 300px;
     margin-bottom: 300px;
     font-family: 'Poppins', sans-serif;
+    @media (max-width: 768px){ 
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 `
 
 const Types__Container = styled.div`
@@ -19,6 +23,9 @@ const Types__Container = styled.div`
     flex-direction: row;
     position: relative;
     height: 25vw;
+    @media (max-width: 768px){
+        height: 40vw; 
+    }
 `
 
 const Types__Container__reverse = styled.div`
@@ -26,6 +33,9 @@ const Types__Container__reverse = styled.div`
     flex-direction: row-reverse;
     position: relative;
     height: 25vw;
+    @media (max-width: 768px){
+        height: 40vw; 
+    }
 `
 
 const Types__Container__img = styled.div`
@@ -35,11 +45,17 @@ const Types__Container__img = styled.div`
     align-items: center;
     width: 30%;   
     margin-left: 20px;
-    border-radius: 50px 0px 0px 50px;
+    border-radius:3vw 0px 0px 3vw;
     background-color: #EF8354;
     box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.25);
+    @media (max-width: 768px){
+        margin-left: 5px;
+    }
     img{
         width: 8vw;
+        @media (max-width: 768px){
+            width: 12vw; 
+    }
     }
 `
 
@@ -50,11 +66,17 @@ const Types__Container__img__reverse = styled.div`
     align-items: center;
     width: 30%;   
     margin-right: 20px;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0px 3vw 3vw  0px;
     background-color: #EF8354;
     box-shadow: inset -4px 4px 6px rgba(0, 0, 0, 0.25);
+    @media (max-width: 768px){
+        margin-right: 5px;
+    }
     img{
         width: 8vw;
+        @media (max-width: 768px){
+            width: 12vw; 
+    }
     }
 `
 
@@ -71,21 +93,31 @@ const Types__Container__info = styled.div`
     right: 0;
     height: 100%;
     width: 70%;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 3vw 0px 0px 3vw;
     background-color: #4F5D75;
     padding-left: 70px;
+    @media (max-width: 768px){
+        padding-left: 30px;
+    }
     h2 {
         font-size: 2.2vw;
         font-weight: 700;
         margin-bottom: 2vw;
         margin-top: 0;
         font-family: 'Anybody', cursive;
+        @media (max-width: 768px){
+            font-size: 4vw;
+            margin-bottom: 1.5vw;
+        }
     }
     p {
         font-size: 0.8vw;
         font-weight: 400;
         margin: 0;
         width: 70%;
+        @media (max-width: 768px){
+            font-size: 2vw;
+        }
     }
     a {
         text-decoration: none;
@@ -97,16 +129,22 @@ const Types__Container__info = styled.div`
         font-size: 0.9vw;
         font-weight: 500;
         width: 15vw;
-        height: 4.5vh;
+        height: 3vw;
         background-color: #fff;
         padding: 10px;
         border-radius: 3vw;
-        margin-top: 10px;
         text-align: center;
         transform: translateX(50%);
         margin-left: 50%;
         margin-top: 20px;
         transition: all 0.31s ease;
+        @media (max-width: 768px){
+            height: 4vw;
+            width: 23vw;
+            margin-left: 35%;
+            margin-top: 15px;
+            font-size: 1.5vw;
+        }
         &:hover {
             background-color: #EF8354;
             color: #ffffff;
@@ -124,21 +162,30 @@ const Types__Container__info__reverse = styled.div`
     left: 0;
     height: 100%;
     width: 70%;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0px 3vw 3vw 0px;
     background-color: #4F5D75;
     padding-left: 70px;
+    @media (max-width: 768px){
+        padding-left: 30px;
+    }
     h2 {
         font-size: 2.2vw;
         font-weight: 700;
         margin-bottom: 2vw;
         margin-top: 0;
         font-family: 'Anybody', cursive;
+        @media (max-width: 768px){
+            font-size: 4vw; ;
+        }
     }
     p {
         font-size: 0.8vw;
         font-weight: 400;
         margin: 0;
         width: 70%;
+        @media (max-width: 768px){
+            font-size: 2vw;
+        }
     }
     a {
         display: flex;
@@ -150,15 +197,21 @@ const Types__Container__info__reverse = styled.div`
         font-size: 0.9vw;
         font-weight: 500;
         width: 15vw;
-        height: 4vh;
+        height: 3vw;
         padding: 10px;
         border-radius: 4.5vw;
-        margin-top: 10px;
         text-align: center;
         transform: translateX(50%);
         margin-left: 50%;
         margin-top: 20px;
         transition: all 0.31s ease;
+        @media (max-width: 768px){
+            height: 4vw;
+            width: 23vw;
+            margin-left: 35%;
+            margin-top: 15px;
+            font-size: 1.5vw;
+        }
         &:hover {
             background-color: #EF8354;
             color: #ffffff;
@@ -188,6 +241,7 @@ export default function Types() {
                 start: "top bottom",
                 end: "top top",
                 scrub: true,
+                markers: true,
             }
         })
         gsap.fromTo(item2.current, {

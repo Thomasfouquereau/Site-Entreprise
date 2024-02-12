@@ -12,12 +12,19 @@ const Headerdiv = styled.header`
     justify-content: center;
     position: relative;
     font-family: 'Anybody', cursive;
+    @media (max-width: 768px) {
+        height: 36vh;
+    }
     h1 {
         font-size: 3.5vw;
         font-weight: 700;
         margin-bottom: 1rem;
         overflow: hidden;
         margin-left: 10vw;
+        @media (max-width: 768px) {
+            font-size: 6.6vw;
+            margin-left: 7vw;
+        }
     }
     span{
         color: #EF8354;
@@ -28,6 +35,12 @@ const Headerdiv = styled.header`
         margin-bottom: 5rem;
         margin-left: 10vw;
         overflow: hidden;
+        @media (max-width: 768px) {
+            font-size: 4.5vw;
+            width: 50vw;
+            margin-bottom: 0rem;
+            margin-left: 7vw;
+        }
     }
 `
 const HeaderFlex = styled.div`
@@ -39,6 +52,9 @@ const HeaderFlex = styled.div`
         width: 15vw;
         margin-right: 10vw;
         rotate: 100deg;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 `
 
@@ -59,7 +75,6 @@ const FooterHeader = styled.div`
 
 export default function Header() {
 
-    const [description, setDescription] = useState('Site entreprise');
     const [typeSite, setTypeSite] = useState(' Site entreprise');
     const titre = useRef(null);
     const p = useRef(null);
@@ -67,19 +82,15 @@ export default function Header() {
 
     useEffect(() => {
         const arrayTypeSite = [' Landing page', ' Site vitrine', ' Site e-commerce'];
-        const arrayDescription = ['Landing page', 'Site vitrine', 'Site e-commerce'];
         let index = 0;
 
         const interval = setInterval(() => {
             setTypeSite(arrayTypeSite[index]);
-            setDescription(arrayDescription[index]);
             index = index === arrayTypeSite.length - 1 ? 0 : index + 1;
             gsap.fromTo(titre.current, { y: -150, opacity: 0 }, { y: 0, opacity: 1, duration: 1 });
             gsap.fromTo(titre.current, { y: 0, opacity: 1 }, { y: 150, opacity: 0, duration: 1, delay: 4 });
-            gsap.fromTo(p.current, { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 });
-            gsap.fromTo(p.current, { y: 0, opacity: 1 }, { y: 50, opacity: 0, duration: 1, delay: 4 });
-            gsap.fromTo(img.current, { rotate:100, scale:1.15 }, { rotate:160, scale:1 , duration: 1 });
-            gsap.fromTo(img.current, { rotate:160,scale:1 }, { rotate:100, scale:1.15 , duration: 1.3, delay: 4 });
+            gsap.fromTo(img.current, { rotate: 100, scale: 1.15 }, { rotate: 160, scale: 1, duration: 1 });
+            gsap.fromTo(img.current, { rotate: 160, scale: 1 }, { rotate: 100, scale: 1.15, duration: 1.3, delay: 4 });
         }, 5000);
         return () => clearInterval(interval);
     }, []);
@@ -89,7 +100,7 @@ export default function Header() {
             <HeaderFlex>
                 <div className="header__Text">
                     <h1 className="header__Text__Title">Votre<span ref={titre}>{typeSite}</span></h1>
-                    <p ref={p} className="header__Text__Description">{description}</p>
+                    <p ref={p} className="header__Text__Description">Pour professionnel ou particulier </p>
                 </div>
                 <img src={polygonHeader} ref={img} alt="polygon" className="header__Polygon" />
             </HeaderFlex>
