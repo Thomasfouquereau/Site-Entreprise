@@ -241,7 +241,6 @@ export default function Types() {
                 start: "top bottom",
                 end: "top top",
                 scrub: true,
-                markers: true,
             }
         })
         gsap.fromTo(item2.current, {

@@ -19,6 +19,11 @@ const Offre__Nav__Section = styled.section`
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
     color: #fff;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
     a{
         text-decoration: none;
     }
@@ -31,7 +36,11 @@ const Offre__Nav__Container = styled.div`
     border-radius: 3vw;
     margin: 5px;
     position: relative;  
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        width: calc( 100% - 10px );
+        height: 40vw;
+    }
     &:hover{
         scale: 0.98;
         transition: all 0.3s ease-in-out;
@@ -59,6 +68,10 @@ const Offre__Nav__Card__Container__Icon = styled.img`
     width: 7vw;
     height: 7vw;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        width: 15vw;
+        height: 15vw;
+    }
     &:hover{
         scale: 1.1;
         transition: all 0.3s ease-in-out;
@@ -79,6 +92,9 @@ const Offre__Nav__Card__Container__Coder = styled.p`
     font-style: italic;
     font-size: 1.7vw;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        font-size: 3.5vw;
+    }
     &:hover{
         scale: 1.01;
         transition: all 0.3s ease-in-out;
@@ -91,6 +107,9 @@ const Offre__Nav__Card__Container__Title = styled.h2`
     font-family:'Anybody', cursive;
     font-size: 2.5vw;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        font-size: 4.5vw;
+    }
     &:hover{
         scale: 1.01;
         transition: all 0.3s ease-in-out;
@@ -110,6 +129,10 @@ const Offre__Nav__Card__New = styled.span`
     border-radius: 3vw;
     font-size: 1vw;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        font-size: 3.5vw;
+        padding: 0.5vw 3vw;
+    }
     &:hover{
         scale: 1.2;
         transition: all 0.3s ease-in-out;

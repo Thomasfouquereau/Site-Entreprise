@@ -14,6 +14,9 @@ const Offre__Nav__Section = styled.section`
     flex-wrap: wrap;
     width: 95%;
     margin: 0 auto;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
     a{
         text-decoration: none;
     }
@@ -27,6 +30,11 @@ const Offre__Nav__Container = styled.div`
     margin: 5px;
     position: relative;  
     transition: all 0.3s ease-in-out; 
+    @media (max-width: 768px) {
+        width: 100% ;
+        height: 30vw;
+        margin: 5px 0;
+    }
     &:hover{
         scale: 0.98;
         transition: all 0.3s ease-in-out;
@@ -55,6 +63,10 @@ const Offre__Nav__Card__Container__Icon = styled.img`
     width: 7vw;
     height: 7vw;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        width: 15vw;
+        height: 15vw;
+    }
     &:hover{
         scale: 1.1;
         transition: all 0.3s ease-in-out;
@@ -67,6 +79,9 @@ const Offre__Nav__Card__Container__Info = styled.div`
     justify-content: center;
     text-align: center;
     width: 70%;
+    @media (max-width: 768px) {
+        width: 60%;
+    }
 `
 
 const Offre__Nav__Card__Container__Coder = styled.p`
@@ -75,6 +90,9 @@ const Offre__Nav__Card__Container__Coder = styled.p`
     font-style: italic;
     font-size: 1.7vw;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        font-size: 2.7vw;
+    }
     &:hover{
         scale: 1.015;
         transition: all 0.3s ease-in-out;
@@ -87,6 +105,9 @@ const Offre__Nav__Card__Container__Title = styled.h2`
     font-family:'Anybody', cursive;
     font-size: 2.5vw;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        font-size: 3.5vw;
+    }
     &:hover{
         scale: 1.01;
         transition: all 0.3s ease-in-out;
@@ -100,6 +121,10 @@ const Offre__Nav__Card__Prix = styled.p`
     margin: 0;
     font-size: 1vw;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        font-size: 2vw;
+        bottom: 1.5vw;
+    }
     &:hover{
         scale: 1.1;
         transition: all 0.3s ease-in-out;
@@ -109,8 +134,13 @@ const Offre__Nav__Card__Prix = styled.p`
 const Offre__Nav__Card__Arrow = styled.img`
     position: absolute;
     bottom: 1vw;
-    right: 2.5vw;
+    right: 1.5vw;
     transition: all 0.3s ease-in-out;
+    width: 2vw;
+    @media (max-width: 768px) {
+        bottom: 1.5vw;
+        width: 4vw;
+    }
     &:hover{
         scale: 1.2;
         transition: all 0.3s ease-in-out;
@@ -130,6 +160,11 @@ const Offre__Nav__Card__New = styled.span`
     border-radius: 3vw;
     font-size: 1vw;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        font-size: 2vw;
+        padding: 0.5vw 3vw;
+        top: 2vw;
+    }
     &:hover{
         scale: 1.1;
         transition: all 0.3s ease-in-out;

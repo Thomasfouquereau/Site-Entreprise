@@ -13,7 +13,7 @@ const Headerdiv = styled.header`
     position: relative;
     font-family: 'Anybody', cursive;
     @media (max-width: 768px) {
-        height: 36vh;
+        height: 45vh;
     }
     h1 {
         font-size: 3.5vw;

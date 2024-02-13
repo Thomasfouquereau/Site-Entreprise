@@ -9,6 +9,10 @@ const Offre__Section = styled.section`
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
     color: #fff;
+    @media (max-width: 768px) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 `
 
 const Offre__Container__Title = styled.section`
@@ -22,16 +26,26 @@ const Offre__Container__Title = styled.section`
     border-radius: 3vw;
     background-color: #4F5D75;
     padding: 70px 50px;
+    @media (max-width: 768px) {
+        padding: 60px 30px;
+        margin-bottom: 5px;
+    }
     h1{
         font-size: 2.3vw;
         font-weight: 700;
         margin: 0;
         margin-top: 10px;
         font-family: 'Anybody', cursive;
+        @media (max-width: 768px) {
+            font-size: 4vw;
+        }
     }
     p{
         font-size: 1vw;
         font-weight: 400;
+        @media (max-width: 768px) {
+            font-size: 1.7vw;
+        }
     }
 `
 
@@ -46,16 +60,26 @@ const Offre__Container__Info = styled.section`
     border-radius: 3vw;
     background-color: #EF8354;
     padding: 70px 50px;
+    @media (max-width: 768px) {
+        padding: 60px 30px;
+        margin-top:5px
+    }
     h2{
         font-size: 1.7vw;
         font-weight: 700;
         margin: 0;
         margin-top: 10px;
         font-family: 'Anybody', cursive;
+        @media (max-width: 768px) {
+            font-size: 3vw;
+        }
     }
     p{
         font-size: 0.9vw;
         font-weight: 400;
+        @media (max-width: 768px) {
+            font-size: 1.4vw;
+        }
     }
 `
 

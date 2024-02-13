@@ -13,6 +13,10 @@ const StyledNav = styled.nav`
     height: 5vh;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
+    @media (max-width: 768px) {
+            margin-top: -5vh;
+        }
+
 `;
 
 const Ul = styled.ul`
@@ -99,44 +103,55 @@ const HeaderNav = styled.div`
         display: block;
         width: 100%;
         height: 15vh;
-        background-color: #2D3142;
-        border-radius: 40px ;
+        background-color: #EF8354;
+        border-radius: 30px ;
         border: 47px solid #EF8354;
         position: absolute;
         bottom: -60px;
         z-index: 9000;
         rotate: 180deg;
         position: fixed;
-
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.346);
         button{
             display: block;
             width: 85vw;
-            height: 8.5vh;
+            height: 8.9vh;
             background-color: #2D3142;
             border: none;
-            border-radius: 0px 0px 40px 40px;
+            border-radius: 0px 0px 30px 30px;
             outline: none;
             cursor: pointer;
             padding: 0;
             margin-left: 50%;
             transform: translateX(-50%);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.346);
             img {
-                width: 23vw;
-                height: 6vh;
-                margin-top: 3vh;
+                width: 14vw;
+                height: 5vh;
+                margin-top: 4vh;
             }
         } span {
             position: absolute;
-            bottom: 3.7vh;
+            bottom: 4.3vh;
             left: 50%;
             transform: translateX(50%);
-            font-size: 5vw;
+            font-size: 3vw;
             color: #EF8354;
             font-weight: 700;
-            font-style: italic; 
             rotate: 180deg;
             margin: 0;
             padding: 0;
+        }
+    } @media (max-width: 470px) {
+        button{
+        img {
+                width: 24vw;
+                height: 7vh;
+                margin-top: 3vh;
+            }
+        }
+        span{
+            font-size: 5vw;
         }
     }
 `;
@@ -148,14 +163,21 @@ const Parent = styled.div`
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     border-radius: 20px;
-    height: 55vh;
-    width: 85.5vw;
+    height: 60vh;
+    width: 65vw;
     margin-left: 50%;
     transform: translateX(-50%);
     border: 4px solid #EF8354;
     padding: 10px;
     background-color: #2D3142;
-    margin-top: 23vh;
+    margin-top: 20vh;
+    box-shadow: 0px 10px 19px 7px rgba(0, 0, 0, 0.346);
+    @media (max-width: 470px) {
+        height: 55vh;
+        width: 85.5vw;
+        margin-top: 28vh;
+    }
+    
 `;
 
 const Div1 = styled.div`
@@ -272,6 +294,7 @@ const Div7 = styled.div`
 const NavBar = () => {
 
     const ul = useRef(null);
+
     useEffect(() => {
         gsap.fromTo(ul.current, { y: -200 }, { y: 0, duration: 0.7 });
     }, []);
@@ -290,9 +313,14 @@ const NavBar = () => {
         } else {
             gsap.fromTo(mobileNav, { y: 0 }, { y: 900, duration: 0.7, display: 'none', borderRadius: '70px', background: 'none' });
             gsap.fromTo(buttonImg, { rotate: -180, opacity: 0, y: -200 }, { rotate: 0, duration: 0.6, opacity: 1, y: 0 });
-            gsap.fromTo(buttonText, { opacity: 0, y: -200 }, { opacity: 1, duration: 0.6, innerHTML: 'menu', y: 0 });
+            gsap.fromTo(buttonText, { opacity: 0, y: -200 }, { opacity: 1, duration: 0.6, innerHTML: 'Menu', y: 0 });
         }
     }
+
+    useEffect(() => {
+        handleClick();
+    }, []);
+
 
     return (
         <StyledNav  >
@@ -316,7 +344,7 @@ const NavBar = () => {
             <HeaderNav>
                 <button onClick={handleClick}>
                     <img className='buttonImg' src={MobileMenuIcon} />
-                    <span className='buttonText'>menu</span>
+                    <span className='buttonText'>Menu</span>
                 </button>
             </HeaderNav>
             <MobileUl className='mobileNav'>
