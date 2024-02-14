@@ -3,6 +3,13 @@ import styled from 'styled-components';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const Services__section = styled.section`
     margin-top: 300px;
     margin-bottom: 300px;
@@ -17,7 +24,7 @@ const Services__Info = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     font-family: 'Anybody', cursive;
     @media (max-width: 768px) {
         margin-bottom: 50px;
@@ -54,6 +61,7 @@ const Services__wrapper = styled.div`
     grid-row-gap: 5px;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
+    color: ${theme.primary};
     @media (max-width: 768px) {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -64,7 +72,7 @@ const Services__wrapper = styled.div`
 
 const Services__wrapper__item1 = styled.div` 
      grid-area: 1 / 1 / 2 / 3; 
-     background-color:#EF8354;
+     background-color:${theme.secondary};
      border-radius: 0px 2vw 2vw 0px;
      height: 15vw;
      display: flex;
@@ -73,6 +81,7 @@ const Services__wrapper__item1 = styled.div`
         justify-content: center;
         padding-left: 8%;
         padding-right: 8%;
+        z-index: 1;
         @media (max-width: 768px) {
             grid-area: 1 / 1 / 2 / 5;
             height: 30vw;
@@ -99,7 +108,7 @@ const Services__wrapper__item1 = styled.div`
 
 const Services__wrapper__item2 = styled.div`
      grid-area: 1 / 3 / 2 / 5; 
-     background-color:#4F5D75;
+     background-color:${theme.primary};
      border-radius: 2vw 0px 0px 2vw;
      height: 15vw;;
      @media (max-width: 768px) {
@@ -110,7 +119,7 @@ const Services__wrapper__item2 = styled.div`
 
 const Services__wrapper__item3 = styled.div`
      grid-area: 2 / 1 / 3 / 2;
-     background-color:#4F5D75;
+     background-color:${theme.primary};
      border-radius: 0px 2vw 2vw 0px;
      height: 15vw;
      @media (max-width: 768px) {
@@ -121,7 +130,7 @@ const Services__wrapper__item3 = styled.div`
 
 const Services__wrapper__item4 = styled.div`
      grid-area: 2 / 2 / 3 / 4; 
-     background-color:#EF8354;
+     background-color:${theme.secondary};
      border-radius: 2vw;
      height: 15vw;
      display: flex;
@@ -130,6 +139,8 @@ const Services__wrapper__item4 = styled.div`
         justify-content: center;
         padding-left: 8%;
         padding-right: 8%;
+        box-shadow: -6vw 2vw 20vw 2vw ${theme.shadowPrimary};
+        z-index: 1;
         @media (max-width: 768px) {
             grid-area: 2 / 2 / 3 / 6;
             height: 30vw;
@@ -156,7 +167,7 @@ const Services__wrapper__item4 = styled.div`
 
 const Services__wrapper__item5 = styled.div`
      grid-area: 2 / 4 / 3 / 5;
-     background-color:#4F5D75;
+     background-color:${theme.primary};
      border-radius: 2vw 0px 0px 2vw;
      height: 15vw;
      @media (max-width: 768px) {
@@ -167,7 +178,7 @@ const Services__wrapper__item5 = styled.div`
 
 const Services__wrapper__item6 = styled.div`
      grid-area: 3 / 1 / 4 / 3;
-     background-color:#4F5D75;
+     background-color:${theme.primary};
      border-radius: 0px 2vw 2vw 0px;
      height: 15vw;
      @media (max-width: 768px) {
@@ -178,7 +189,7 @@ const Services__wrapper__item6 = styled.div`
 
 const Services__wrapper__item7 = styled.div`
      grid-area: 3 / 3 / 4 / 5; 
-     background-color:#EF8354;
+     background-color:${theme.secondary};
      border-radius: 2vw 0px 0px 2vw;
      height: 15vw;
      display: flex;
@@ -187,6 +198,7 @@ const Services__wrapper__item7 = styled.div`
         justify-content: center;
         padding-left: 8%;
         padding-right: 8%;
+        z-index: 1;
         @media (max-width: 768px) {
             grid-area: 3 / 3 / 4 / 7;
             height: 30vw;

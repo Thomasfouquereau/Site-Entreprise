@@ -5,6 +5,13 @@ import { gsap } from "gsap";
 import MobileMenuIcon from '../assets/icon-mobile-menu-arrow.svg';
 import MobileMenuClose from '../assets/icon-mobile-menu-cross.svg';
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const StyledNav = styled.nav`
     display: flex;
     justify-content: center;
@@ -30,7 +37,7 @@ const Ul = styled.ul`
 const StyledLi = styled.li`
     display: flex;
     margin: 0 1rem;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -50,13 +57,15 @@ const StyledLi = styled.li`
         color: #fff; 
         padding: 3rem 3rem;
         width: 100%; 
+        color: ${theme.primary};
     }
 `;
 
 const Contact = styled.li`
     display: flex;
     margin: 0 1rem;
-    background-color: #00F5D4;
+    background: rgb(2,0,36);
+    background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -103,9 +112,9 @@ const HeaderNav = styled.div`
         display: block;
         width: 100%;
         height: 15vh;
-        background-color: #EF8354;
+        background: rgb(2,0,36);
+        background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
         border-radius: 30px ;
-        border: 47px solid #EF8354;
         position: absolute;
         bottom: -60px;
         z-index: 9000;
@@ -115,7 +124,7 @@ const HeaderNav = styled.div`
         button{
             display: block;
             width: 85vw;
-            height: 8.9vh;
+            height: 14vh;
             background-color: #2D3142;
             border: none;
             border-radius: 0px 0px 30px 30px;
@@ -127,16 +136,18 @@ const HeaderNav = styled.div`
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.346);
             img {
                 width: 14vw;
-                height: 5vh;
-                margin-top: 4vh;
+                margin-bottom: -7vh;
             }
         } span {
             position: absolute;
-            bottom: 4.3vh;
+            bottom: 4vh;
             left: 50%;
             transform: translateX(50%);
             font-size: 3vw;
-            color: #EF8354;
+            background: -webkit-linear-gradient(#f0f0f0, #00ff73);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: 700;
             rotate: 180deg;
             margin: 0;
@@ -152,6 +163,7 @@ const HeaderNav = styled.div`
         }
         span{
             font-size: 5vw;
+            rotate: 180deg;
         }
     }
 `;
@@ -182,7 +194,8 @@ const Parent = styled.div`
 
 const Div1 = styled.div`
     grid-area: 1 / 1 / 2 / 3;
-    background-color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
     border-radius: 15px;
 `;
 

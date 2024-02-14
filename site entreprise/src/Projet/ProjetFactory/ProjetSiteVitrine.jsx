@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const ProjetSiteVitrine_container = styled.div`
     display: flex;
     flex-direction: column;
@@ -18,12 +25,31 @@ const ProjetSiteVitrine_container__info = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #EF8354;
+    background-color: ${theme.primary};
     width: 95%;
-    border-radius: 3vw;
+    border-radius: 2.5vw;
     height: 25vh;
+    position: relative;
+    border: 0.12vw solid ${theme.border};
+    ::after {
+        content: "";
+        position: absolute;
+        width: 40vw;
+        height: 18vh;
+        background: ${theme.secondary};
+        box-shadow: ${theme.shadowPrimary} -8vw 9vh 10vw 5px;  
+        z-index: -1;
+        border-radius: 3vw;
+        left: 0px;
+        bottom: 1px;
+    }
     @media (max-width: 768px) {
         height: 35vw;
+        ::after {
+            width: 50vw;
+            height: 27vw;
+            box-shadow: ${theme.shadowPrimary} -14vw 3.5vh 20vw 2px;
+        }
     }
     h1 {
         font-size: 2vw;
@@ -61,7 +87,7 @@ const ProjetSiteVitrine_container__message = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 3vw;
-    height: 25vh;
+    height: 27vh;
     margin-top: 8vw;
     @media (max-width: 768px) {
         height: 53vh;
@@ -82,7 +108,7 @@ const ProjetSiteVitrine_container__message = styled.div`
         }
         span {
             font-weight: 700;
-            color: #EF8354;
+            color: ${theme.secondary};
             font-size: 1.5vw;
             @media (max-width: 768px) {
                 font-size: 3vw;
@@ -94,8 +120,8 @@ const ProjetSiteVitrine_container__message = styled.div`
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: #EF8354;
-        background-color: #fff;
+        color: ${theme.secondary};
+        background-color: ${theme.primary};
         font-family: 'poppins', sans-serif;
         font-size: 1.1vw;
         font-weight: 500;
@@ -103,18 +129,18 @@ const ProjetSiteVitrine_container__message = styled.div`
         height: 4vh;
         padding: 10px;
         border-radius: 4.5vw;
-        margin-top: 2vw;
         text-align: center;
         transition: all 0.31s ease;
+        box-shadow: inset ${theme.shadowPrimary} 6px 6px 30px -5px;
+        margin-top: 2vh;
         @media (max-width: 768px) {
-                font-size: 2.5vw;
+                font-size: 2.6vw;
                 width: 40vw;
                 height: 6vw;
-                margin-top: 3vw;
             }
         &:hover {
-            background-color: #EF8354;
-            color: #ffffff;
+            background-color: ${theme.secondary};
+            color: ${theme.primary};
             transition: all 0.31s ease;
             transform: scale(0.95);
         }
@@ -137,7 +163,7 @@ export default function ProjetSiteVitrine() {
                     <span>Désole</span>,
                     <br />
                     mais nous n'avons pas de projet à vous présentez
-                    <spna>pour le moment</spna>.
+                    <span> pour le moment</span>.
                 </p>
                 <p>
                     Soyer le premier et <span>contactez nous</span>

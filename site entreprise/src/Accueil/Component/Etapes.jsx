@@ -24,7 +24,8 @@ const Etapes__Container__title = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #4F5D75;
+    background: rgb(2,0,36);
+    background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
     height: 15vw;
     border-radius: 3vw;
     padding-left: 2%;

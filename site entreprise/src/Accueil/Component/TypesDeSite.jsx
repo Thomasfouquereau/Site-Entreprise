@@ -8,6 +8,13 @@ import icon_moniteur from '../../assets/Icon-monitor-shadow.svg';
 import icon_shop from '../../assets/Icon-shop-shadow.svg';
 import icon_saas from '../../assets/Icon-saas-shadow.svg';
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const Section__Types = styled.section`
     margin-top: 300px;
     margin-bottom: 300px;
@@ -46,8 +53,9 @@ const Types__Container__img = styled.div`
     width: 30%;   
     margin-left: 20px;
     border-radius:3vw 0px 0px 3vw;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: -2vw -3vw 20vw 0vw ${theme.shadowPrimary};
     @media (max-width: 768px){
         margin-left: 5px;
     }
@@ -67,8 +75,9 @@ const Types__Container__img__reverse = styled.div`
     width: 30%;   
     margin-right: 20px;
     border-radius: 0px 3vw 3vw  0px;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     box-shadow: inset -4px 4px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 2vw -3vw 20vw 0vw ${theme.shadowPrimary};
     @media (max-width: 768px){
         margin-right: 5px;
     }
@@ -81,7 +90,7 @@ const Types__Container__img__reverse = styled.div`
 `
 
 const Types__Container__info__bg_color = styled.div`
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     width: 70%;
 `
 
@@ -94,7 +103,7 @@ const Types__Container__info = styled.div`
     height: 100%;
     width: 70%;
     border-radius: 3vw 0px 0px 3vw;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     padding-left: 70px;
     @media (max-width: 768px){
         padding-left: 30px;
@@ -146,7 +155,7 @@ const Types__Container__info = styled.div`
             font-size: 1.5vw;
         }
         &:hover {
-            background-color: #EF8354;
+            background-color: ${theme.secondary};
             color: #ffffff;
             transition: all 0.31s ease;
             transform: scale(0.95) translateX(50%);
@@ -163,7 +172,7 @@ const Types__Container__info__reverse = styled.div`
     height: 100%;
     width: 70%;
     border-radius: 0px 3vw 3vw 0px;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     padding-left: 70px;
     @media (max-width: 768px){
         padding-left: 30px;
@@ -213,7 +222,7 @@ const Types__Container__info__reverse = styled.div`
             font-size: 1.5vw;
         }
         &:hover {
-            background-color: #EF8354;
+            background-color: ${theme.secondary};
             color: #ffffff;
             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
             transition: all 0.31s ease;

@@ -27,7 +27,10 @@ const Headerdiv = styled.header`
         }
     }
     span{
-        color: #EF8354;
+        background: -webkit-linear-gradient(#f0f0f0, #00ff73);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     p { 
         font-size: 1.7vw;
