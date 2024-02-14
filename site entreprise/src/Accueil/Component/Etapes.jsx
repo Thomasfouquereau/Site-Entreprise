@@ -7,6 +7,13 @@ import icon_site from '../../assets/Icon-site.svg';
 import icon_clef from '../../assets/Icon-clef.svg';
 import icon_message from '../../assets/IconMessage.svg';
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const Section__Etapes = styled.section`
     margin-top: 300px;
     margin-bottom: 300px;
@@ -24,7 +31,7 @@ const Etapes__Container__title = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgb(2,0,36);
+    background: ${theme.primary};
     background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
     height: 15vw;
     border-radius: 3vw;
@@ -69,7 +76,7 @@ const Etapes__Container__item1 = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color:#4F5D75;
+    background-color:${theme.primary};
     border-radius: 3vw 0px 0px 3vw;
     height: 15vw;
     width: 55%;
@@ -120,19 +127,19 @@ const Etapes__Container__item2 = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:#EF8354;
+    background-color: ${theme.secondary};
     right: 0;
     border-radius: 3vw;
     padding-left: 8%;
     padding-right: 8%;
-    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.402);
+    box-shadow: 0px 0px 3vw 0px ${theme.shadowPrimary};
     @media (max-width: 768px){
         height: 25vw;
     }
     span {
         font-size: 1.5vw;
         font-weight: 400;
-        color: #4F5D75;
+        color: ${theme.primary};
         margin-bottom: 1 0px;
         margin-top: 0;
         @media (max-width: 768px){
@@ -142,7 +149,7 @@ const Etapes__Container__item2 = styled.div`
     h2 {
         font-size: 2vw;
         font-weight: 700;
-        color: #4F5D75;
+        color: ${theme.primary};
         margin-bottom: 0;
         margin-top: 0;
         @media (max-width: 768px){

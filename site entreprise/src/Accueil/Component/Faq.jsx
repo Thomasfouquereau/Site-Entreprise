@@ -2,6 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import styled from "styled-components";
 import { gsap } from "gsap";
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
 
 const Section__Faq = styled.section`
     margin-top: 300px;
@@ -20,7 +26,7 @@ const Faq__Title__Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 15vw;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     border-radius: 3vw;
     margin-bottom: 5px;
     @media (max-width: 768px) {
@@ -55,7 +61,7 @@ const Faq__Container = styled.div`
     text-align: center;
     align-items: center;
     height: 20vw;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     padding: 70px;
     border-radius: 3vw;
     margin-bottom: 5px;
@@ -72,7 +78,7 @@ const Faq__Question = styled.span`
 `
 const Faq__Container__Response = styled.div`
     position: absolute;     
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     border-radius: 3vw;
     height: 100%;
     width: 100%;
@@ -81,12 +87,14 @@ const Faq__Container__Response = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: ${theme.shadowPrimary} 0vw 11vh 20vw 2px;
     p{
         font-size: 1vw;
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 0;
         padding: 0 10vw;
+        color: ${theme.primary};
         @media (max-width: 768px) {
             font-size: 2vw;
         }

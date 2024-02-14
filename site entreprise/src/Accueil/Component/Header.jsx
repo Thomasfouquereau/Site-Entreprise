@@ -4,6 +4,13 @@ import { gsap } from "gsap";
 
 import polygonHeader from '../../assets/polygon Header.svg';
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const Headerdiv = styled.header`
     width: 100%;
     height: 75vh;
@@ -51,10 +58,25 @@ const HeaderFlex = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    ::after {
+            content: "";
+            position: absolute;
+            background-color: #ffffff00;
+            z-index: 1;
+            width: 20px;
+            height: 10px;
+            bottom: 35vh;
+            right: 20vw;
+            box-shadow: 2vw -3vw 30vw 8vw ${theme.shadowPrimary};
+            @media (max-width: 768px) {
+            display: none;
+        }
+        }
     img{
         width: 15vw;
         margin-right: 10vw;
         rotate: 100deg;
+        position: relative;
         @media (max-width: 768px) {
             display: none;
         }
