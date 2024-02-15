@@ -8,6 +8,13 @@ import icon_site_vitrine from '../assets/Icon-monitor-shadow.svg';
 import icon_site_e_commerce from '../assets/Icon-shop-shadow.svg';
 import icon_site_saas from '../assets/Icon-saas-shadow2.svg';
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const Offre__Nav__Section = styled.section`
     display: flex;
     flex-direction: row;
@@ -17,7 +24,6 @@ const Offre__Nav__Section = styled.section`
     margin-top: 200px;
     margin-bottom: 250px;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
     color: #fff;
     @media (max-width: 768px) {
         flex-direction: column;
@@ -30,7 +36,7 @@ const Offre__Nav__Section = styled.section`
 `
 
 const Offre__Nav__Container = styled.div`
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     height: 18vw;
     width: calc( 100% / 2 - 10px );
     border-radius: 3vw;
@@ -43,12 +49,10 @@ const Offre__Nav__Container = styled.div`
     }
     &:hover{
         scale: 0.98;
-        transition: all 0.3s ease-in-out;
-        background-color: #EF8354;
-    span{
-        transition: all 0.2s ease-in-out;
-        background-color: #4F5D75;
-    }
+        background: ${theme.primary};
+        background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
+        box-shadow: ${theme.shadowPrimary} 6vw 14vh 20vw 0px;
+        z-index: 1; //////////// shadow priorité ///////////////
     }
     a{
         color: #fff;
@@ -122,7 +126,7 @@ const Offre__Nav__Card__New = styled.span`
     right: 2.5vw;
     font-style: italic;
     text-transform: capitalize;
-    background-color: #f27a47;
+    background-color: ${theme.secondary};
     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
     color: #fff;
     padding: 0.2vw 1.5vw;

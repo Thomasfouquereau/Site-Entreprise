@@ -6,12 +6,19 @@ import icon_facebook from '../assets/Icon-fb.svg';
 import icon_instagram from '../assets/Icon-ig.svg';
 import icon_linkedin from '../assets/Icon-in.svg';
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const Footer__ = styled.footer`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #222223;
+    background-color: ${theme.primary};
     padding: 50px 0px;
     font-family: 'Poppins', sans-serif;
     font-size: 0.7vw;
@@ -26,12 +33,13 @@ const Footer__Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:#EF8354 ;
+    background-color:${theme.secondary};
     width: 30vw;
     height: 5vw;
     padding: 20px 30px;
     border-radius: 3vw;
     transform: translateY(-90%);
+    box-shadow: ${theme.shadowPrimary} -0vw -0vh 20vw 0.7vw;
     a{
         display: flex;
         align-items: center;
@@ -44,22 +52,22 @@ const Footer__Container__Contact = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color:#2D3142 ;
+    background-color:${theme.primary} ;
     width: 13vw;
     height: 3vw;
     border-radius: 3vw;
     cursor: pointer;
     transition: all 0.31s ease;
     &:hover{
-        background-color: #EF8354;
-        box-shadow: #2D3142 0px 0px 0px 2px;
+        background-color: ${theme.secondary};
+        box-shadow: ${theme.primary} 0px 0px 0px 2px;
         transition: all 0.31s ease;
         img{
             filter: invert(1);
             transition: all 0.31s ease;
         }
         span{
-            color: #2D3142;
+            color: ${theme.primary};
             transition: all 0.31s ease;
             font-size: 0.7vw;
         }

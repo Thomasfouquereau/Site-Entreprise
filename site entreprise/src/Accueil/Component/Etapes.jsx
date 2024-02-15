@@ -132,7 +132,7 @@ const Etapes__Container__item2 = styled.div`
     border-radius: 3vw;
     padding-left: 8%;
     padding-right: 8%;
-    box-shadow: 0px 0px 3vw 0px ${theme.shadowPrimary};
+    box-shadow: 0px 0px 3vw 0px ${theme.secondary};
     @media (max-width: 768px){
         height: 25vw;
     }
