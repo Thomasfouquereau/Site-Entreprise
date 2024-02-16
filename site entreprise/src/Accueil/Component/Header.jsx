@@ -59,15 +59,7 @@ const HeaderFlex = styled.div`
     justify-content: space-between;
     align-items: center;
     ::after {
-            content: "";
-            position: absolute;
-            background-color: #ffffff00;
-            z-index: 1;
-            width: 20px;
-            height: 10px;
-            bottom: 35vh;
-            right: 20vw;
-            box-shadow: 2vw -3vw 30vw 8vw ${theme.shadowPrimary};
+                                                                     
             @media (max-width: 768px) {
             display: none;
         }

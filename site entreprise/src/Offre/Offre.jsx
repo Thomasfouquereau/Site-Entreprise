@@ -3,6 +3,13 @@ import Offre__Nav from './Component/Offre__Nav';
 import styled from "styled-components";
 import { gsap } from "gsap";
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const Offre__Section = styled.section`
     margin-top: 200px;
     margin-bottom: 250px;
@@ -24,7 +31,7 @@ const Offre__Container__Title = styled.section`
     height: 14vw;
     width: 95%;
     border-radius: 3vw;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     padding: 70px 50px;
     @media (max-width: 768px) {
         padding: 60px 30px;
@@ -58,8 +65,9 @@ const Offre__Container__Info = styled.section`
     height: 14vw;
     width: 95%;
     border-radius: 3vw;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     padding: 70px 50px;
+    color: ${theme.primary};
     @media (max-width: 768px) {
         padding: 60px 30px;
         margin-top:5px
