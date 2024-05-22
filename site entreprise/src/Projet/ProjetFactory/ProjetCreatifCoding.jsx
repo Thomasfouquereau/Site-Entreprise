@@ -163,7 +163,7 @@ export default function ProjetCreatifCoding() {
                     <span>Désole</span>,
                     <br />
                     mais nous n'avons pas de projet à vous présentez
-                    <spna>pour le moment</spna>.
+                    <spna> pour le moment</spna>.
                 </p>
                 <p>
                     Soyer le premier et <span>contactez nous</span>

@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { gsap } from "gsap";
 import MobileMenuIcon from '../assets/icon-mobile-menu-arrow.svg';
 import MobileMenuClose from '../assets/icon-mobile-menu-cross.svg';
+import Logo from '../assets/logo-42dev-no-bg-var1.svg';
+import LogoBg from '../assets/logo-42dev.svg';
 
 const theme = {
     primary: "#0f284e",
@@ -48,7 +50,7 @@ const StyledLi = styled.li`
     &:hover {
             transform: scale(1.05);
             transition: all 0.31s ease;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.346);
+            box-shadow: -20px 13px 16vw 17px ${theme.shadowPrimary};
         }
     a {
         font-size: 1vw;
@@ -58,6 +60,17 @@ const StyledLi = styled.li`
         padding: 3rem 3rem;
         width: 100%; 
         color: ${theme.primary};
+    }
+`;
+
+const Logo42dev = styled.img`
+    width: 8vw;
+    height: 2.5vw;
+    margin-top: 0.4vw;
+    @media (max-width: 768px) {
+        width: 80%;
+        height: 100%;
+        margin-top: 0.4vw;
     }
 `;
 
@@ -76,7 +89,7 @@ const Contact = styled.li`
     &:hover {
             transform: scale(1.05);
             transition: all 0.31s ease;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.346);
+            box-shadow: 3vw 1vw 7vw 0px ${theme.shadowPrimary};
         }
     a {
         font-size: 1vw;
@@ -125,7 +138,7 @@ const HeaderNav = styled.div`
             display: block;
             width: 85vw;
             height: 14vh;
-            background-color: #2D3142;
+            background-color: ${theme.primary};
             border: none;
             border-radius: 0px 0px 30px 30px;
             outline: none;
@@ -155,7 +168,7 @@ const HeaderNav = styled.div`
         }
     } @media (max-width: 470px) {
         button{
-        img {
+        img{
                 width: 24vw;
                 height: 7vh;
                 margin-top: 3vh;
@@ -163,7 +176,6 @@ const HeaderNav = styled.div`
         }
         span{
             font-size: 5vw;
-            rotate: 180deg;
         }
     }
 `;
@@ -179,9 +191,9 @@ const Parent = styled.div`
     width: 65vw;
     margin-left: 50%;
     transform: translateX(-50%);
-    border: 4px solid #EF8354;
+    border: 4px solid ${theme.secondary};
     padding: 10px;
-    background-color: #2D3142;
+    background-color: ${theme.primary};
     margin-top: 20vh;
     box-shadow: 0px 10px 19px 7px rgba(0, 0, 0, 0.346);
     @media (max-width: 470px) {
@@ -313,20 +325,19 @@ const NavBar = () => {
     }, []);
 
     const [close, setClose] = useState(false);
-    console.log(close);
     const mobileNav = document.querySelector('.mobileNav');
     const buttonImg = document.querySelector('.buttonImg');
     const buttonText = document.querySelector('.buttonText');
     const handleClick = () => {
         setClose(!close);
         if (close) {
-            gsap.fromTo(mobileNav, { y: 900 }, { y: 0, duration: 0.7, display: 'block', borderRadius: '0px', background: '#2D3142' });
+            gsap.fromTo(mobileNav, { y: 900 }, { y: 0, duration: 0.7, display: 'block', borderRadius: '0px', background: '#0a1c36d3' });
             gsap.fromTo(buttonImg, { rotate: 0, opacity: 0, y: -200 }, { rotate: 180, duration: 0.6, opacity: 1, y: 0 });
             gsap.fromTo(buttonText, { opacity: 0, y: -200 }, { opacity: 1, duration: 0.6, innerHTML: 'Fermer', y: 0 });
         } else {
             gsap.fromTo(mobileNav, { y: 0 }, { y: 900, duration: 0.7, display: 'none', borderRadius: '70px', background: 'none' });
             gsap.fromTo(buttonImg, { rotate: -180, opacity: 0, y: -200 }, { rotate: 0, duration: 0.6, opacity: 1, y: 0 });
-            gsap.fromTo(buttonText, { opacity: 0, y: -200 }, { opacity: 1, duration: 0.6, innerHTML: 'Menu', y: 0 });
+            gsap.fromTo(buttonText, { opacity: 0, y: -200, rotate: 180 }, { opacity: 1, duration: 0.6, innerHTML: 'Menu', y: 0 });
         }
     }
 
@@ -348,7 +359,7 @@ const NavBar = () => {
                     <Link to="/Offre">Offre</Link>
                 </StyledLi>
                 <StyledLi>
-                    <Link to="/entreprise">A-TechPro</Link>
+                    <Link to="/entreprise"><Logo42dev src={Logo} /></Link>
                 </StyledLi>
                 <Contact>
                     <Link to="/contact">Contact</Link>
@@ -368,7 +379,7 @@ const NavBar = () => {
                     <Div4><Link to="/Projet" onClick={handleClick}>Projet</Link></Div4>
                     <Div5><Link to="/" onClick={handleClick}>Accueil</Link></Div5>
                     <Div6><button onClick={handleClick} ><img src={MobileMenuClose} alt="" /></button></Div6>
-                    <Div7><Link to="/entreprise" onClick={handleClick}><span>A</span>-TechPro</Link></Div7>
+                    <Div7><Link to="/entreprise" onClick={handleClick}><Logo42dev src={LogoBg} /></Link></Div7>
                 </Parent>
             </MobileUl>
         </StyledNav>

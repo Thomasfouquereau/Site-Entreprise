@@ -7,6 +7,13 @@ import icon_telephone from "../assets/Icon-telephone.svg";
 import icon_mail from "../assets/Icon-mail.svg";
 import icon_arrow from "../assets/Icon-arrow.svg";
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const Section__Contact = styled.section`
     margin-top: 200px;
     margin-bottom: 300px;
@@ -30,12 +37,12 @@ const Contact__Container__Info__button = styled.div`
     button{
         height: 50%;
         border: none;
-        background-color: #EF8354;
+        background-color: ${theme.secondary};
         border-radius: 3vw;
         cursor: pointer;
         font-size: 1vw;
         font-weight: 600;
-        color: #EF8354;
+        color: ${theme.secondary};
         margin-top: 5px;
         img{
             width: 3vw;
@@ -48,7 +55,7 @@ const Contact__Container__Info__div = styled.div`
     display: flex;
     flex-direction: column;
     width: 75%;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     padding: 50px;
     border-radius: 3vw;
     position: relative;
@@ -56,7 +63,7 @@ const Contact__Container__Info__div = styled.div`
     h1{
         font-size: 2vw;
         font-weight: 600;
-        color: #EF8354;
+        color: ${theme.secondary};
         margin-top: 0px;
     }
     p{
@@ -97,7 +104,7 @@ const Contact__Container__Form__Wrapper__div1 = styled.div`
         padding-left: 20px;
         border-radius: 3vw;
         &::placeholder{
-            color: #EF8354;
+            color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
         }
@@ -117,7 +124,7 @@ const Contact__Container__Form__Wrapper__div2 = styled.div`
         padding-left: 20px;
         border-radius: 3vw;
         &::placeholder{
-            color: #EF8354;
+            color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
         }
@@ -137,7 +144,7 @@ const Contact__Container__Form__Wrapper__div3 = styled.div`
         padding-left: 20px;
         border-radius: 3vw;
         &::placeholder{
-            color: #EF8354;
+            color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
         }
@@ -157,7 +164,7 @@ const Contact__Container__Form__Wrapper__div4 = styled.div`
         padding-left: 20px;
         border-radius: 3vw;
         &::placeholder{
-            color: #EF8354;
+            color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
         }
@@ -167,7 +174,7 @@ const Contact__Container__Form__Wrapper__div4 = styled.div`
 const Contact__Container__Form__Wrapper__div5 = styled.div`
     grid-area: 3 / 1 / 4 / 3;
     border-radius: 3vw;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
 `
 
 const Contact__Container__Form__div6 = styled.input`
@@ -203,7 +210,7 @@ const Contact__Container__Form__Wrapper__div6 = styled.div`
         padding-left: 20px; 
         border-radius: 3vw;
         &::placeholder{
-            color: #EF8354;
+            color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
         }
@@ -223,7 +230,7 @@ const Contact__Container__Form__Wrapper__div7 = styled.div`
         padding-left: 20px;
         border-radius: 3vw;
         &::placeholder{
-            color: #EF8354;
+            color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
         }
@@ -238,7 +245,7 @@ const Contact__Container__Form__Wrapper__div8 = styled.div`
         width: 100%;
         height: 100%;
         border: none;
-        background-color: #EF8354;
+        background-color: ${theme.secondary};
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;

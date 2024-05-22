@@ -233,7 +233,7 @@ export default function Offre__Nav() {
                 </Link>
             </Offre__Nav__Container>
             <Offre__Nav__Container >
-                <Link to="/Offre/Creatif-Coding">
+                <Link to="/Offre/Creatif-coding">
                     <Offre__Nav__Card__Container>
                         <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
                         <Offre__Nav__Card__Container__Icon src={icon_creatif_coding} alt='icon site' />

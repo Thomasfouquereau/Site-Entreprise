@@ -137,15 +137,14 @@ const Types__Container__info = styled.div`
         margin: 0;
         font-size: 0.9vw;
         font-weight: 500;
-        width: 15vw;
-        height: 3vw;
+        width: 13vw;
+        height: 2.5vw;
         background-color: #fff;
-        padding: 10px;
-        border-radius: 3vw;
+        padding: 8px;
+        border-radius: 0.5vw;
         text-align: center;
-        transform: translateX(50%);
         margin-left: 50%;
-        margin-top: 20px;
+        margin-top: 30px;
         transition: all 0.31s ease;
         @media (max-width: 768px){
             height: 4vw;
@@ -158,7 +157,6 @@ const Types__Container__info = styled.div`
             background-color: ${theme.secondary};
             color: #ffffff;
             transition: all 0.31s ease;
-            transform: scale(0.95) translateX(50%);
         }
     }
 `
@@ -197,22 +195,22 @@ const Types__Container__info__reverse = styled.div`
         }
     }
     a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         color: #222223;
-        background-color: #fff;
+        margin: 0;
         font-size: 0.9vw;
         font-weight: 500;
-        width: 15vw;
-        height: 3vw;
-        padding: 10px;
-        border-radius: 4.5vw;
+        width: 13vw;
+        height: 2.5vw;
+        background-color: #fff;
+        padding: 8px;
+        border-radius: 0.5vw;
         text-align: center;
-        transform: translateX(50%);
         margin-left: 50%;
-        margin-top: 20px;
+        margin-top: 30px;
         transition: all 0.31s ease;
         @media (max-width: 768px){
             height: 4vw;
@@ -226,7 +224,6 @@ const Types__Container__info__reverse = styled.div`
             color: #ffffff;
             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
             transition: all 0.31s ease;
-            transform: scale(0.95) translateX(50%);
         }
     }
 `
@@ -301,9 +298,10 @@ export default function Types() {
                     <Types__Container__info>
                         <h2>Landing Page</h2>
                         <p>
-                            Une landing page est une page web qui a pour but de convertir
-                            un visiteur en client. Elle est souvent utilisée pour des
-                            campagnes de marketing digital.
+                        Une landing page est une page web spécialement conçue pour convertir les visiteurs en 
+                        leads ou clients. Elle est souvent utilisée dans le cadre de campagnes marketing pour 
+                        inciter à une action précise, comme remplir un formulaire, s'inscrire à une newsletter 
+                        ou effectuer un achat. 
                         </p>
                         <Link to="/Offre/Landing-page">En savoir plus</Link>
                     </Types__Container__info>
@@ -318,9 +316,10 @@ export default function Types() {
                     <Types__Container__info__reverse>
                         <h2>Site vitrine</h2>
                         <p>
-                            Un site vitrine est un site web qui présente votre entreprise,
-                            vos produits ou vos services. Il est le premier contact que vos
-                            clients auront avec vous. Il doit donc être clair, simple et efficace.
+                        Un site vitrine est une plateforme en ligne conçue pour présenter l’activité, 
+                        les services ou les produits d’une entreprise sans les vendre directement. 
+                        Il sert principalement à informer les visiteurs, à promouvoir la marque et 
+                        à établir une présence professionnelle sur le web. 
                         </p>
                         <Link to="/Offre/Site-vitrine">En savoir plus</Link>
                     </Types__Container__info__reverse>
@@ -335,9 +334,9 @@ export default function Types() {
                     <Types__Container__info>
                         <h2>Site e-commerce</h2>
                         <p>
-                            Un site e-commerce est un site web qui permet de vendre
-                            des produits ou des services en ligne. Il est donc indispensable
-                            pour toute entreprise qui souhaite vendre ses produits en ligne.
+                        Un site e-commerce est une plateforme en ligne dédiée à la vente de produits et services. 
+                        Il permet aux entreprises de proposer leurs articles directement aux consommateurs via 
+                        internet, facilitant ainsi les transactions commerciales.
                         </p>
                         <Link to="/Offre/Site-e-commerce">En savoir plus</Link>
                     </Types__Container__info>
@@ -350,13 +349,14 @@ export default function Types() {
                 </Types__Container__img__reverse>
                 <Types__Container__info__bg_color>
                     <Types__Container__info__reverse>
-                        <h2>Site SaaS</h2>
+                        <h2>Sites créatifs</h2>
                         <p>
-                            Un site SaaS est un site web qui permet de vendre un service en ligne.
-                            Il est donc indispensable pour toute entreprise qui souhaite vendre
-                            un service en ligne.
+                            Un site web créatif est une plateforme en ligne conçue pour présenter des travaux 
+                            \artistiques et innovants. Il est idéal pour les artistes, designers et créateurs 
+                            qui souhaitent partager leur portfolio, promouvoir leurs projets et attirer de 
+                            nouveaux clients.
                         </p>
-                        <Link to="/Offre/Site-saas">En savoir plus</Link>
+                        <Link to="/Offre/Creatif-coding">En savoir plus</Link>
                     </Types__Container__info__reverse>
                 </Types__Container__info__bg_color>
             </Types__Container__reverse>

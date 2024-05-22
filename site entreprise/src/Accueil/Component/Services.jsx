@@ -76,16 +76,16 @@ const Services__wrapper__item1 = styled.div`
      border-radius: 0px 2vw 2vw 0px;
      height: 15vw;
      display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding-left: 8%;
-        padding-right: 8%;
-        z-index: 1;
-        @media (max-width: 768px) {
-            grid-area: 1 / 1 / 2 / 5;
-            height: 30vw;
-        }
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    z-index: 1;
+    @media (max-width: 768px) {
+        grid-area: 1 / 1 / 2 / 5;
+        height: 30vw;
+    }
         h2 {
             font-size: 2vw;
             font-weight: 700;

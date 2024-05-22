@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+import Renolandes from "../../assets/Screenshot 2024-05-23 RenoLandes.png"
+
 const theme = {
     primary: "#0f284e",
     secondary: "#00ff73",
@@ -159,15 +161,13 @@ export default function ProjetSiteVitrine() {
                 </p>
             </ProjetSiteVitrine_container__info>
             <ProjetSiteVitrine_container__message>
-                <p>
-                    <span>Désole</span>,
-                    <br />
-                    mais nous n'avons pas de projet à vous présentez
-                    <span> pour le moment</span>.
-                </p>
-                <p>
-                    Soyer le premier et <span>contactez nous</span>
-                </p>
+                <div>
+                    <div>
+                        <img src={Renolandes} alt="image du site renolandes" />
+                        <span>Renolandes</span>
+                        <a>visiter le site</a>
+                    </div>
+                </div>
                 <Link to="/contact">contactez nous</Link>
             </ProjetSiteVitrine_container__message>
         </ProjetSiteVitrine_container>

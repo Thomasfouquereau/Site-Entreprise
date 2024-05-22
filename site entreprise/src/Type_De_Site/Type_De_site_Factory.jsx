@@ -10,9 +10,10 @@ import Creatif_Coding from "./CreatifCoding/CreatifCoding";
 
 import icon_landing_page from "../assets/Icon-site.svg";
 import icon_site_vitrine from "../assets/Icon-monitor-shadow copy.svg";
-import icon_site_saas  from "../assets/Icon-saas-shadow copy.svg";
+import icon_site_saas from "../assets/Icon-saas-shadow copy.svg";
 import icon_site_e_commerce from "../assets/Icon-shop-shadow copy.svg";
 import icon_creatif_coding from "../assets/Icon-creatif-coding-shadow copy.svg";
+
 
 const Section__Type_de_Site = styled.section`
     margin-top: 300px;
@@ -84,9 +85,9 @@ export default function Type_De_site_Factory() {
     let titre = window.location.href.includes("Site-vitrine") ? "Site Vitrine"
         : window.location.href.includes("Landing-page") ? "Landing page"
             : window.location.href.includes("Site-e-commerce") ? "Site e-commerce"
-                : window.location.href.includes("Creatif-Coding") ? "Creatif Coding"
+                : window.location.href.includes("Creatif-coding") ? "Creatif Coding"
                     : window.location.href.includes("Site-saas") ? "Site saas"
-                        : null
+                            : null
 
     return (
         <Section__Type_de_Site>
@@ -95,7 +96,7 @@ export default function Type_De_site_Factory() {
                     window.location.href.includes("Site-vitrine") ? <img src={icon_site_vitrine} alt="title" />
                         : window.location.href.includes("Landing-page") ? <img src={icon_landing_page} alt="title" />
                             : window.location.href.includes("Site-e-commerce") ? <img src={icon_site_e_commerce} alt="title" />
-                                : window.location.href.includes("Creatif-Coding") ? <img src={icon_creatif_coding} alt="title" />
+                                : window.location.href.includes("Creatif-coding") ? <img src={icon_creatif_coding} alt="title" />
                                     : window.location.href.includes("Site-saas") ? <img src={icon_site_saas} alt="title" />
                                         : null
                 }
@@ -109,7 +110,7 @@ export default function Type_De_site_Factory() {
                 window.location.href.includes("Site-vitrine") ? <Site_Vitrine />
                     : window.location.href.includes("Landing-page") ? <LandingPage />
                         : window.location.href.includes("Site-e-commerce") ? <Site_E_Commerce />
-                            : window.location.href.includes("Creatif-Coding") ? <Creatif_Coding />
+                            : window.location.href.includes("Creatif-coding") ? <Creatif_Coding />
                                 : window.location.href.includes("Site-saas") ? <Site_Saas /> : null
             }
             <Type_De_Site__Container__description>

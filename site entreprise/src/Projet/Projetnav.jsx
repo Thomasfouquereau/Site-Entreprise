@@ -194,7 +194,7 @@ export default function Projetnav() {
                 </Link>
             </Offre__Nav__Container>
             <Offre__Nav__Container >
-                <Link to="/Projet/Creatif-Coding">
+                <Link to="/Projet/Creatif-coding">
                     <Offre__Nav__Card__Container>
                         <Offre__Nav__Card__Container__Icon src={icon_creatif_coding} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
@@ -204,17 +204,7 @@ export default function Projetnav() {
                     </Offre__Nav__Card__Container>
                 </Link>
             </Offre__Nav__Container>
-            {/* <Offre__Nav__Container >
-                <Link to="/Projet/Creatif-Coding">
-                    <Offre__Nav__Card__Container>
-                        <Offre__Nav__Card__Container__Icon src={icon_creatif_coding} alt='icon site' />
-                        <Offre__Nav__Card__Container__Info>
-                            <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
-                            <Offre__Nav__Card__Container__Title>Creatif Coding</Offre__Nav__Card__Container__Title>
-                        </Offre__Nav__Card__Container__Info>
-                    </Offre__Nav__Card__Container>
-                </Link>
-            </Offre__Nav__Container> */}
+            
         </Offre__Nav__Section>
     )
 }
