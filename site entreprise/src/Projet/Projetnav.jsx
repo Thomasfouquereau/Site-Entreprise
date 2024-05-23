@@ -7,6 +7,7 @@ import icon_creatif_coding from '../assets/Icon-creatif-coding-shadow.svg';
 import icon_site_vitrine from '../assets/Icon-monitor-shadow.svg';
 import icon_site_e_commerce from '../assets/Icon-shop-shadow.svg';
 import icon_site_saas from '../assets/Icon-saas-shadow2.svg';
+import Icon_portfolio from '../assets/Icon-portfolio.svg';
 
 const theme = {
     primary: "#0f284e",
@@ -150,7 +151,7 @@ export default function Projetnav() {
             <Offre__Nav__Container >
                 <Link to="/Projet/Landing-page">
                     <Offre__Nav__Card__Container>
-                        <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
+                        
                         <Offre__Nav__Card__Container__Icon src={icon_landing_page} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
                             <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
@@ -207,7 +208,8 @@ export default function Projetnav() {
             <Offre__Nav__Container >
                 <Link to="/Projet/Portfolio">
                     <Offre__Nav__Card__Container>
-                        <Offre__Nav__Card__Container__Icon src={icon_creatif_coding} alt='icon site' />
+                    <Offre__Nav__Card__New>New !</Offre__Nav__Card__New>
+                        <Offre__Nav__Card__Container__Icon src={Icon_portfolio} alt='icon site' />
                         <Offre__Nav__Card__Container__Info>
                             <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
                             <Offre__Nav__Card__Container__Title>Portfolio</Offre__Nav__Card__Container__Title>

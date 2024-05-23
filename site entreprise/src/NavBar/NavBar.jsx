@@ -298,7 +298,7 @@ const Div6 = styled.div`
 
 const Div7 = styled.div`
     grid-area: 5 / 1 / 7 / 4;
-    background-color: white;
+    background-color: #2D3142;
     border-radius: 15px;
     display: flex;
     justify-content: center;
