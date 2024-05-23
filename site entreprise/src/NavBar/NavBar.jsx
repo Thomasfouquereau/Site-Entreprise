@@ -298,7 +298,8 @@ const Div6 = styled.div`
 
 const Div7 = styled.div`
     grid-area: 5 / 1 / 7 / 4;
-    background-color: #2D3142;
+    background: rgb(2,0,36);
+    background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -379,7 +380,7 @@ const NavBar = () => {
                     <Div4><Link to="/Projet" onClick={handleClick}>Projet</Link></Div4>
                     <Div5><Link to="/" onClick={handleClick}>Accueil</Link></Div5>
                     <Div6><button onClick={handleClick} ><img src={MobileMenuClose} alt="" /></button></Div6>
-                    <Div7><Link to="/entreprise" onClick={handleClick}><Logo42dev src={LogoBg} /></Link></Div7>
+                    <Div7><Link to="/entreprise" onClick={handleClick}><Logo42dev src={Logo} /></Link></Div7>
                 </Parent>
             </MobileUl>
         </StyledNav>

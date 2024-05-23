@@ -366,7 +366,7 @@ export default function Types() {
                         <h2>Sites créatifs</h2>
                         <p>
                             Un site web créatif est une plateforme en ligne conçue pour présenter des travaux 
-                            \artistiques et innovants. Il est idéal pour les artistes, designers et créateurs 
+                            artistiques et innovants. Il est idéal pour les artistes, designers et créateurs 
                             qui souhaitent partager leur portfolio, promouvoir leurs projets et attirer de 
                             nouveaux clients.
                         </p>

@@ -28,7 +28,7 @@ const Contact__Container__Info = styled.div`
     width: 100%;
     height: 20vw;
     margin-bottom: 5px;
-` 
+`
 
 const Contact__Container__Info__button = styled.div`
     display: flex;
@@ -43,10 +43,18 @@ const Contact__Container__Info__button = styled.div`
         font-size: 1vw;
         font-weight: 600;
         color: ${theme.secondary};
-        margin-top: 5px;
+        margin-top: 5px;  
+        transition: cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
         img{
             width: 3vw;
             height: 3vw;
+            transition: cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+        }
+        &:hover{
+            transform: scale(0.95);
+            img{
+                transform: scale(1.2);
+            }
         }
     } 
 `
@@ -80,7 +88,8 @@ const Contact__Container__Info__div = styled.div`
         bottom: 40px;
         rotate: 50deg;
     }
-` 
+    
+`
 
 const Contact__Container__Form__Wrapper = styled.div`
     display: grid;
@@ -103,12 +112,17 @@ const Contact__Container__Form__Wrapper__div1 = styled.div`
         font-weight: 600;
         padding-left: 20px;
         border-radius: 3vw;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
         &::placeholder{
             color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
         }
+        &:hover{
+            transform: scaleY(0.95) scaleX(0.99);
+        }
     }
+
 `
 
 const Contact__Container__Form__Wrapper__div2 = styled.div`
@@ -123,10 +137,14 @@ const Contact__Container__Form__Wrapper__div2 = styled.div`
         font-weight: 600;
         padding-left: 20px;
         border-radius: 3vw;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
         &::placeholder{
             color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
+        }
+        &:hover{
+            transform: scaleY(0.95) scaleX(0.99);
         }
     }
 `
@@ -143,10 +161,14 @@ const Contact__Container__Form__Wrapper__div3 = styled.div`
         font-weight: 600;
         padding-left: 20px;
         border-radius: 3vw;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
         &::placeholder{
             color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
+        }
+        &:hover{
+            transform: scaleY(0.95) scaleX(0.99);
         }
     }
 `
@@ -163,10 +185,14 @@ const Contact__Container__Form__Wrapper__div4 = styled.div`
         font-weight: 600;
         padding-left: 20px;
         border-radius: 3vw;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
         &::placeholder{
             color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
+        }
+        &:hover{
+            transform: scaleY(0.95) scaleX(0.99);
         }
     }
 `
@@ -175,6 +201,10 @@ const Contact__Container__Form__Wrapper__div5 = styled.div`
     grid-area: 3 / 1 / 4 / 3;
     border-radius: 3vw;
     background-color: ${theme.secondary};
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+    &:hover{
+        transform: scaleY(0.95) scaleX(0.99);
+    }
 `
 
 const Contact__Container__Form__div6 = styled.input`
@@ -209,10 +239,14 @@ const Contact__Container__Form__Wrapper__div6 = styled.div`
         font-weight: 600;
         padding-left: 20px; 
         border-radius: 3vw;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
         &::placeholder{
             color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
+        }
+        &:hover{
+            transform: scaleY(0.95) scaleX(0.99);
         }
     }
 `
@@ -229,10 +263,14 @@ const Contact__Container__Form__Wrapper__div7 = styled.div`
         font-weight: 600;
         padding-left: 20px;
         border-radius: 3vw;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
         &::placeholder{
             color: ${theme.primary};
             font-size: 1vw;
             font-weight: 600;
+        }
+        &:hover{
+            transform: scaleY(0.98) scaleX(0.995);
         }
     }
 `
@@ -251,6 +289,16 @@ const Contact__Container__Form__Wrapper__div8 = styled.div`
         padding-left: 20px;
         border-radius: 3vw;
         color: #fff;
+        transition: cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+        &:hover{
+            transform: scale(0.95);
+            img{
+                transform: scale(1.2);
+            }
+        }
+        img{
+            transition: cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+        }
     }
 `
 
