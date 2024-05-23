@@ -12,6 +12,7 @@ import ProjetSiteVitrine from './Projet/ProjetFactory/ProjetSiteVitrine';
 import ProjetECommerce from './Projet/ProjetFactory/ProjetECommerce';
 import ProjetApplicationWeb from './Projet/ProjetFactory/ProjetApplicationWeb';
 import ProjetCreatifCoding from './Projet/ProjetFactory/ProjetCreatifCoding';
+import ProjetPortfolio from './Projet/ProjetFactory/ProjetPortfolio';
 import A_TechPro from './A-TechPro/A-TechPro';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Projet/E-Commerce" element={<ProjetECommerce/>} />
         <Route path="/Projet/Application-web" element={<ProjetApplicationWeb/>} />
         <Route path="/Projet/Creatif-coding" element={<ProjetCreatifCoding/>} />
+        <Route path="/Projet/Portfolio" element={<ProjetPortfolio/>} />
       </Routes>
     </div>
   )

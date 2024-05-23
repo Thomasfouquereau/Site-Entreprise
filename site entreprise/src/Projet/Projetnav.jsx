@@ -204,6 +204,17 @@ export default function Projetnav() {
                     </Offre__Nav__Card__Container>
                 </Link>
             </Offre__Nav__Container>
+            <Offre__Nav__Container >
+                <Link to="/Projet/Portfolio">
+                    <Offre__Nav__Card__Container>
+                        <Offre__Nav__Card__Container__Icon src={icon_creatif_coding} alt='icon site' />
+                        <Offre__Nav__Card__Container__Info>
+                            <Offre__Nav__Card__Container__Coder>coder</Offre__Nav__Card__Container__Coder>
+                            <Offre__Nav__Card__Container__Title>Portfolio</Offre__Nav__Card__Container__Title>
+                        </Offre__Nav__Card__Container__Info>
+                    </Offre__Nav__Card__Container>
+                </Link>
+            </Offre__Nav__Container>
             
         </Offre__Nav__Section>
     )

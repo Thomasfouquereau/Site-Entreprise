@@ -7,12 +7,14 @@ import LandingPage from "./LandingPage/LandingPage";
 import Site_E_Commerce from "./Site_E_Commerce/Site_E_Commerce";
 import Site_Saas from "./Site_Saas/Site_Saas";
 import Creatif_Coding from "./CreatifCoding/CreatifCoding";
+import Portfolio from "./Portfolio/Portfolio"
 
 import icon_landing_page from "../assets/Icon-site.svg";
 import icon_site_vitrine from "../assets/Icon-monitor-shadow copy.svg";
 import icon_site_saas from "../assets/Icon-saas-shadow copy.svg";
 import icon_site_e_commerce from "../assets/Icon-shop-shadow copy.svg";
 import icon_creatif_coding from "../assets/Icon-creatif-coding-shadow copy.svg";
+import icon_Portfolio from "../assets/Icon-portfolio.svg";
 
 
 const Section__Type_de_Site = styled.section`
@@ -87,6 +89,7 @@ export default function Type_De_site_Factory() {
             : window.location.href.includes("Site-e-commerce") ? "Site e-commerce"
                 : window.location.href.includes("Creatif-coding") ? "Creatif Coding"
                     : window.location.href.includes("Site-saas") ? "Site saas"
+                        : window.location.href.includes("Portfolio") ? "Portfolio"
                             : null
 
     return (
@@ -98,6 +101,7 @@ export default function Type_De_site_Factory() {
                             : window.location.href.includes("Site-e-commerce") ? <img src={icon_site_e_commerce} alt="title" />
                                 : window.location.href.includes("Creatif-coding") ? <img src={icon_creatif_coding} alt="title" />
                                     : window.location.href.includes("Site-saas") ? <img src={icon_site_saas} alt="title" />
+                                        : window.location.href.includes("Portfolio") ? <img src={icon_Portfolio} alt="title" />
                                         : null
                 }
                 <Type_De_Site__Container__Title__Info>
@@ -111,7 +115,9 @@ export default function Type_De_site_Factory() {
                     : window.location.href.includes("Landing-page") ? <LandingPage />
                         : window.location.href.includes("Site-e-commerce") ? <Site_E_Commerce />
                             : window.location.href.includes("Creatif-coding") ? <Creatif_Coding />
-                                : window.location.href.includes("Site-saas") ? <Site_Saas /> : null
+                                : window.location.href.includes("Site-saas") ? <Site_Saas /> 
+                                    : window.location.href.includes("Portfolio") ? <Portfolio /> 
+                                        : null
             }
             <Type_De_Site__Container__description>
                 <h2>Création de {titre}</h2>

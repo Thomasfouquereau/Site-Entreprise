@@ -7,6 +7,7 @@ import icon_site from '../../assets/Icon-site-shadow.svg';
 import icon_moniteur from '../../assets/Icon-monitor-shadow.svg';
 import icon_shop from '../../assets/Icon-shop-shadow.svg';
 import icon_saas from '../../assets/Icon-saas-shadow.svg';
+import Icon_portfolio from '../../assets/Icon-portfolio.svg';
 
 const theme = {
     primary: "#0f284e",
@@ -234,6 +235,7 @@ export default function Types() {
     const item2 = useRef(null);
     const item3 = useRef(null);
     const item4 = useRef(null);
+    const item5 = useRef(null);
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -280,6 +282,18 @@ export default function Types() {
             duration: 1,
             scrollTrigger: {
                 trigger: item4.current,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+            }
+        })
+        gsap.fromTo(item5.current, {
+            x: "80%",
+        }, {
+            x: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: item5.current,
                 start: "top bottom",
                 end: "top top",
                 scrub: true,
@@ -360,6 +374,24 @@ export default function Types() {
                     </Types__Container__info__reverse>
                 </Types__Container__info__bg_color>
             </Types__Container__reverse>
+
+            <Types__Container>
+                <Types__Container__img ref={item5}>
+                    <img src={Icon_portfolio} alt="icon site" />
+                </Types__Container__img>
+                <Types__Container__info__bg_color>
+                    <Types__Container__info>
+                        <h2>Portfolio</h2>
+                        <p>
+                        Un portfolio en ligne est un site web personnel ou professionnel dédié à la présentation des 
+                        œuvres, projets et compétences d'un individu. Il est idéal pour les artistes, designers, 
+                        photographes, développeurs et autres créatifs qui souhaitent montrer leur travail, attirer 
+                        des clients potentiels et se démarquer dans leur domaine.
+                        </p>
+                        <Link to="/Offre/Portfolio">En savoir plus</Link>
+                    </Types__Container__info>
+                </Types__Container__info__bg_color>
+            </Types__Container>
 
         </Section__Types>
     );

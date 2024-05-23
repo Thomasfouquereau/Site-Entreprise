@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
 import Renolandes from "../../assets/Screenshot 2024-05-23 RenoLandes.png"
 
 const theme = {
@@ -28,7 +27,7 @@ const ProjetSiteVitrine_container__info = styled.div`
     flex-direction: column;
     justify-content: center;
     background-color: ${theme.primary};
-    width: 95%;
+    width: 95vw;
     border-radius: 2.5vw;
     height: 25vh;
     position: relative;
@@ -133,7 +132,7 @@ const ProjetSiteVitrine_container__message = styled.div`
         border-radius: 4.5vw;
         text-align: center;
         transition: all 0.31s ease;
-        box-shadow: inset ${theme.shadowPrimary} 6px 6px 30px -5px;
+        border: 1px solid ${theme.secondary};
         margin-top: 2vh;
         @media (max-width: 768px) {
                 font-size: 2.6vw;
@@ -149,6 +148,113 @@ const ProjetSiteVitrine_container__message = styled.div`
     }
 `
 
+const ProjetSiteVitrine_container_site = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    width: 85vw;
+    height: 100%;
+    margin-top: 5vw;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: ${theme.secondary};
+        background-color: ${theme.primary};
+        font-family: 'poppins', sans-serif;
+        font-size: 1.1vw;
+        font-weight: 500;
+        width: 15vw;
+        height: 4vh;
+        padding: 10px;
+        border-radius: 4.5vw;
+        text-align: center;
+        transition: all 0.31s ease;
+        border: 1px solid ${theme.secondary};
+        margin-top: 2vh;
+        @media (max-width: 768px) {
+                font-size: 2.6vw;
+                width: 40vw;
+                height: 6vw;
+            }
+        &:hover {
+            background-color: ${theme.secondary};
+            color: ${theme.primary};
+            transition: all 0.31s ease;
+            transform: scale(0.95);
+        }
+    }
+`
+
+const ProjetSiteVitrine_container_site_card = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: ${theme.primary} ;
+    padding: 1vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    border-radius: 1.5vw;
+    width: 25vw;
+    height: 24vw;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+    :hover{
+        transform: scale(1.1);
+        box-shadow: ${theme.shadowPrimary} 0vw 0vh 20vw 2px;
+    }
+    h2{
+        margin: 0;
+        font-size: 1.5vw;
+        text-align: left;
+        width: 100%;
+        font-family: 'Anybody', cursive;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    :hover{
+        color:${theme.secondary};
+    }
+    }
+    img{
+        width:23vw;
+        height:14vw;
+        object-fit: cover;
+        border-radius: 1.3vw;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+        margin-bottom: 0.7vw;
+        margin-top: 0.5vw;
+        :hover{
+        transform: scale(1.09);
+    }
+    }
+`
+const ProjetSiteVitrine_container_site_card_balise = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    span{
+        color: ${theme.primary};
+        background-color: ${theme.secondary};
+        width:5.3vw;
+        text-align:center;
+        padding: 0.15vw 0;
+        border-radius: 1vw;
+        margin-left: 0.5vw;
+        font-family: 'poppins', sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 0.7vw;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+        :hover{
+        transform: scale(1.09);
+    }
+    }
+    
+`
+
+
 export default function ProjetSiteVitrine() {
     return (
         <ProjetSiteVitrine_container>
@@ -160,16 +266,21 @@ export default function ProjetSiteVitrine() {
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                 </p>
             </ProjetSiteVitrine_container__info>
-            <ProjetSiteVitrine_container__message>
-                <div>
-                    <div>
+                <ProjetSiteVitrine_container_site>
+
+                    <ProjetSiteVitrine_container_site_card>
+                        <h2>Renolandes</h2>
                         <img src={Renolandes} alt="image du site renolandes" />
-                        <span>Renolandes</span>
-                        <a>visiter le site</a>
-                    </div>
-                </div>
-                <Link to="/contact">contactez nous</Link>
-            </ProjetSiteVitrine_container__message>
+                        <ProjetSiteVitrine_container_site_card_balise>
+                            <span>coder</span>
+                            <span>designer</span>
+                            <span>site-vitrine</span>
+                        </ProjetSiteVitrine_container_site_card_balise>
+                        <Link to="https://www.renolandes.com/" target="_blank">visiter le site</Link>
+                    </ProjetSiteVitrine_container_site_card>
+
+                </ProjetSiteVitrine_container_site>
+
         </ProjetSiteVitrine_container>
 
     )
