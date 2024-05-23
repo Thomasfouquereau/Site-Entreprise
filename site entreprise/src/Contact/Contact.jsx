@@ -52,6 +52,7 @@ const Contact__Container__Info__button = styled.div`
         }
         &:hover{
             transform: scale(0.95);
+            box-shadow: 0vw 1vw 7vw 0px ${theme.shadowPrimary};
             img{
                 transform: scale(1.2);
             }
@@ -204,6 +205,7 @@ const Contact__Container__Form__Wrapper__div5 = styled.div`
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
     &:hover{
         transform: scaleY(0.95) scaleX(0.99);
+        box-shadow: 0vw 1vw 7vw 0px ${theme.shadowPrimary};
     }
 `
 
@@ -292,6 +294,7 @@ const Contact__Container__Form__Wrapper__div8 = styled.div`
         transition: cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
         &:hover{
             transform: scale(0.95);
+            box-shadow: 0vw 0vw 7vw 0px ${theme.shadowPrimary};
             img{
                 transform: scale(1.2);
             }
