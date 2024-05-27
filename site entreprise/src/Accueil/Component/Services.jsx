@@ -308,7 +308,7 @@ export default function Services() {
                 <Services__wrapper__item5 ref={item5}></Services__wrapper__item5>
                 <Services__wrapper__item6 ref={item6}></Services__wrapper__item6>
                 <Services__wrapper__item7>
-                    <h2>Maintenance Web Expertise</h2>
+                    <h2>Maintenance Web</h2>
                     <p>
                         Nous assurons la maintenance proactive de votre site, garantissant un fonctionnement sans faille. Notre équipe est prête à résoudre rapidement les problèmes et à fournir un support technique de qualité pour une expérience client optimale.
                     </p>

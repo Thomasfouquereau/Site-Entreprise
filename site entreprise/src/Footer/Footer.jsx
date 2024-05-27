@@ -5,6 +5,7 @@ import icon_mail from '../assets/Icon-mail.svg';
 import icon_facebook from '../assets/Icon-fb.svg';
 import icon_instagram from '../assets/Icon-ig.svg';
 import icon_linkedin from '../assets/Icon-in.svg';
+import logo_dev from '../assets/logo-42dev-no-bg.svg';
 
 const theme = {
     primary: "#0f284e",
@@ -62,6 +63,7 @@ const Footer__Container__Contact = styled.div`
         background-color: ${theme.secondary};
         box-shadow: ${theme.primary} 0px 0px 0px 2px;
         transition: all 0.31s ease;
+        transform: scale(1.05);
         img{
             filter: invert(1);
             transition: all 0.31s ease;
@@ -93,7 +95,16 @@ const Footer__Container__Links = styled.div`
     img{
         width: 1.7vw;
         height: 1.7vw;
+        transition: all 0.31s ease;
+        &:hover{
+            filter: invert(1);
+            transform: scale(1.2);
+        }
    }
+`
+
+const Logo = styled.img`
+    transform: translateY(-2vw);
 `
 
 const Footer__Container__Content = styled.div`
@@ -117,6 +128,7 @@ export default function Footer() {
                     <img src={icon_linkedin} />
                 </Footer__Container__Links>
             </Footer__Container>
+            <Logo src={logo_dev} />
             <Footer__Container__Content>
                 <p>© 2024 - Tous droits réservés</p>
             </Footer__Container__Content>
