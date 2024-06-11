@@ -354,10 +354,10 @@ const NavBar = () => {
                     <Link to="/">Accueil</Link>
                 </StyledLi>
                 <StyledLi>
-                    <Link to="/Projet">Projet</Link>
+                    <Link to="/Offre">Offre</Link>
                 </StyledLi>
                 <StyledLi>
-                    <Link to="/Offre">Offre</Link>
+                    <Link to="/Projet">Projet</Link>
                 </StyledLi>
                 <StyledLi>
                     <Link to="/entreprise"><Logo42dev src={Logo} /></Link>

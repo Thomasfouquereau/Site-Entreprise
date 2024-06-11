@@ -1,5 +1,14 @@
 import styled from "styled-components" 
 
+import logo_42dev from "../assets/logo-42dev-no-bg.svg"
+
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
+
 const Container = styled.div`
     font-family: 'Montserrat', sans-serif;
 `
@@ -9,17 +18,15 @@ const Header = styled.div`
     align-items: center;
     margin-top: 5vw;
     width: 95%;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     height: 8vw;
     border-radius: 50px;
-    padding-left: 5vw;
+    padding-left: 3vw;
     margin-left: 50%;
     transform: translateX(-50%);
-    span{
-        font-size: 5vw;
-        font-weight: 700;
-        color: #EF8354;
-        margin-right: 2vw;
+    img{
+        width: 7vw;
+        margin-right: 3vw;
     }
 `
 
@@ -32,7 +39,7 @@ const InfoConteneur = styled.div`
 `
  
  const Info = styled.div`
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     border-radius: 50px;
     width: 95%;
     height: 19vw;
@@ -42,7 +49,7 @@ const InfoHover = styled.div`
     position: absolute; 
     right: 0;
     height: 19vw;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     width: 49.5%;
     border-radius: 50px 0 0 50px;
     box-shadow: -8px 10px 7px 0px rgba(0, 0, 0, 0.25);
@@ -55,7 +62,7 @@ const InfoHover2 = styled.div`
     position: absolute;
     left: 0;
     height: 19vw;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     width: 49.5%;
     border-radius:  0 50px 50px 0 ;
     box-shadow: 8px 0px 7px 0px rgba(0, 0, 0, 0.25);
@@ -69,9 +76,9 @@ export default function A_TechPro() {
         <Container>
 
             <Header>
-                <span>A</span>
+                <img src={logo_42dev} />
                 <div>
-                    <h1>Création de sites internet</h1>
+                    <h1>42dev</h1>
                     <p>Création de sites internet sur mesure, adaptés à vos besoins et à votre budget.</p>
                 </div>
             </Header>

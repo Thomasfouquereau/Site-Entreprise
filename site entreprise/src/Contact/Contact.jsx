@@ -21,6 +21,10 @@ const Section__Contact = styled.section`
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    @media (max-width: 470px) {
+        margin-top: 50px;
+    margin-bottom: 100px;
+    }
 `
 
 const Contact__Container__Info = styled.div`
@@ -28,6 +32,11 @@ const Contact__Container__Info = styled.div`
     width: 100%;
     height: 20vw;
     margin-bottom: 5px;
+    @media (max-width: 470px){
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+    }
 `
 
 const Contact__Container__Info__button = styled.div`
@@ -57,7 +66,21 @@ const Contact__Container__Info__button = styled.div`
                 transform: scale(1.2);
             }
         }
-    } 
+    }
+    @media (max-width: 470px){
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 3vw;
+        button{
+            width: 49%;
+            height: 25vw;
+            img{
+                width: 9vw;
+                height: 9vw;
+            }
+        }
+    }
 `
 
 const Contact__Container__Info__div = styled.div`
@@ -90,6 +113,21 @@ const Contact__Container__Info__div = styled.div`
         rotate: 50deg;
     }
     
+    @media (max-width: 470px){
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 1vw;
+        margin-left: 0;
+        h1{
+            font-size: 4vw;
+        }
+        p{
+            font-size: 2vw;
+        }
+        img{
+            display: none;
+        }
+    }
 `
 
 const Contact__Container__Form__Wrapper = styled.div`
@@ -98,6 +136,51 @@ const Contact__Container__Form__Wrapper = styled.div`
     grid-template-rows: repeat(3, 1fr) 4fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
+    @media (max-width: 470px){
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        div{
+            margin-bottom: 2vw;
+            height: 10vw;
+            width: 100%;
+            margin-bottom: 1vw;
+            border-radius: 3vw ;
+            &:last-child{
+                height: 20vw;
+                margin-top: 2vw;
+                
+                img{
+                    display: none;
+                }
+                span{
+                    display:block;
+                    font-size: 5vw;
+                }
+            }
+            &:nth-child(7){
+                height: 30vw;
+                textarea{
+                    font-size: 3vw;
+                    border-radius: 3vw ;
+                    &::placeholder{
+                        font-size: 3vw;
+                        color: ${theme.primary};
+                    }
+                }
+            }
+            input{
+                &::placeholder{
+                    font-size: 3vw;
+                }
+                &::before{
+                    font-size: 3vw;
+                }
+                font-size: 3vw;
+                border-radius: 3vw ;
+            }
+        }
+    }
 `
 
 const Contact__Container__Form__Wrapper__div1 = styled.div`
@@ -256,15 +339,18 @@ const Contact__Container__Form__Wrapper__div6 = styled.div`
 const Contact__Container__Form__Wrapper__div7 = styled.div`
     grid-area: 4 / 1 / 5 / 6;
     border-radius: 3vw;
-    input{
-        width: 100%;
-        height: 100%;
+    textarea{
+        width: 100% !important;
+        height: 100% !important;
         border: none;
         background-color: #fff;
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
-        border-radius: 3vw;
+        padding-top: 20px;
+        border-radius: 2vw ;
+        resize: none;
+        font-family: Arial, Helvetica, sans-serif;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
         &::placeholder{
             color: ${theme.primary};
@@ -289,9 +375,12 @@ const Contact__Container__Form__Wrapper__div8 = styled.div`
         font-size: 1vw;
         font-weight: 600;
         padding-left: 20px;
-        border-radius: 3vw;
+        border-radius: 2vw;
         color: #fff;
         transition: cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+        span{
+            display:none;
+        }
         &:hover{
             transform: scale(0.95);
             box-shadow: 0vw 0vw 7vw 0px ${theme.shadowPrimary};
@@ -306,7 +395,6 @@ const Contact__Container__Form__Wrapper__div8 = styled.div`
 `
 
 export default function Contact() {
-
     return (
         <Section__Contact>
             <Contact__Container__Info>
@@ -345,10 +433,10 @@ export default function Contact() {
                     <input type="email" placeholder="Email" />
                 </Contact__Container__Form__Wrapper__div6>
                 <Contact__Container__Form__Wrapper__div7>
-                    <input type="text" placeholder="Message" />
+                    <textarea type="text" placeholder="Message" />
                 </Contact__Container__Form__Wrapper__div7>
                 <Contact__Container__Form__Wrapper__div8>
-                    <button><img src={icon_envoyer} alt="icon envoyer" /></button>
+                    <button><img src={icon_envoyer} alt="icon envoyer"/><span>Envoyer</span></button>
                 </Contact__Container__Form__Wrapper__div8>
             </Contact__Container__Form__Wrapper>
         </Section__Contact>

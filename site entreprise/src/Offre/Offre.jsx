@@ -34,7 +34,7 @@ const Offre__Container__Title = styled.section`
     background-color: ${theme.primary};
     padding: 70px 50px;
     @media (max-width: 768px) {
-        padding: 60px 30px;
+        padding: 80px 25px;
         margin-bottom: 5px;
     }
     h1{
@@ -44,14 +44,14 @@ const Offre__Container__Title = styled.section`
         margin-top: 10px;
         font-family: 'Anybody', cursive;
         @media (max-width: 768px) {
-            font-size: 4vw;
+            font-size: 6vw;
         }
     }
     p{
         font-size: 1vw;
         font-weight: 400;
         @media (max-width: 768px) {
-            font-size: 1.7vw;
+            font-size: 2.5vw;
         }
     }
 `
@@ -69,7 +69,7 @@ const Offre__Container__Info = styled.section`
     padding: 70px 50px;
     color: ${theme.primary};
     @media (max-width: 768px) {
-        padding: 60px 30px;
+        padding: 110px 25px;
         margin-top:5px
     }
     h2{
@@ -79,14 +79,14 @@ const Offre__Container__Info = styled.section`
         margin-top: 10px;
         font-family: 'Anybody', cursive;
         @media (max-width: 768px) {
-            font-size: 3vw;
+            font-size: 6vw;
         }
     }
     p{
         font-size: 0.9vw;
         font-weight: 400;
         @media (max-width: 768px) {
-            font-size: 1.4vw;
+            font-size: 2.5vw;
         }
     }
 `
