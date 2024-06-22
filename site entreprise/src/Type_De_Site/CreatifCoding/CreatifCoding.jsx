@@ -8,6 +8,13 @@ import icon_responsive from "../../assets/Icon-responsive.svg";
 import icon_referencement from "../../assets/Icon-referencement.svg";
 import icon_design from "../../assets/Icon-design-2.svg";
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#fff83",
+}
+
 const Types_Wrapper = styled.div`
     display: grid;
     grid-template-columns: 2.5fr repeat(5, 1fr);
@@ -19,7 +26,7 @@ const Types_Wrapper = styled.div`
 `
 const Types_Wrapper__div1 = styled.div`
     grid-area: 1 / 1 / 3 / 2;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     border-radius: 3vw;
     display: flex;
     flex-direction: column;
@@ -39,7 +46,7 @@ const Types_Wrapper__div1 = styled.div`
 `  
 const Types_Wrapper__div2 = styled.div`
     grid-area: 1 / 2 / 2 / 4;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     border-radius: 3vw;
     display: flex;
     flex-direction: column;
@@ -59,7 +66,7 @@ const Types_Wrapper__div2 = styled.div`
 `
 const Types_Wrapper__div3 = styled.div`
     grid-area: 1 / 4 / 2 / 7;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     border-radius: 3vw;
     display: flex;
     flex-direction: column;
@@ -79,7 +86,7 @@ const Types_Wrapper__div3 = styled.div`
 `
 const Types_Wrapper__div4 = styled.div`
     grid-area: 2 / 2 / 3 / 5;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     border-radius: 3vw;
     display: flex;
     flex-direction: column;
@@ -99,7 +106,7 @@ const Types_Wrapper__div4 = styled.div`
 `
 const Types_Wrapper__div5 = styled.div`
     grid-area: 2 / 5 / 3 / 7;
-    background-color: #EF8354;
+    background-color: ${theme.secondary};
     border-radius: 3vw;
     display: flex;
     flex-direction: column;
@@ -220,6 +227,10 @@ export default function Site_Vitrine() {
             })
         }
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <section>

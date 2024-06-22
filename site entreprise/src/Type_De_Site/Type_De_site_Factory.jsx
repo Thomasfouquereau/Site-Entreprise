@@ -16,6 +16,12 @@ import icon_site_e_commerce from "../assets/Icon-shop-shadow copy.svg";
 import icon_creatif_coding from "../assets/Icon-creatif-coding-shadow copy.svg";
 import icon_Portfolio from "../assets/Icon-portfolio.svg";
 
+const theme = {
+    primary: "#0f284e",
+    secondary: "#00ff73",
+    border: "#e0e0e038",
+    shadowPrimary: "#00ff7383",
+}
 
 const Section__Type_de_Site = styled.section`
     margin-top: 300px;
@@ -29,11 +35,11 @@ const Type_De_Site__Container__Title = styled.div`
     flex-direction: row;
     align-items: center;
     padding-left: 50px;
-    background-color: #fff;
+    background-color: ${theme.primary};
     border-radius: 50px;
     height: 10vw;
     margin-bottom: 5px;
-    color: #2D3142;
+    color: #fff;
     img {
         width: 5vw;
         height: 5vw;
@@ -60,7 +66,7 @@ const Type_De_Site__Container__description = styled.div`
     flex-direction: column;
     justify-content: center;
     padding-left: 40px;
-    background-color: #4F5D75;
+    background-color: ${theme.primary};
     border-radius: 50px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -77,7 +83,7 @@ const Type_De_Site__Container__description = styled.div`
         margin: 0;
         font-size: 0.8vw;
         span{
-            color: #EF8354;
+            color: ${theme.secondary};
         }
     }
 `
