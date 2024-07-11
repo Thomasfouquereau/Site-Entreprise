@@ -47,6 +47,7 @@ const StyledLi = styled.li`
     transition: all 0.3s ease;
     height: 3.5vw;
     width: 12vw;
+   
     &:hover {
             transform: scale(1.05);
             transition: all 0.31s ease;
@@ -60,6 +61,7 @@ const StyledLi = styled.li`
         padding: 3rem 3rem;
         width: 100%; 
         color: ${theme.primary};
+        will-change: transform;
     }
 `;
 

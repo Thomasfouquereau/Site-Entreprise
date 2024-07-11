@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import icon_design from '../../assets/Icon_design.svg';
-import icon_site from '../../assets/Icon-site.svg';
+import icon_site from '../../assets/Icon-site copy.svg';
 import icon_clef from '../../assets/Icon-clef.svg';
 import icon_message from '../../assets/IconMessage.svg';
 

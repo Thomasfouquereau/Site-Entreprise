@@ -49,16 +49,17 @@ const Offre__Nav__Container = styled.div`
         background: ${theme.primary};
         background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
         box-shadow: ${theme.shadowPrimary} 6vw 14vh 20vw 0px;
-    span{
-        transition: all 0.2s ease-in-out;
-        background-color: ${theme.primary};
-    }
+        span{
+            transition: all 0.2s ease-in-out;
+            background-color: ${theme.primary};
+            will-change: transform;
+        }
     }
     a{
         color: #fff;
     }
    
-`
+`;
 
 const Offre__Nav__Card__Container = styled.div`
     display: flex;
@@ -100,11 +101,12 @@ const Offre__Nav__Card__Container__Coder = styled.p`
     font-style: italic;
     font-size: 1.7vw;
     transition: all 0.3s ease-in-out;
+    will-change: transform;
     @media (max-width: 768px) {
         font-size: 2.7vw;
     }
     &:hover{
-        scale: 1.015;
+        scale: 1.15;
         transition: all 0.3s ease-in-out;
     }
 `
@@ -115,11 +117,12 @@ const Offre__Nav__Card__Container__Title = styled.h2`
     font-family:'Anybody', cursive;
     font-size: 2.5vw;
     transition: all 0.3s ease-in-out;
+    will-change: transform;
     @media (max-width: 768px) {
         font-size: 3.5vw;
     }
     &:hover{
-        scale: 1.01;
+        scale: 1.1;
         transition: all 0.3s ease-in-out;
     }
 `

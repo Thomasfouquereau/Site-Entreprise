@@ -97,6 +97,7 @@ const Offre__Nav__Card__Container__Coder = styled.p`
     font-style: italic;
     font-size: 1.7vw;
     transition: all 0.3s ease-in-out;
+    will-change: transform;
     @media (max-width: 768px) {
         font-size: 3.5vw;
     }
@@ -112,6 +113,7 @@ const Offre__Nav__Card__Container__Title = styled.h2`
     font-family:'Anybody', cursive;
     font-size: 2.5vw;
     transition: all 0.3s ease-in-out;
+    will-change: transform;
     @media (max-width: 768px) {
         font-size: 4.5vw;
     }
@@ -134,6 +136,7 @@ const Offre__Nav__Card__New = styled.span`
     border-radius: 3vw;
     font-size: 1vw;
     transition: all 0.3s ease-in-out;
+    will-change: transform;
     @media (max-width: 768px) {
         font-size: 3.5vw;
         padding: 0.5vw 3vw;
