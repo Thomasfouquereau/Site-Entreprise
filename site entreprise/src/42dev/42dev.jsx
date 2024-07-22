@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import styled, { keyframes } from "styled-components"
 import logo_42dev from "../assets/logo-42dev-no-bg.svg"
+import logo_42dev2 from "../assets/Logo-42dev(2).svg"
+import logo_A from "../assets/Logo A-TechPro.svg"
 
 const theme = {
     primary: "#0f284e",
@@ -19,30 +21,48 @@ const QuestionContainer = styled.div`
     background-color: #02001b;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 100;
     top: 0;
 `
 
 const Question1 = styled.div`
     position: absolute;
-    top: 11vw;
+    top: 20vh;
     left: 5vw;
     font-size: 1.7vw;
     background-color: ${theme.primary};
     width: 38vw;
     padding: 3vw 2vw;
     border-radius: 1.5vw;
+    span{
+        color: ${theme.secondary};
+        margin: 0vw;
+        padding: 0vw;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
 `
 
 const Question2 = styled.div`
     position: absolute;
-    bottom: 11vw;
+    bottom: 20vh;
     right: 5vw;
     font-size: 1.7vw;
     background-color: ${theme.primary};
     width: 38vw;
     padding: 3vw 2vw;
     border-radius: 1.5vw;
+    span{
+        color: ${theme.secondary};
+        margin: 0vw;
+        padding: 0vw;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
 `
 
 const HeaderSection = styled.div`
@@ -76,6 +96,7 @@ const InfoConteneur = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 `
 
 const Info = styled.div`
@@ -85,29 +106,69 @@ const Info = styled.div`
     height: 19vw;
 `
 
+const LogoA = styled.img`
+    position: absolute;
+    left: 0;
+    height: 14vw;
+    width: 49.5%;
+    top: 2.5vw;
+`
+
+const Logo42 = styled.img`
+    position: absolute;
+    right: 0;
+    height: 14vw;
+    width: 49.5%;
+    bottom: 2.5vw;
+`
+
 const InfoHover = styled.div`
     position: absolute; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     right: 0;
     height: 19vw;
     background-color: ${theme.primary};
     width: 49.5%;
     border-radius: 50px 0 0 50px;
     box-shadow: -8px 10px 7px 0px rgba(0, 0, 0, 0.25);
-    h2{
-        margin: 0;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    h3{
+        font-size: 1.5vw;
+        margin-top: 0;
+    }
+    p{
+        font-size: 1vw;
+    }
+    span{
+        color: ${theme.secondary};
     }
 `
 
 const InfoHover2 = styled.div`
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     left: 0;
     height: 19vw;
     background-color: ${theme.primary};
     width: 49.5%;
     border-radius:  0 50px 50px 0 ;
     box-shadow: 8px 0px 7px 0px rgba(0, 0, 0, 0.25);
-    h2{
-        margin: 0;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    h3{
+        font-size: 1.5vw;
+        margin-top: 0;
+    }
+    p{
+        font-size: 1vw;
+    }
+    span{
+        color: ${theme.secondary};
     }
 `
 
@@ -116,11 +177,11 @@ export default function A_TechPro() {
     useEffect(() => {
         gsap.timeline({ defaults: { ease: "power1.out" } })
             .fromTo(
-                [".Question1", ".Question2"], // Assurez-vous que les classes correspondent
+                [".Question1", ".Question2"],
                 { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 0.7, stagger: 1.5 }
+                { opacity: 1, y: 0, duration: 0.7, stagger: 1.4 }
             )
-            .to(".QuestionContainer", { opacity: 0, duration: 0.7, delay: 4 , display: "none" });
+            .to(".QuestionContainer", { opacity: 0, duration: 0.7, delay: 3.5, display: "none" });
     }, []);
 
     return (
@@ -128,14 +189,14 @@ export default function A_TechPro() {
 
             <QuestionContainer className="QuestionContainer">
                 <Question1 className="Question1">
-                    <span>
-                        42, c'est la réponse à toutes les questions, n'est-ce pas?
-                    </span>
+                    <p>
+                        <span>42</span>, c'est la réponse à toutes les questions, n'est-ce pas?
+                    </p>
                 </Question1>
                 <Question2 className="Question2">
-                    <span>
-                        Alors, pourquoi ne pas faire confiance à 42dev pour votre site web?
-                    </span>
+                    <p>
+                        Alors, pourquoi ne pas faire confiance à <span>42dev</span> pour votre site web?
+                    </p>
                 </Question2>
             </QuestionContainer>
 
@@ -148,19 +209,33 @@ export default function A_TechPro() {
             </HeaderSection>
 
             <InfoConteneur>
+
                 <Info>
-                    <div></div>
+                    <LogoA src={logo_A} />
                     <InfoHover>
-                        <h2>Création de sites internet</h2>
+                        <h3>Qui somme nous ?</h3>
+                        <p>
+                            42<span>dev</span> c’est la partie création site web de <span>A</span>-TechPro,
+                            <br />
+                            <br />
+                            Dédiée à offrir des solutions digitales sur mesure, intégrant les dernières technologies pour assurer une visibilité maximale et une interaction fluide avec vos utilisateurs.
+                        </p>
                     </InfoHover>
                 </Info>
 
                 <Info>
-                    <div></div>
+                    <Logo42 src={logo_42dev2} />
                     <InfoHover2>
-                        <h2>Création de sites internet</h2>
+                        <h3>Que faisons-nous ?</h3>
+                        <p>
+                            Chez 42dev nous nous occupons de vous créer des sites <span>3A</span><span>(</span>Accessible, Agréable, Attractif<span>)</span>.
+                            <br />
+                            <br />
+                            Qui répondent à vos besoins spécifiques tout en garantissant une expérience utilisateur optimale et une esthétique soignée, afin de vous démarquer dans le monde numérique.
+                        </p>
                     </InfoHover2>
                 </Info>
+
             </InfoConteneur>
 
         </Container>

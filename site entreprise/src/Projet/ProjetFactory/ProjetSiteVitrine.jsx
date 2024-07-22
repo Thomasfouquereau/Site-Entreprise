@@ -156,6 +156,9 @@ const ProjetSiteVitrine_container_site = styled.div`
     width: 85vw;
     height: 100%;
     margin-top: 5vw;
+    @media (max-width: 768px) {
+                flex-direction: column;
+            }
     a {
         display: flex;
         justify-content: center;
@@ -173,11 +176,12 @@ const ProjetSiteVitrine_container_site = styled.div`
         text-align: center;
         transition: all 0.31s ease;
         border: 1px solid ${theme.secondary};
-        margin-top: 2vh;
+        margin-top: 2vw;
         @media (max-width: 768px) {
                 font-size: 2.6vw;
                 width: 40vw;
                 height: 6vw;
+                margin-top: 1vw;
             }
         &:hover {
             background-color: ${theme.secondary};
@@ -201,6 +205,10 @@ const ProjetSiteVitrine_container_site_card = styled.div`
     width: 25vw;
     height: 24vw;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+    @media (max-width: 768px) {
+        width: 80vw;
+        height: 75vw;
+            }
     :hover{
         transform: scale(1.1);
         box-shadow: ${theme.shadowPrimary} 0vw 0vh 20vw 2px;
@@ -212,6 +220,12 @@ const ProjetSiteVitrine_container_site_card = styled.div`
         width: 100%;
         font-family: 'Anybody', cursive;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+        @media (max-width: 768px) {
+                font-size: 4.5vw;
+                margin-left: 7vw;
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
     :hover{
         color:${theme.secondary};
     }
@@ -224,11 +238,17 @@ const ProjetSiteVitrine_container_site_card = styled.div`
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
         margin-bottom: 0.7vw;
         margin-top: 0.5vw;
-        :hover{
+        @media (max-width: 768px) {
+            width:73vw;
+            height:42vw;
+            margin-bottom: 3vw;
+            }
+    :hover{
         transform: scale(1.09);
     }
     }
 `
+
 const ProjetSiteVitrine_container_site_card_balise = styled.div`
     display: flex;
     width: 100%;
@@ -247,13 +267,17 @@ const ProjetSiteVitrine_container_site_card_balise = styled.div`
         text-transform: capitalize;
         font-size: 0.7vw;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+        @media (max-width: 768px) {
+            padding: 0.15vw 0;
+            font-size: 2.6vw;
+            width:18vw;
+            }
         :hover{
-        transform: scale(1.09);
-    }
+            transform: scale(1.09);
+        }
     }
     
 `
-
 
 export default function ProjetSiteVitrine() {
     return (
