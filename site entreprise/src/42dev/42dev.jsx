@@ -34,10 +34,17 @@ const Question1 = styled.div`
     width: 38vw;
     padding: 3vw 2vw;
     border-radius: 1.5vw;
+    @media (max-width: 768px){
+        top: 35vh;
+        width: 57vw;
+        font-size: 3.5vw;
+        padding: 4vw 4vw;
+    }
     span{
         color: ${theme.secondary};
         margin: 0vw;
         padding: 0vw;
+        
     }
     p{
         margin: 0;
@@ -54,6 +61,12 @@ const Question2 = styled.div`
     width: 38vw;
     padding: 3vw 2vw;
     border-radius: 1.5vw;
+    @media (max-width: 768px){
+        bottom: 35vh;
+        width: 57vw;
+        font-size: 3.5vw;
+        padding: 4vw 4vw;
+    }
     span{
         color: ${theme.secondary};
         margin: 0vw;
@@ -76,17 +89,34 @@ const HeaderSection = styled.div`
     margin-left: 50%;
     margin-top: 5vw;
     transform: translateX(-50%);
+    @media (max-width: 768px){
+        height: 20vw;
+        border-radius: 4vw;
+        margin-top: 20vw;
+    }
     img{
         width: 7vw;
         margin-right: 3vw;
+        @media (max-width: 768px){
+            width: 20vw;
+            margin-right: 6vw;
+        }
     }
     h1{
         font-size: 1.5vw;
         margin-bottom: 0vw;
+        @media (max-width: 768px){
+            font-size: 4vw;
+            margin-top: 0vw;
+        }
     }
     p{
         font-size: 1vw;
         margin-top: 0.6vw;
+        @media (max-width: 768px){
+            font-size: 2vw;
+            margin-top: 0.6vw;
+        }
     }
 `
 
@@ -97,6 +127,9 @@ const InfoConteneur = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
+    @media (max-width: 768px){
+        margin-bottom: 25vw;
+    }
 `
 
 const Info = styled.div`
@@ -104,6 +137,11 @@ const Info = styled.div`
     border-radius: 50px;
     width: 95%;
     height: 19vw;
+    @media (max-width: 768px){
+        height: 40vw;
+        border-radius: 4vw;
+        margin-bottom: -0.3vw;
+    }
 `
 
 const LogoA = styled.img`
@@ -112,6 +150,10 @@ const LogoA = styled.img`
     height: 14vw;
     width: 49.5%;
     top: 2.5vw;
+    @media (max-width: 768px){
+        height: 30vw;
+        top: 5vw;
+    }
 `
 
 const Logo42 = styled.img`
@@ -120,6 +162,10 @@ const Logo42 = styled.img`
     height: 14vw;
     width: 49.5%;
     bottom: 2.5vw;
+    @media (max-width: 768px){
+        height: 30vw;
+        bottom: 5vw;
+    }
 `
 
 const InfoHover = styled.div`
@@ -135,12 +181,22 @@ const InfoHover = styled.div`
     box-shadow: -8px 10px 7px 0px rgba(0, 0, 0, 0.25);
     padding-left: 3vw;
     padding-right: 3vw;
+    @media (max-width: 768px){
+        height: 40vw;
+        border-radius: 4vw 0 0 4vw;
+    }
     h3{
         font-size: 1.5vw;
         margin-top: 0;
+        @media (max-width: 768px){
+            font-size: 3vw;
+        }
     }
     p{
         font-size: 1vw;
+        @media (max-width: 768px){
+            font-size: 1.7vw;
+        }
     }
     span{
         color: ${theme.secondary};
@@ -160,12 +216,23 @@ const InfoHover2 = styled.div`
     box-shadow: 8px 0px 7px 0px rgba(0, 0, 0, 0.25);
     padding-left: 3vw;
     padding-right: 3vw;
+    @media (max-width: 768px){
+        height: 40vw;
+        border-radius:  0 4vw 4vw 0 ;
+
+    }
     h3{
         font-size: 1.5vw;
         margin-top: 0;
+        @media (max-width: 768px){
+            font-size: 3vw;
+        }
     }
     p{
         font-size: 1vw;
+        @media (max-width: 768px){
+            font-size: 1.7vw;
+        }
     }
     span{
         color: ${theme.secondary};

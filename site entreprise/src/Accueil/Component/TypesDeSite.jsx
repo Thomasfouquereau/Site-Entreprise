@@ -32,7 +32,7 @@ const Types__Container = styled.div`
     position: relative;
     height: 25vw;
     @media (max-width: 768px){
-        height: 40vw; 
+        height: 47vw; 
     }
 `
 
@@ -42,7 +42,7 @@ const Types__Container__reverse = styled.div`
     position: relative;
     height: 25vw;
     @media (max-width: 768px){
-        height: 40vw; 
+        height: 47vw; 
     }
 `
 
@@ -107,7 +107,7 @@ const Types__Container__info = styled.div`
     background-color: ${theme.primary};
     padding-left: 70px;
     @media (max-width: 768px){
-        padding-left: 30px;
+        padding-left: 20px;
     }
     h2 {
         font-size: 2.2vw;
@@ -127,6 +127,7 @@ const Types__Container__info = styled.div`
         width: 70%;
         @media (max-width: 768px){
             font-size: 2vw;
+            width: 85%;
         }
     }
     a {
@@ -174,7 +175,7 @@ const Types__Container__info__reverse = styled.div`
     background-color: ${theme.primary};
     padding-left: 70px;
     @media (max-width: 768px){
-        padding-left: 30px;
+        padding-left: 20px;
     }
     h2 {
         font-size: 2.2vw;
@@ -193,6 +194,7 @@ const Types__Container__info__reverse = styled.div`
         width: 70%;
         @media (max-width: 768px){
             font-size: 2vw;
+            width: 85%;
         }
     }
     a {

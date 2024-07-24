@@ -27,6 +27,7 @@ const Footer__ = styled.footer`
     line-height: 1.5;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    
 `
 
 const Footer__Container = styled.div`
@@ -41,6 +42,11 @@ const Footer__Container = styled.div`
     border-radius: 3vw;
     transform: translateY(-90%);
     box-shadow: ${theme.shadowPrimary} -0vw -0vh 20vw 0.7vw;
+    @media (max-width: 768px){
+        transform: translateY(-110%);
+        width: 70vw;
+        height: 20vw;
+    }
     a{
         display: flex;
         align-items: center;
@@ -59,6 +65,10 @@ const Footer__Container__Contact = styled.div`
     border-radius: 3vw;
     cursor: pointer;
     transition: all 0.31s ease;
+    @media (max-width: 768px){
+        width: 27vw;
+        height: 8vw;
+    }
     &:hover{
         background-color: ${theme.secondary};
         box-shadow: ${theme.primary} 0px 0px 0px 2px;
@@ -73,15 +83,29 @@ const Footer__Container__Contact = styled.div`
             transition: all 0.31s ease;
             font-size: 0.7vw;
         }
+        @media (max-width: 768px){
+        span{
+            font-size: 2vw;
+        }
+    }
     }
     img{
         width: 2vw;
         height: 2vw;
         margin-right: 10px;
+        @media (max-width: 768px){
+            width: 4vw;
+            height: 4vw;
+        }
     }
     span{
         font-size: 0.7vw;
         color:#fff
+    }
+    @media (max-width: 768px){
+        span{
+            font-size: 2vw;
+        }
     }
 `
 
@@ -92,6 +116,9 @@ const Footer__Container__Links = styled.div`
     align-items: center;
     width: 7vw;
     margin-right: 10px;
+    @media (max-width: 768px){
+            width: 18vw;
+        }
     img{
         width: 1.7vw;
         height: 1.7vw;
@@ -100,15 +127,28 @@ const Footer__Container__Links = styled.div`
             filter: invert(1);
             transform: scale(1.2);
         }
+        @media (max-width: 768px){
+            width: 5vw;
+            height: 5vw;
+        }
    }
 `
 
 const Logo = styled.img`
     transform: translateY(-2vw);
+    @media (max-width: 768px){
+        width: 20vw;
+        height: 20vw;
+        transform: translateY(-11vw);
+    }
 `
 
 const Footer__Container__Content = styled.div`
     color: #fff;
+    @media (max-width: 768px) {
+        font-size: 2vw;
+        transform: translateY(-3vw);
+    }
 `
 
 export default function Footer() {
