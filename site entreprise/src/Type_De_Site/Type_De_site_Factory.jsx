@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import { gsap } from "gsap";
+
 import Site_Vitrine from "./Site_Vitrine/Site_Vitrine";
 import LandingPage from "./LandingPage/LandingPage";
 import Site_E_Commerce from "./Site_E_Commerce/Site_E_Commerce";
@@ -29,6 +30,10 @@ const Section__Type_de_Site = styled.section`
     margin-left: 20px;
     margin-right: 20px;
     font-family: 'Poppins', sans-serif;
+    @media (max-width: 768px){
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 `
 const Type_De_Site__Container__Title = styled.div`
     display: flex;
@@ -40,24 +45,43 @@ const Type_De_Site__Container__Title = styled.div`
     height: 10vw;
     margin-bottom: 5px;
     color: #fff;
+    @media (max-width: 768px){
+        padding-left: 20px;
+        border-radius: 3vw;
+        height: 20vw;
+    }
     img {
         width: 5vw;
         height: 5vw;
+        @media (max-width: 768px){
+            width: 8vw;
+            height: 8vw;
+        }
     }
 `
 
 const Type_De_Site__Container__Title__Info = styled.div`
     margin-left: 2vw;
+    @media (max-width: 768px){
+        margin-left: 4vw;
+    }
     h1{
         margin: 0;
         margin-bottom: 20px;
         font-size: 2vw;
         font-weight: 700;
         font-family: 'Anybody', cursive;
+        @media (max-width: 768px){
+            font-size: 3vw;
+            margin-bottom: 1.8vw;
+        }
     }
     p{
         margin: 0;
         font-size: 0.9vw;
+        @media (max-width: 768px){
+            font-size: 1.7vw;
+        }
     }
 `
 
@@ -73,16 +97,29 @@ const Type_De_Site__Container__description = styled.div`
     margin-bottom: 5px;
     height: 17vw;
     color: #fff;
+    @media (max-width: 768px){
+        border-radius: 3vw;
+        height: 37vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
     h2{
         margin: 0;
         padding-bottom: 1.5vw;
         font-size: 1.8vw;
         font-weight: 700;
         font-family: 'Anybody', cursive;
+        @media (max-width: 768px){
+            font-size: 3vw;
+            margin-bottom: 1.8vw;
+        }
     }
     p{
         margin: 0;
         font-size: 0.8vw;
+        @media (max-width: 768px){
+            font-size: 1.7vw;
+        }
         span{
             color: ${theme.secondary};
         }

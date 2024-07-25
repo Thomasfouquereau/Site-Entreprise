@@ -19,6 +19,7 @@ const ProjetSiteVitrine_container = styled.div`
     margin-bottom: 10vw;
     @media (max-width: 768px) {
         margin-top: 16vw;
+        margin-bottom: 25vw;
     }
 `
 

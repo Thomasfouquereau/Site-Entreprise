@@ -98,24 +98,17 @@ const HeaderSection = styled.div`
         width: 7vw;
         margin-right: 3vw;
         @media (max-width: 768px){
-            width: 20vw;
+            width: 14vw;
             margin-right: 6vw;
         }
     }
-    h1{
-        font-size: 1.5vw;
-        margin-bottom: 0vw;
-        @media (max-width: 768px){
-            font-size: 4vw;
-            margin-top: 0vw;
-        }
-    }
+
     p{
         font-size: 1vw;
         margin-top: 0.6vw;
+        margin-bottom: 0.6vw;
         @media (max-width: 768px){
-            font-size: 2vw;
-            margin-top: 0.6vw;
+            font-size: 2.2vw;
         }
     }
 `
@@ -270,7 +263,6 @@ export default function A_TechPro() {
             <HeaderSection>
                 <img src={logo_42dev} />
                 <div>
-                    <h1>42dev</h1>
                     <p>Création de sites internet sur mesure, adaptés à vos besoins et à votre budget.</p>
                 </div>
             </HeaderSection>

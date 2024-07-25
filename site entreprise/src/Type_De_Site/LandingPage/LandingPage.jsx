@@ -12,7 +12,7 @@ const theme = {
     primary: "#0f284e",
     secondary: "#00ff73",
     border: "#e0e0e038",
-    shadowPrimary: "#00ff7383",
+    shadowPrimary: "#fff83",
 }
 
 const Types_Wrapper = styled.div`
@@ -23,6 +23,11 @@ const Types_Wrapper = styled.div`
     grid-row-gap: 5px;
     height: 13vw;
     font-family: 'Anybody', cursive;
+    @media (max-width: 768px){
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        height: 55vw;
+    }
 `
 const Types_Wrapper__div1 = styled.div`
     grid-area: 1 / 1 / 3 / 2;
@@ -32,18 +37,28 @@ const Types_Wrapper__div1 = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px){
+        grid-area: 1 / 1 / 4 / 2;
+    }
     h3{
         font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
         color : #2D3142;
+        @media (max-width: 768px){
+            font-size: 3vw;
+        }
     }
     img{
         width: 4vw;
         height: 4vw;
+        @media (max-width: 768px){
+            width: 6vw;
+            height: 6vw;
+        }
     }
-`  
+`
 const Types_Wrapper__div2 = styled.div`
     grid-area: 1 / 2 / 2 / 4;
     background-color: ${theme.secondary};
@@ -52,16 +67,26 @@ const Types_Wrapper__div2 = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px){
+        grid-area: 1 / 2 / 3 / 4;
+    }
     h3{
         font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
         color : #2D3142;
+        @media (max-width: 768px){
+            font-size: 3vw;
+        }
     }
     img{
-        width: 2.3vw;
-        height: 2.3vw;
+        width: 4vw;
+        height: 4vw;
+        @media (max-width: 768px){
+            width: 6vw;
+            height: 6vw;
+        }
     }
 `
 const Types_Wrapper__div3 = styled.div`
@@ -72,16 +97,26 @@ const Types_Wrapper__div3 = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px){
+        grid-area: 3 / 3 / 7 / 4;
+    }
     h3{
         font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
         color : #2D3142;
+        @media (max-width: 768px){
+            font-size: 3vw;
+        }
     }
     img{
-        width: 2.3vw;
-        height: 2.3vw;;
+        width: 4vw;
+        height: 4vw;
+        @media (max-width: 768px){
+            width: 6vw;
+            height: 6vw;
+        }
     }
 `
 const Types_Wrapper__div4 = styled.div`
@@ -92,16 +127,26 @@ const Types_Wrapper__div4 = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px){
+        grid-area: 4 / 1 / 7 / 2;
+    }
     h3{
         font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
         color : #2D3142;
+        @media (max-width: 768px){
+            font-size: 3vw;
+        }
     }
     img{
-        width: 2.2vw;
-        height: 2.2vw;
+        width: 4vw;
+        height: 4vw;
+        @media (max-width: 768px){
+            width: 6vw;
+            height: 6vw;
+        }
     }
 `
 const Types_Wrapper__div5 = styled.div`
@@ -112,23 +157,31 @@ const Types_Wrapper__div5 = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px){
+        grid-area: 3 / 2 / 6 / 3;
+    }
     h3{
         font-size: 1vw;
         font-weight: 600;
         margin: 0;
         padding-top: 10px;
         color : #2D3142;
+        @media (max-width: 768px){
+            font-size: 3vw;
+        }
     }
     img{
-        width: 2.3vw;
-        height: 2.3vw;
+        width: 4vw;
+        height: 4vw;
+        @media (max-width: 768px){
+            width: 6vw;
+            height: 6vw;
+        }
     }
 `
 
-
 export default function Site_Vitrine() {
 
-    //au hover sur les div, icon a une animation gsap qui se déclenche
     const [hover, setHover] = useState(false);
     const [hover2, setHover2] = useState(false);
     const [hover3, setHover3] = useState(false);
@@ -254,7 +307,7 @@ export default function Site_Vitrine() {
                     <h3>Référencement</h3>
                 </Types_Wrapper__div4>
                 <Types_Wrapper__div5 onMouseEnter={handleHover5} onMouseLeave={handleHover5}>
-                <img ref={icon5} src={icon_evolutif} alt="Icone Evolutif" />
+                    <img ref={icon5} src={icon_evolutif} alt="Icone Evolutif" />
                     <h3>Evolutif</h3>
                 </Types_Wrapper__div5>
             </Types_Wrapper>
