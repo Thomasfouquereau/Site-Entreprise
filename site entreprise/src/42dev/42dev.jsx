@@ -87,7 +87,7 @@ const HeaderSection = styled.div`
     border-radius: 50px;
     padding-left: 3vw;
     margin-left: 50%;
-    margin-top: 5vw;
+    margin-top: 7vw;
     transform: translateX(-50%);
     @media (max-width: 768px){
         height: 20vw;
@@ -115,7 +115,7 @@ const HeaderSection = styled.div`
 
 const InfoConteneur = styled.div`
     margin-top: 1vw;
-    margin-bottom: 5vw;
+    margin-bottom: 15vw;
     display: flex;
     flex-direction: column;
     align-items: center;

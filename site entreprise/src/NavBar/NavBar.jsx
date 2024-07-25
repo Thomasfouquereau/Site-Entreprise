@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { gsap } from "gsap";
-import MobileMenuIcon from '../assets/icon-mobile-menu-arrow.svg';
+import MobileMenuIcon from '../assets/Icon-menu.svg';
 import MobileMenuClose from '../assets/icon-mobile-menu-cross.svg';
 import Logo from '../assets/logo-42dev-no-bg-var1.svg';
 import LogoBg from '../assets/logo-42dev.svg';
@@ -23,8 +23,8 @@ const StyledNav = styled.nav`
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     @media (max-width: 768px) {
-            margin-top: -5vh;
-        }
+        margin-top: -5vh;
+    }
 
 `;
 
@@ -32,8 +32,8 @@ const Ul = styled.ul`
     display: flex;
     list-style: none;
     @media (max-width: 768px) {
-            display: none;
-        }
+        display: none;
+    }
 `;
 
 const StyledLi = styled.li`
@@ -47,7 +47,6 @@ const StyledLi = styled.li`
     transition: all 0.3s ease;
     height: 3.5vw;
     width: 12vw;
-   
     &:hover {
             transform: scale(1.05);
             transition: all 0.31s ease;
@@ -66,7 +65,7 @@ const StyledLi = styled.li`
 `;
 
 const Logo42dev = styled.img`
-    width: 8vw;
+    width: 4vw;
     height: 2.5vw;
     margin-top: 0.4vw;
     @media (max-width: 768px) {
@@ -131,7 +130,7 @@ const HeaderNav = styled.div`
         background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
         border-radius: 30px ;
         position: absolute;
-        bottom: -60px;
+        bottom: -55px;
         z-index: 9000;
         rotate: 180deg;
         position: fixed;
@@ -151,7 +150,7 @@ const HeaderNav = styled.div`
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.346);
             img {
                 width: 14vw;
-                margin-bottom: -7vh;
+                margin-bottom: -6vw;
             }
         } span {
             position: absolute;
@@ -172,7 +171,7 @@ const HeaderNav = styled.div`
         button{
         img{
                 width: 24vw;
-                height: 7vh;
+                height: 6vh;
                 margin-top: 3vh;
             }
         }
@@ -184,7 +183,7 @@ const HeaderNav = styled.div`
 
 const Parent = styled.div`
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
@@ -199,22 +198,14 @@ const Parent = styled.div`
     margin-top: 20vh;
     box-shadow: 0px 10px 19px 7px rgba(0, 0, 0, 0.346);
     @media (max-width: 470px) {
-        height: 55vh;
-        width: 85.5vw;
+        height: 57vh;
+        width: 100vw;
         margin-top: 28vh;
     }
-    
-`;
-
-const Div1 = styled.div`
-    grid-area: 1 / 1 / 2 / 3;
-    background: rgb(2,0,36);
-    background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
-    border-radius: 15px;
 `;
 
 const Div2 = styled.div`
-    grid-area: 1 / 3 / 3 / 7;
+    grid-area: 1 / 1 / 3 / 3;
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -231,7 +222,7 @@ const Div2 = styled.div`
 `;
 
 const Div3 = styled.div`
-    grid-area: 2 / 1 / 4 / 3;
+    grid-area: 1 / 3 / 3 / 5;
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -248,7 +239,7 @@ const Div3 = styled.div`
 `;
 
 const Div4 = styled.div`
-    grid-area: 3 / 3 / 4 / 7;
+    grid-area: 3 / 1 / 5 / 3;
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -265,7 +256,8 @@ const Div4 = styled.div`
 `;
 
 const Div5 = styled.div`
-    grid-area: 4 / 1 / 5 / 7;
+    grid-area: 5 / 1 / 7 / 4;
+    
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -282,7 +274,8 @@ const Div5 = styled.div`
 `;
 
 const Div6 = styled.div`
-    grid-area: 5 / 4 / 7 / 7;
+    
+    grid-area: 5 / 4 / 7 / 5;
     border-radius: 15px;
     button{
         width: 100%;
@@ -299,7 +292,7 @@ const Div6 = styled.div`
 `;
 
 const Div7 = styled.div`
-    grid-area: 5 / 1 / 7 / 4;
+    grid-area: 3 / 3 / 5 / 5;
     background: rgb(2,0,36);
     background: linear-gradient(163deg, #020024 0%, rgba(14,40,80,1) 35%, #00ff73 100%);
     border-radius: 15px;
@@ -348,7 +341,6 @@ const NavBar = () => {
         handleClick();
     }, []);
 
-
     return (
         <StyledNav  >
             <Ul ref={ul}>
@@ -371,12 +363,11 @@ const NavBar = () => {
             <HeaderNav>
                 <button onClick={handleClick}>
                     <img className='buttonImg' src={MobileMenuIcon} />
-                    <span className='buttonText'>Menu</span>
                 </button>
             </HeaderNav>
             <MobileUl className='mobileNav'>
                 <Parent>
-                    <Div1><img src="" alt="" /> </Div1>
+                    {/* <Div1><img src="" alt="" /> </Div1> */}
                     <Div2><Link to="/contact" onClick={handleClick}>Contact</Link></Div2>
                     <Div3><Link to="/Offre" onClick={handleClick}>Offre</Link></Div3>
                     <Div4><Link to="/Projet" onClick={handleClick}>Projet</Link></Div4>
