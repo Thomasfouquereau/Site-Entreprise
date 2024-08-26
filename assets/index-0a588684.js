@@ -4044,4 +4044,4 @@ display: flex;
         font-size: 2vw;
         transform: translateY(-3vw);
     }
-`;function _P(){return b(hP,{children:[b(mP,{children:[p(ke,{to:"/Contact",children:b(gP,{children:[p("img",{src:t_}),p("span",{children:"Contact"})]})}),b(vP,{children:[p("img",{src:dP}),p("img",{src:fP}),p("img",{src:pP})]})]}),p(wP,{src:r_}),p(yP,{children:p("p",{children:"© 2024 - Tous droits réservés"})})]})}const xP="/Site-Entreprise/";gf.createRoot(document.getElementById("root")).render(p(Is.StrictMode,{children:b(E3,{basename:xP,children:[p(cP,{}),p(Qb,{}),p(_P,{})]})}));
+`;function _P(){return b(hP,{children:[b(mP,{children:[p(ke,{to:"/Contact",children:b(gP,{children:[p("img",{src:t_}),p("span",{children:"Contact"})]})}),b(vP,{children:[p("img",{src:dP}),p("img",{src:fP}),p("img",{src:pP})]})]}),p(wP,{src:r_}),p(yP,{children:p("p",{children:"© 2024 - Tous droits réservés"})})]})}const xP="/Site-Entreprise";gf.createRoot(document.getElementById("root")).render(p(Is.StrictMode,{children:b(E3,{basename:xP,children:[p(cP,{}),p(Qb,{}),p(_P,{})]})}));
