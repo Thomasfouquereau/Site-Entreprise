@@ -22,6 +22,7 @@ const StyledNav = styled.nav`
     height: 5vh;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
+    z-index: 1000;
     @media (max-width: 768px) {
         margin-top: -5vh;
     }

@@ -106,8 +106,8 @@ export default function Header() {
             index = index === arrayTypeSite.length - 1 ? 0 : index + 1;
             gsap.fromTo(titre.current, { y: -150, opacity: 0 }, { y: 0, opacity: 1, duration: 1 });
             gsap.fromTo(titre.current, { y: 0, opacity: 1 }, { y: 150, opacity: 0, duration: 1, delay: 4 });
-            gsap.fromTo(img.current, { rotate: 100, scale: 1.15 }, { rotate: 160, scale: 1, duration: 1 });
-            gsap.fromTo(img.current, { rotate: 160, scale: 1 }, { rotate: 100, scale: 1.15, duration: 1.3, delay: 4 });
+            gsap.fromTo(img.current, { rotate: 100, scale: 1.4 }, { rotate: 160, scale: 1, duration: 1 });
+            gsap.fromTo(img.current, { rotate: 160, scale: 1 }, { rotate: 100, scale: 1.4, duration: 1.3, delay: 4 });
         }, 5000);
         return () => clearInterval(interval);
     }, []);

@@ -102,7 +102,6 @@ const HeaderSection = styled.div`
             margin-right: 6vw;
         }
     }
-
     p{
         font-size: 1vw;
         margin-top: 0.6vw;
@@ -115,7 +114,7 @@ const HeaderSection = styled.div`
 
 const InfoConteneur = styled.div`
     margin-top: 1vw;
-    margin-bottom: 15vw;
+    margin-bottom: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,6 +234,7 @@ const InfoHover2 = styled.div`
 export default function A_TechPro() {
 
     useEffect(() => {
+        document.body.style.overflow = 'hidden';
         gsap.timeline({ defaults: { ease: "power1.out" } })
             .fromTo(
                 [".Question1", ".Question2"],
@@ -242,6 +242,9 @@ export default function A_TechPro() {
                 { opacity: 1, y: 0, duration: 0.7, stagger: 1.4 }
             )
             .to(".QuestionContainer", { opacity: 0, duration: 0.7, delay: 3.5, display: "none" });
+        setTimeout(() => {
+            document.body.style.overflow = 'auto';
+        }, 6500);
     }, []);
 
     return (
